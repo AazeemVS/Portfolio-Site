@@ -1,7 +1,7 @@
 import React from 'react';
 
 // NodeJSIcon component displays the Node.js logo (SVG) with a label
-const nodeJSIcon: React.FC = () => (
+const NodeJSIcon: React.FC = () => (
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
     
@@ -39,4 +39,4 @@ const nodeJSIcon: React.FC = () => (
   </div>
 );
 
-export default nodeJSIcon;
+export default NodeJSIcon;

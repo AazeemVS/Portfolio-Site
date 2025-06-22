@@ -1,7 +1,7 @@
 import React from 'react';
 
 // CPlusPlusIcon component displays a C++ logo with a label
-const cppIcon: React.FC = () => (
+const CPPIcon: React.FC = () => (
 
         // Container aligns icon and text horizontally
         <div className="flex flex-row w-full justify-start items-center gap-4">
@@ -16,4 +16,4 @@ const cppIcon: React.FC = () => (
         </div>
 );
 
-export default cppIcon;
+export default CPPIcon;
