@@ -1,20 +1,20 @@
 import React from 'react';
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";
 import CSSIcon from "@/components/ui/icons/CSSIcon";
-import TailwindCSSIcon from "@/components/ui/icons/TailwindCSSIcon";
-import JSIcon from "@/components/ui/icons/JSIcon";
-import TSIcon from "@/components/ui/icons/TSIcon";
-import ReactIcon from "@/components/ui/icons/ReactIcon";
-import ViteIcon from "@/components/ui/icons/ViteIcon1";
-import JavaIcon from "@/components/ui/icons/JavaIcon";
-import GitIcon from "@/components/ui/icons/GitIcon";
-import NodeJSIcon from "@/components/ui/icons/NodeJSIcon";
-import CPlusPlusIcon from "@/components/ui/icons/CPlusPLusIcon";
-import ShadcnIcon from "@/components/ui/icons/ShadcnIcon1";
-import NextJSIcon from "@/components/ui/icons/NextJSProjIcon";
-import CSharpIcon from "@/components/ui/icons/CSharpIcon";
-import AngularIcon from "@/components/ui/icons/AngularIcon";
-import FigmaIcon from "@/components/ui/icons/FigmaIcon";
+import TailwindCSSIcon from "@/components/ui/icons/tailwindCSSIcon";
+import JSIcon from "@/components/ui/icons/jsIcon";
+import TSIcon from "@/components/ui/icons/tsIcon";
+import ReactIcon from "@/components/ui/icons/reactIcon";
+import ViteIcon from "@/components/ui/icons/viteIcon";
+import JavaIcon from "@/components/ui/icons/javaIcon";
+import GitIcon from "@/components/ui/icons/gitIcon";
+import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
+import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
+import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
+import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
+import CSharpIcon from "@/components/ui/icons/csharpIcon";
+import AngularIcon from "@/components/ui/icons/angularIcon";
+import FigmaIcon from "@/components/ui/icons/figmaIcon";
 import {
   Card,
   CardContent,

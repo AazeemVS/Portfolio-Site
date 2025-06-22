@@ -2,9 +2,9 @@
 import React from 'react';
 import type { ReactElement } from 'react';
 import SkillBox from "@/components/ui/skillBox";
-import NextJSIcon from "@/components/ui/icons/NextJSProjIcon";
-import JSIcon      from "@/components/ui/icons/JSProjIcon";
-import AngularIcon from "@/components/ui/icons/AngularProjIcon";
+import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
+import JSIcon      from "@/components/ui/icons/jsProjIcon";
+import AngularIcon from "@/components/ui/icons/angularProjIcon";
 
 interface ProjectTemplateProps {
   title: string;          // Project title text
