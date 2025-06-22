@@ -17,8 +17,8 @@ import {
 import Footer from '@/components/ui/footer';
 
 //Images
-import homePageImg from "@/../images/Catch_Frenzy_Home_Img.png"
-import Level1Img from "@/../images/Catch_Frenzy_level1.png"
+import homePageImg from "@/../images/CF-home.png"
+import Level1Img from "@/../images/CF-lvl1.png"
 import Level2Img from "@/../images/CF_Lvl2.png"
 import Level3Img from "@/../images/CF_Lvl3.png"
 

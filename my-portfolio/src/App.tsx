@@ -36,61 +36,60 @@ import {
 
   return (
     <div className="w-full mt-5">
-  <div className="max-w-4xl mx-auto px-4">
-    <NavigationMenu className="w-full">
-      <NavigationMenuList className="flex items-center space-x-56">
-        {/* 1) Left: fixed-width container */}
-        <div className="flex-none w-64 flex justify-start ">
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
-              onClick={() => navigate("/LandingPage")}
-            >
-              Aazeem Vaidya Shaikh
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </div>
-
-        {/* 2) Center: grow to fill */}
-        <div className="flex-1 flex justify-center">
-          <NavigationMenuItem>
-            <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
-              {[
-                ["About Me", "/AboutMe"],
-                ["My Sites", "/MySites"],
-                ["Projects", "/Projects"],
-                ["Dev Blog", "/DevBlog"],
-              ].map(([label, path]) => (
+      <div className="max-w-4xl mx-auto px-4">
+        <NavigationMenu className="w-full">
+          <NavigationMenuList className="flex items-center space-x-56">
+            {/* 1) Left: fixed-width container */}
+            <div className="flex-none w-64 flex justify-start ">
+              <NavigationMenuItem>
                 <NavigationMenuLink
-                  key={label}
                   className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
-                  onClick={() => navigate(path)}
+                  onClick={() => navigate("/LandingPage")}
                 >
-                  {label}
+                  Aazeem Vaidya Shaikh
                 </NavigationMenuLink>
-              ))}
+              </NavigationMenuItem>
             </div>
-          </NavigationMenuItem>
-        </div>
 
-        {/* 3) Right: same fixed width as left */}
-        <div className="flex-none w-64 flex justify-end">
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
-              onClick={() => navigate("/ContactMe")}
-            >
-              Contact Me
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </div>
-      </NavigationMenuList>
+            {/* 2) Center: grow to fill */}
+            <div className="flex-1 flex justify-center">
+              <NavigationMenuItem>
+                <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
+                  {[
+                    ["About Me", "/AboutMe"],
+                    ["My Sites", "/MySites"],
+                    ["Projects", "/Projects"],
+                    ["Dev Blog", "/DevBlog"],
+                  ].map(([label, path]) => (
+                    <NavigationMenuLink
+                      key={label}
+                      className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
+                      onClick={() => navigate(path)}
+                    >
+                      {label}
+                    </NavigationMenuLink>
+                  ))}
+                </div>
+              </NavigationMenuItem>
+            </div>
 
-      <NavigationMenuViewport />
-    </NavigationMenu>
-  </div>
-</div>
+            {/* 3) Right: same fixed width as left */}
+            <div className="flex-none w-64 flex justify-end">
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
+                  onClick={() => navigate("/ContactMe")}
+                >
+                  Contact Me
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </div>
+          </NavigationMenuList>
 
+          <NavigationMenuViewport />
+        </NavigationMenu>
+      </div>
+    </div>
   );
 }
 

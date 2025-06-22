@@ -34,50 +34,48 @@ const slides = [
 
 const WorkoutTrackerInfoPage: React.FC = () => (
     <>
-     <Card className="mb-[5%]">
-      <CardTitle className="text-white">MoveSync: Workout Tracker Application</CardTitle>
-    </Card>
+      <Card className="mb-[5%]">
+        <CardTitle className="text-white">MoveSync: Workout Tracker Application</CardTitle>
+      </Card>
 
-    {/* Carousel to show off different images of my websites */}
-    <div className="flex justify-center">
-      <Carousel className="w-full max-w-5xl"> {/* Increased max-width */}
-        <CarouselContent>
-          
-          {slides.map((slides, index) => (
-           <CarouselItem key={index} className="basis-full">
-            <div className="p-2">
-              <div className="flex items-center justify-center h-[500px]">
-                <img
-                  src={slides.img}
-                  alt={`SBECI Site Preview ${index + 1}`}
-                  className="h-full w-auto object-contain rounded-sm border border-[#27272a] shadow-lg"
-                />
+      {/* Carousel to show off different images of my websites */}
+      <div className="flex justify-center">
+        <Carousel className="w-full max-w-5xl"> {/* Increased max-width */}
+          <CarouselContent>
+            
+            {slides.map((slides, index) => (
+            <CarouselItem key={index} className="basis-full">
+              <div className="p-2">
+                <div className="flex items-center justify-center h-[500px]">
+                  <img
+                    src={slides.img}
+                    alt={`SBECI Site Preview ${index + 1}`}
+                    className="h-full w-auto object-contain rounded-sm border border-[#27272a] shadow-lg"
+                  />
+                </div>
+                <div className="ml-16 mr-16 mt-0">
+                    <Card className="border-none mt-4 p-0 text-left w-full">
+                  <p className="text-gray-300 text-sm">
+                    {slides.caption}
+                  </p>
+                </Card>
+                </div>
+                
               </div>
-              <div className="ml-16 mr-16 mt-0">
-                  <Card className="border-none mt-4 p-0 text-left w-full">
-                <p className="text-gray-300 text-sm">
-                  {slides.caption}
-                </p>
-              </Card>
-              </div>
-              
-            </div>
-          </CarouselItem>
+            </CarouselItem>
 
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="h-12 w-12 -left-16" /> {/* Adjusted position */}
-        <CarouselNext className="h-12 w-12 -right-16" />
-      </Carousel>
-    </div>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="h-12 w-12 -left-16" /> {/* Adjusted position */}
+          <CarouselNext className="h-12 w-12 -right-16" />
+        </Carousel>
+      </div>
 
-    <Card>
-      <CardHeader className="text-white text-2xl"> About The Project:</CardHeader>
-      <CardDescription className="text-white text-md"> </CardDescription>
-
-    </Card>
-
-    <Footer />
+        <Card>
+          <CardHeader className="text-white text-2xl"> About The Project:</CardHeader>
+          <CardDescription className="text-white text-md"> </CardDescription>
+        </Card>
+      <Footer/>
   </>
 );
 

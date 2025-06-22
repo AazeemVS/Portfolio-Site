@@ -40,13 +40,11 @@ const AboutMe: React.FC = () => (
   </div>
 </div>
 
-  {/* === Full-width content below === */}
   <div className="max-w-4xl mx-auto space-y-8">
     {/* What I Do */}
     <div>
       <h3 className="text-white text-2xl font-bold">What I Do</h3>
       <ul className="mt-2 space-y-2 text-white font-semibold">
-        {/* …list items… */}
       </ul>
       <p className="mt-4 text-white font-semibold">
         During my internship at RIT’s School of Interactive Media & Games, I developed front-end components for student project portals. At Grid 1 Solutions, I led the restoration and modernization of a legacy website—revamping its look, improving performance, and integrating new content management workflows. I’ve also been on the Dean’s List every semester at RIT, where I’m a rising junior double-majoring in Game Design & Development and Software Engineering. Last summer, I completed three AI courses on Coursera taught by Andrew Ng to deepen my understanding of machine learning pipelines. 
@@ -97,7 +95,8 @@ const AboutMe: React.FC = () => (
 
     {/* Skills */}
        <Skills></Skills>
-          
+
+   {/* Personal Story Section */} 
   <Story></Story>
   <footer>
       <Footer></Footer>

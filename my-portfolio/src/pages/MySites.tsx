@@ -39,46 +39,45 @@ const MySites: React.FC = () => {
   const navigate = useNavigate();
 return (
         <>
-<Card>
-    <h2 className="text-white text-left text-4xl font-bold ml-[5%]"> My Sites </h2>
-</Card>
-<ProjectTemplate
-        title="Workout Tracker Application"
-        description="An workout and pushup tracker application."
-        backgroundImg={WorkoutAppImg}
-        icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
-        onClick={() => navigate('/WorkoutTrackerInfoPage')}
-      />
-      
-      <ProjectTemplate
-        title="EduBridge"
-        description="An educational platform connecting learners and mentors in real time."
-        backgroundImg={SBESCIImg}
-        icons={[<AngularIcon key="1"/>, <TSIcon key="2"/>, <JavaIcon key="3"/>,<HTMLIcon key="4"/>, <CSSIcon key="5"/>]}
-        onClick={() => navigate('/SBECIInfoPage')}
-      />
+    <Card>
+        <h2 className="text-white text-left text-4xl font-bold ml-[5%]"> My Sites </h2>
+    </Card>
+        <ProjectTemplate
+                title="Workout Tracker Application"
+                description="An workout and pushup tracker application."
+                backgroundImg={WorkoutAppImg}
+                icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
+                onClick={() => navigate('/WorkoutTrackerInfoPage')}
+              />
+              
+              <ProjectTemplate
+                title="EduBridge"
+                description="An educational platform connecting learners and mentors in real time."
+                backgroundImg={SBESCIImg}
+                icons={[<AngularIcon key="1"/>, <TSIcon key="2"/>, <JavaIcon key="3"/>,<HTMLIcon key="4"/>, <CSSIcon key="5"/>]}
+                onClick={() => navigate('/SBECIInfoPage')}
+              />
 
-      <ProjectTemplate
-        title="Unexpected Escapes"
-        description="An educational platform connecting learners and mentors in real time."
-        backgroundImg={UnexpectedEscapesHomePage}
-        // override the defaults if you like, or omit this prop to get the 3-icon default
-        icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
-        onClick={() => navigate('/UnexpectedEscapesInfoPage')}
-      />
+              <ProjectTemplate
+                title="Unexpected Escapes"
+                description="An educational platform connecting learners and mentors in real time."
+                backgroundImg={UnexpectedEscapesHomePage}
+                // override the defaults if you like, or omit this prop to get the 3-icon default
+                icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
+                onClick={() => navigate('/UnexpectedEscapesInfoPage')}
+              />
 
-       <ProjectTemplate
-        title="Catch Frenzy"
-        description="An educational platform connecting learners and mentors in real time."
-        backgroundImg={CatchFrenzyImg}
-        // override the defaults if you like, or omit this prop to get the 3-icon default
-        icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
-        onClick={() => navigate('/CatchFrenzyInfoPage')}
-      />
-
- <footer>
-      <Footer></Footer>
- </footer>
+              <ProjectTemplate
+                title="Catch Frenzy"
+                description="An educational platform connecting learners and mentors in real time."
+                backgroundImg={CatchFrenzyImg}
+                // override the defaults if you like, or omit this prop to get the 3-icon default
+                icons={[<JSIcon key="1"/>, <HTMLIcon key="3"/>, <CSSIcon key="4"/>]}
+                onClick={() => navigate('/CatchFrenzyInfoPage')}
+              />
+            <footer>
+                  <Footer></Footer>
+            </footer>
  </>
 )
 };

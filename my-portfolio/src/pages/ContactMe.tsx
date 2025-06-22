@@ -18,6 +18,7 @@ const ContactMe: React.FC = () => (
         You can contact me via Email or LinkedIn.
       </CardDescription>
 
+        {/* Email Section*/}
     <div className="flex justify-center gap-8 pb-6">
      <div className="flex flex-col items-center space-y-2">
             <a 
@@ -60,7 +61,7 @@ const ContactMe: React.FC = () => (
     </motion.a>
   </div>
 
-  {/* LinkedIn column */}
+  {/* LinkedIn Section */}
   <div className="flex flex-col items-center space-y-2">
         <a 
           href="https://linkedin.com/in/AazeemVS" 
@@ -105,8 +106,8 @@ const ContactMe: React.FC = () => (
     </motion.a>
   </div>
 </div>
-
     </Card>
+    
     <footer>
       <Footer></Footer>
   </footer>

@@ -71,7 +71,7 @@ const UnexpectedEscapesInfoPage: React.FC = () => (
 
     </Card>
 
-    <Footer />
+    <Footer/>
     </>
 );
 
