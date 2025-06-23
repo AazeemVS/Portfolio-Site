@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
 // NodeJSIcon component displays the Node.js logo (SVG) with a label
 const NodeJSIcon: React.FC = () => (
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
-    
     {/* Icon wrapper with fixed size */}
     <div className="w-8 h-8">
       {/* SVG for the Node.js logo */}

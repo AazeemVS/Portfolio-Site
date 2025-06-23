@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
 // NextJSProjIcon component displays a Next.js logo (SVG) with a label
 const JSProjIcon: React.FC = () => (
-
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
-    
     {/* Icon wrapper with fixed size */}
     <div className="w-8 h-8">
-
       {/* SVG for the Next.js logo */}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-full h-full">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        className="w-full h-full"
+      >
         <path
           d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7.0-53.2-17.4-63.2-38.5l
              34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8.0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1.0-64.4

@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 // HTMLIcon component displays an HTML logo (SVG) with a label
 const HTMLIcon: React.FC = () => (
-
   // Container aligns icon and text horizontally
   <div className="flex w-full justify-center items-center gap-4">
-    
     {/* Icon wrapper with fixed size */}
     <div className="w-9 h-9">
-        
       {/* SVG for the HTML logo */}
       <svg
         xmlns="http://www.w3.org/2000/svg"

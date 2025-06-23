@@ -10,7 +10,7 @@ const Footer = () => (
       </h2>
       <div className="text-center mt-6">
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-gray-400 hover:text-white transition"
         >
           ↑ Back to top

@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
   useNavigate,
-} from 'react-router-dom';
+} from "react-router-dom";
 
-import LandingPage from '@/pages/LandingPage';
-import AboutMe from '@/pages/AboutMe';
-import NoPage from '@/pages/NoPage';
-import MySites from '@/pages/MySites';
-import Projects from '@/pages/Projects';
-import ContactMe from '@/pages/ContactMe';
-import SBECIInfoPage from './pages/SBECIInfoPage';
-import ImpetusInfoPage from './pages/ImpetusInfoPage';
-import WorkoutTrackerInfoPage from './pages/WorkoutTrackerInfoPage';
-import CatchFrenzyInfoPage from './pages/CatchFrenzyInfoPage';
-import UnexpectedEscapesInfoPage from './pages/UnexpectedEscapesInfoPage';
+import LandingPage from "@/pages/LandingPage";
+import AboutMe from "@/pages/AboutMe";
+import NoPage from "@/pages/NoPage";
+import MySites from "@/pages/MySites";
+import Projects from "@/pages/Projects";
+import ContactMe from "@/pages/ContactMe";
+import SBECIInfoPage from "./pages/SBECIInfoPage";
+import ImpetusInfoPage from "./pages/ImpetusInfoPage";
+import WorkoutTrackerInfoPage from "./pages/WorkoutTrackerInfoPage";
+import CatchFrenzyInfoPage from "./pages/CatchFrenzyInfoPage";
+import UnexpectedEscapesInfoPage from "./pages/UnexpectedEscapesInfoPage";
 
 import {
   NavigationMenu,
@@ -30,8 +30,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
-
-  function NavBar() {
+function NavBar() {
   const navigate = useNavigate();
 
   return (
@@ -96,26 +95,32 @@ import {
 export default function App() {
   return (
     <>
-  <Router>
-     <NavBar />
-    <Routes>
-      <Route index element={<LandingPage/>}></Route>
-      <Route path="/LandingPage" element={<LandingPage/>}></Route>
-      <Route path="/AboutMe" element={<AboutMe/>}></Route>
-      <Route path="/MySites" element={<MySites/>}></Route>
-      <Route path="/Projects" element={<Projects/>}></Route>
-      <Route path="/ContactMe" element={<ContactMe/>}></Route>
-      <Route path="/SBECIInfoPage" element={<SBECIInfoPage/>}></Route>
-      <Route path="/ImpetusInfoPage" element={<ImpetusInfoPage/>}></Route>
-      <Route path="/WorkoutTrackerInfoPage" element={<WorkoutTrackerInfoPage/>}></Route>
-      <Route path="/CatchFrenzyInfoPage" element={<CatchFrenzyInfoPage/>}></Route>
-      <Route path="/UnexpectedEscapesInfoPage" element={<UnexpectedEscapesInfoPage/>}></Route>
-      <Route path="*" element={<NoPage/>}></Route>
-    </Routes>
-  </Router>
-    
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route index element={<LandingPage />}></Route>
+          <Route path="/LandingPage" element={<LandingPage />}></Route>
+          <Route path="/AboutMe" element={<AboutMe />}></Route>
+          <Route path="/MySites" element={<MySites />}></Route>
+          <Route path="/Projects" element={<Projects />}></Route>
+          <Route path="/ContactMe" element={<ContactMe />}></Route>
+          <Route path="/SBECIInfoPage" element={<SBECIInfoPage />}></Route>
+          <Route path="/ImpetusInfoPage" element={<ImpetusInfoPage />}></Route>
+          <Route
+            path="/WorkoutTrackerInfoPage"
+            element={<WorkoutTrackerInfoPage />}
+          ></Route>
+          <Route
+            path="/CatchFrenzyInfoPage"
+            element={<CatchFrenzyInfoPage />}
+          ></Route>
+          <Route
+            path="/UnexpectedEscapesInfoPage"
+            element={<UnexpectedEscapesInfoPage />}
+          ></Route>
+          <Route path="*" element={<NoPage />}></Route>
+        </Routes>
+      </Router>
     </>
   );
-
-  
 }

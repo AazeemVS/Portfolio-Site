@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -7,33 +7,33 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Footer from '@/components/ui/footer';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import Footer from "@/components/ui/footer";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const NoPage: React.FC = () => {
   // Create floating particles
   useEffect(() => {
     const particles = 15;
-    const container = document.querySelector('.particles-container');
-    
+    const container = document.querySelector(".particles-container");
+
     for (let i = 0; i < particles; i++) {
-      const particle = document.createElement('div');
-      particle.className = 'absolute rounded-full bg-cyan-800 opacity-100';
-      
+      const particle = document.createElement("div");
+      particle.className = "absolute rounded-full bg-cyan-800 opacity-100";
+
       // Random properties
       const size = Math.random() * 10 + 5;
       const posX = Math.random() * 100;
       const posY = Math.random() * 100;
       const duration = Math.random() * 20 + 10;
       const delay = Math.random() * 5;
-      
+
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`;
       particle.style.left = `${posX}%`;
       particle.style.top = `${posY}%`;
       particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite alternate`;
-      
+
       container?.appendChild(particle);
     }
   }, []);
@@ -42,7 +42,7 @@ const NoPage: React.FC = () => {
     <div className="relative min-h-screen bg-gradient-to-br from-black via-[#111111] to-[#1a1a1a] flex flex-col overflow-hidden particles-container">
       {/* Floating particles background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" />
-      
+
       {/* Animated rings */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
@@ -81,9 +81,9 @@ const NoPage: React.FC = () => {
           <Card className="max-w-lg w-full bg-[#11111] border border-gray-700 p-8 backdrop-blur-sm bg-opacity-70">
             <CardHeader className="text-center space-y-3">
               <motion.div
-                animate={{ 
+                animate={{
                   scale: [1, 1.05, 1],
-                  opacity: [1, 0.8, 1]
+                  opacity: [1, 0.8, 1],
                 }}
                 transition={{
                   duration: 3,
@@ -98,7 +98,7 @@ const NoPage: React.FC = () => {
                 Page Not Found
               </CardDescription>
             </CardHeader>
-            
+
             <CardContent className="mt-6 text-center text-gray-300 leading-relaxed">
               <motion.p
                 initial={{ opacity: 0 }}
@@ -116,7 +116,7 @@ const NoPage: React.FC = () => {
                 (Error code: 404 - Resource not found)
               </motion.p>
             </CardContent>
-            
+
             <CardFooter className="mt-8 flex justify-center">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -145,11 +145,11 @@ const NoPage: React.FC = () => {
           </Card>
         </motion.div>
       </div>
-      
+
       <footer className="mt-auto">
         <Footer />
       </footer>
-      
+
       <style>
         {`
           @keyframes float {

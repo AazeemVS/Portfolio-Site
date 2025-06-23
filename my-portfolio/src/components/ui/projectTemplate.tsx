@@ -1,16 +1,16 @@
 // components/ProjectTemplate.tsx
-import React from 'react';
-import type { ReactElement } from 'react';
+import React from "react";
+import type { ReactElement } from "react";
 import SkillBox from "@/components/ui/skillBox";
 import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
-import JSIcon      from "@/components/ui/icons/jsProjIcon";
+import JSIcon from "@/components/ui/icons/jsProjIcon";
 import AngularIcon from "@/components/ui/icons/angularProjIcon";
 
 interface ProjectTemplateProps {
-  title: string;          // Project title text
-  description: string;    // Short description text
-  backgroundImg: string;  // URL of the background image
-  onClick?: () => void;   // Click handler for the card
+  title: string; // Project title text
+  description: string; // Short description text
+  backgroundImg: string; // URL of the background image
+  onClick?: () => void; // Click handler for the card
   icons?: ReactElement[]; // Array of icon elements to display
 }
 
@@ -23,12 +23,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   // Default icons if none are provided
   icons = [
     <NextJSIcon key="nextjs" />,
-    <JSIcon      key="js"     />,
-    <AngularIcon key="ng"     />
+    <JSIcon key="js" />,
+    <AngularIcon key="ng" />,
   ],
 }) => (
-
-    // Wrapper which centers the project card on the page
+  // Wrapper which centers the project card on the page
   <div className="flex items-center justify-center mt-20">
     <div
       onClick={onClick}

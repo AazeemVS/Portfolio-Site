@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
 // JavaIcon component displays a Java logo (SVG) with a label
 const JavaIcon: React.FC = () => (
-
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
-    
     {/* Icon wrapper with fixed size */}
     <div className="w-8 h-8">
-        
       {/* SVG for the Java logo */}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="w-full h-full">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+        className="w-full h-full"
+      >
         <path
           d="M277.7 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 
              33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2.0-145.8

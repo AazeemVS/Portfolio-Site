@@ -1,5 +1,5 @@
-import React from 'react'
-import type { ReactNode } from 'react';
+import React from "react";
+import type { ReactNode } from "react";
 
 export interface SkillBoxProps {
   icon: ReactNode;
@@ -7,7 +7,6 @@ export interface SkillBoxProps {
 
 const SkillBox: React.FC<SkillBoxProps> = ({ icon }) => {
   return (
-
     // Simple flex box containing an icon and name of a software
     <div
       className="
