@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 // ViteIcon component displays the Vite logo (SVG) with a label
 const ViteIcon: React.FC = () => (
-
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
-
     {/* Icon wrapper with fixed size */}
     <div className="w-8 h-8">
-        
       {/* SVG for the Vite logo */}
       <svg
         role="img"
