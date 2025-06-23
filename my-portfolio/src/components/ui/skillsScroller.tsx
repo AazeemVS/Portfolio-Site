@@ -24,7 +24,7 @@ const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
     >
       {/* Animated section: scrolls infinitely, and pauses when the user hovers over an icon */}
       <div
-        className="whitespace-nowrap inline-block animate-[scroll_25s_linear_infinite] hover:[animation-play-state:paused] w-fit"
+        className="whitespace-nowrap inline-block animate-[scroll_35s_linear_infinite] hover:[animation-play-state:paused] w-fit"
         style={{
           animationName: "scroll",
           animationDuration: "35s",
