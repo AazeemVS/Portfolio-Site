@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const Experience = () => (
-  <section className="bg text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
+  <section className="bg-slate-900 text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
     <div className="w-full max-w-6xl mx-auto">
       <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
         {/* Title */}
@@ -20,12 +20,12 @@ const Experience = () => (
           after:-translate-x-1/2 after:translate-y-1.5"
           >
             {/* Small blue circle inside the node */}
-            <div className="absolute left-2 w-3 h-3 bg-cyan-600 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
-            <div className="font-medium text-cyan-600 mb-1 sm:mb-0">
+            <div className="absolute left-2 w-3 h-3 bg-cyan-500 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
+            <div className="font-medium text-cyan-500 mb-1 sm:mb-0">
               <motion.a
                 href="https://www.rit.edu/computing/school-interactive-games-and-media/"
                 target="_blank"
-                className="relative inline-block font-medium text-cyan-600 mb-1 sm:mb-0"
+                className="relative inline-block font-medium text-cyan-500 mb-1 sm:mb-0"
                 whileHover="hover"
                 initial="rest"
               >
@@ -33,7 +33,7 @@ const Experience = () => (
                   RIT School of Interactive Games and Media
                 </span>
                 <motion.span
-                  className="absolute bottom-0 left-0 h-0.5 bg-cyan-600"
+                  className="absolute bottom-0 left-0 h-0.5 bg-cyan-500"
                   variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 />
@@ -63,18 +63,18 @@ const Experience = () => (
           after:-translate-x-1/2 after:translate-y-1.5"
           >
             {/* Small blue circle inside the node */}
-            <div className="absolute left-2 w-3 h-3 bg-cyan-600 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
-            <div className="font-medium text-cyan-600 mb-1 sm:mb-0">
+            <div className="absolute left-2 w-3 h-3 bg-cyan-500 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
+            <div className="font-medium text-cyan-500 mb-1 sm:mb-0">
               <motion.a
                 href="https://gridonesolutions.com/"
                 target="_blank"
-                className="relative inline-block font-medium text-cyan-600 mb-1 sm:mb-0"
+                className="relative inline-block font-medium text-cyan-500 mb-1 sm:mb-0"
                 whileHover="hover"
                 initial="rest"
               >
                 <span className="relative z-10">Grid 1 Solutions</span>
                 <motion.span
-                  className="absolute bottom-0 left-0 h-0.5 bg-cyan-600"
+                  className="absolute bottom-0 left-0 h-0.5 bg-cyan-500"
                   variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 />
@@ -103,8 +103,8 @@ const Experience = () => (
           after:-translate-x-1/2 after:translate-y-1.5"
           >
             {/* Small blue circle inside the node */}
-            <div className="absolute left-2 w-3 h-3 bg-cyan-600 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
-            <div className="font-medium text-cyan-600 mb-1 sm:mb-0">
+            <div className="absolute left-2 w-3 h-3 bg-cyan-500 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
+            <div className="font-medium text-cyan-500 mb-1 sm:mb-0">
               Impetus
             </div>
             <div className="text-white text-xl font-semibold">
