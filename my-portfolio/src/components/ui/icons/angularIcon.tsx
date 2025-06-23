@@ -6,7 +6,10 @@ const AngularIcon: React.FC = () => (
   <div className="flex flex-row w-full justify-start items-center gap-4">
     {/* Icon wrapper with fixed size */}
     <div className="w-11 h-11">
-      <img src="../../../images/AngularIcon.png" alt="Angular Logo Image"></img>
+      <img
+        src="../../../images/angular-icon.png"
+        alt="Angular Logo Image"
+      ></img>
     </div>
     <div>
       {/* Label next to the icon */}

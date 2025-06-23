@@ -7,19 +7,19 @@ interface SkillsScrollerProps {
 
 // SkillsScroller component: horizontal marquee of icons that pauses on hover
 const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
-  <div className="flex justify-center items-center relative bg-[#111111]">
+  <div className="flex justify-center items-center relative bg">
     {/* Overlay gradients on left and right to fade icons at edges */}
-    <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#111111] to-transparent z-10 pointer-events-none" />
-    <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#111111] to-transparent z-10 pointer-events-none" />
+    <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#0f172a] to-transparent z-10 pointer-events-none" />
+    <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#0f172a] to-transparent z-10 pointer-events-none" />
 
     {/* Mask and container limiting visible area of the scrolling icons */}
     <div
       className="overflow-hidden max-w-[600px] p-8 relative"
       style={{
         maskImage:
-          "linear-gradient(90deg, transparent 0%, #111111 15%, #111111 85%, transparent 100%)",
+          "linear-gradient(90deg, transparent 0%, #0f172a 15%, #0f172a 85%, transparent 100%)",
         WebkitMaskImage:
-          "linear-gradient(90deg, transparent 0%, #111111 15%, #111111 85%, transparent 100%)",
+          "linear-gradient(90deg, transparent 0%, #0f172a 15%, #0f172a 85%, transparent 100%)",
       }}
     >
       {/* Animated section: scrolls infinitely, and pauses when the user hovers over an icon */}

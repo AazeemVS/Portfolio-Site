@@ -54,7 +54,7 @@ const Skills: React.FC = () => {
   return (
     <>
       {/* Wrap all the content in a card component */}
-      <Card className="bg-gray-800">
+      <Card className="bg-slate-900">
         {/* Title */}
         <div className="text-left">
           <h2 className="text-white text-5xl font-bold ml-[5%]">My Skills</h2>
