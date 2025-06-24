@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
-import Skills from "@/components/ui/skills";
+import StaticSkillsScroller from "@/components/ui/staticSkills";
 import Story from "@/components/ui/story";
 import { motion } from "framer-motion";
 
@@ -115,7 +115,20 @@ const AboutMe: React.FC = () => (
     <Experience></Experience>
 
     {/* Skills */}
-    <Skills></Skills>
+    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
+      <div className="w-full max-w-6xl mx-auto">
+        <div className="flex flex-col justify-center [&>*]:pb-4 ">
+          {/* Title */}
+          <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
+            <div className="text-left">
+              <h2 className="text-white text-5xl font-bold">My Skills</h2>
+            </div>
+            <div></div>
+          </div>
+          <StaticSkillsScroller></StaticSkillsScroller>
+        </div>
+      </div>
+    </section>
 
     {/* Personal Story Section */}
     <Story></Story>

@@ -25,10 +25,10 @@ import CSharpIcon from "@/components/ui/icons/cppIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import FigmaIcon from "@/components/ui/icons/figmaIcon";
 import SkillsScroller from "@/components/ui/skillsScroller";
-import StaticSkillsScroller from "@/components/ui/staticSkills";
 import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
 import PauseBtn from "@/components/ui/pauseBtnSkillsScroller";
+import LandingPageSkillsScroller from "@/components/ui/landingPageSkillsSection";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
@@ -119,18 +119,18 @@ const LandingPage: React.FC = () => (
 
     <Experience></Experience>
 
-    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
+    {/* <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex flex-col justify-center [&>*]:pb-4 ">
           {/* Title */}
-          <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
+    {/* <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
             <div className="text-left">
               <h2 className="text-white text-5xl font-bold">My Skills</h2>
             </div>
             <div>
-              <div className="text-right ">
-                {/* Button which appears on hover which allows the user to click onto a sub page about the project*/}
-                <PauseBtn />
+              <div className="text-right "> */}
+    {/* Button which appears on hover which allows the user to click onto a sub page about the project*/}
+    {/* <PauseBtn />
               </div>
             </div>
           </div>
@@ -155,15 +155,17 @@ const LandingPage: React.FC = () => (
 
     <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
-          {/* Title */}
-          <div className="text-left">
+        <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]"> */}
+    {/* Title */}
+    {/* <div className="text-left">
             <h2 className="text-white text-5xl font-bold">My Skills</h2>
           </div>
           <StaticSkillsScroller />
         </div>
       </div>
-    </section>
+    </section> */}
+
+    <LandingPageSkillsScroller />
 
     <footer>
       <Footer></Footer>
