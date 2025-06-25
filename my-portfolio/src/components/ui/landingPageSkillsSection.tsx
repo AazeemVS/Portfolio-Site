@@ -15,7 +15,7 @@ import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
 import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
 import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
 //import NextJSIcon from "@/components/ui/icons/nextJSIcon"; Might be needed later
-import CSharpIcon from "@/components/ui/icons/cppIcon";
+import CSharpIcon from "@/components/ui/icons/csharpIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import FigmaIcon from "@/components/ui/icons/figmaIcon";
 

@@ -29,6 +29,7 @@ import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
 import PauseBtn from "@/components/ui/pauseBtnSkillsScroller";
 import LandingPageSkillsScroller from "@/components/ui/landingPageSkillsSection";
+import StaticSkillsScroller from "@/components/ui/staticSkills";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
@@ -116,9 +117,15 @@ const LandingPage: React.FC = () => (
         </p>
       </CardContent>
     </Card>
-
     <Experience></Experience>
-
+    {/* <StaticSkillsScroller></StaticSkillsScroller>
+    <SkillsScroller icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]} />
+    <SkillsScroller
+      icons={[ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon]}
+    />
+    <SkillsScroller
+      icons={[ShadcnIcon, CPlusPlusIcon, AngularIcon, CSharpIcon, FigmaIcon]}
+    />{" "} */}
     {/* <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex flex-col justify-center [&>*]:pb-4 ">
@@ -164,9 +171,7 @@ const LandingPage: React.FC = () => (
         </div>
       </div>
     </section> */}
-
     <LandingPageSkillsScroller />
-
     <footer>
       <Footer></Footer>
     </footer>
