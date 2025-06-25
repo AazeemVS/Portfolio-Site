@@ -24,7 +24,7 @@ const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
     >
       {/* Animated section: scrolls infinitely, and pauses when the user hovers over an icon */}
       <div
-        className="whitespace-nowrap inline-block animate-[scroll_25s_linear_infinite] hover:[animation-play-state:paused] w-fit"
+        className="whitespace-nowrap inline-block animate-[scroll_35s_linear_infinite] hover:[animation-play-state:paused] w-fit"
         style={{
           animationName: "scroll",
           animationDuration: "35s",
@@ -35,7 +35,10 @@ const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
         {/* Duplicates the animation to create a fluid looping animation */}
         {[...Array(2)].flatMap((_, loop) =>
           icons.map((Icon, i) => (
-            <span key={`icon-${loop}-${i}`} className="inline-block mx-2">
+            <span
+              key={`icon-${loop}-${i}`}
+              className="inline-block mx-2 p-2 bg-[#1e293b] rounded-lg hover:bg-[#334155] transition-colors"
+            >
               {/* Renders each passed icon */}
               <Icon />
             </span>
