@@ -29,57 +29,87 @@ import {
   NavigationMenuIndicator,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { motion } from "framer-motion";
 
 function NavBar() {
   const navigate = useNavigate();
-
+  const underlineVariants = {
+    rest: { width: 0 },
+    hover: { width: "100%" },
+  };
+  const underlineTransition = { duration: 0.3, ease: "easeOut" };
   return (
     <div className="w-full mt-5">
       <div className="max-w-4xl mx-auto px-4">
         <NavigationMenu className="w-full">
-          <NavigationMenuList className="flex items-center space-x-56">
-            {/* 1) Left: fixed-width container */}
-            <div className="flex-none w-64 flex justify-start ">
+          <NavigationMenuList className="grid grid-cols-3 gap-64 place-items-center">
+            {/* 1) Left */}
+            <div className="grid place-items-center pr-96">
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
-                  onClick={() => navigate("/LandingPage")}
-                >
-                  Aazeem Vaidya Shaikh
+                <NavigationMenuLink onClick={() => navigate("/LandingPage")}>
+                  <motion.span
+                    className="relative inline-block text-xl font-bold whitespace-nowrap"
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <span className="relative z-10">Aazeem Vaidya Shaikh</span>
+                    <motion.span
+                      className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
+                      variants={underlineVariants}
+                      transition={underlineTransition}
+                    />
+                  </motion.span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </div>
 
-            {/* 2) Center: grow to fill */}
-            <div className="flex-1 flex justify-center">
+            {/* 2) Center */}
+            <div className="grid place-items-center px-4">
               <NavigationMenuItem>
                 <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
                   {[
                     ["About Me", "/AboutMe"],
-                    ["My Sites", "/MySites"],
                     ["Projects", "/Projects"],
                     ["Dev Blog", "/DevBlog"],
                   ].map(([label, path]) => (
                     <NavigationMenuLink
                       key={label}
-                      className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
                       onClick={() => navigate(path)}
                     >
-                      {label}
+                      <motion.span
+                        className="relative inline-block text-xl font-bold whitespace-nowrap"
+                        initial="rest"
+                        whileHover="hover"
+                      >
+                        <span className="relative z-10">{label}</span>
+                        <motion.span
+                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
+                          variants={underlineVariants}
+                          transition={underlineTransition}
+                        />
+                      </motion.span>
                     </NavigationMenuLink>
                   ))}
                 </div>
               </NavigationMenuItem>
             </div>
 
-            {/* 3) Right: same fixed width as left */}
-            <div className="flex-none w-64 flex justify-end">
+            {/* 3) Right */}
+            <div className="grid place-items-center pl-112">
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  className="text-xl font-bold hover:-translate-y-0.5 transition-transform whitespace-nowrap"
-                  onClick={() => navigate("/ContactMe")}
-                >
-                  Contact Me
+                <NavigationMenuLink onClick={() => navigate("/ContactMe")}>
+                  <motion.span
+                    className="relative inline-block text-xl font-bold whitespace-nowrap"
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <span className="relative z-10">Contact Me</span>
+                    <motion.span
+                      className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
+                      variants={underlineVariants}
+                      transition={underlineTransition}
+                    />
+                  </motion.span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </div>
@@ -101,7 +131,6 @@ export default function App() {
           <Route index element={<LandingPage />}></Route>
           <Route path="/LandingPage" element={<LandingPage />}></Route>
           <Route path="/AboutMe" element={<AboutMe />}></Route>
-          <Route path="/MySites" element={<MySites />}></Route>
           <Route path="/Projects" element={<Projects />}></Route>
           <Route path="/ContactMe" element={<ContactMe />}></Route>
           <Route path="/SBECIInfoPage" element={<SBECIInfoPage />}></Route>

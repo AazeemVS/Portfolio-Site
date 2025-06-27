@@ -2,6 +2,7 @@ import * as React from "react";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { cva } from "class-variance-authority";
 import { ChevronDownIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -123,17 +124,28 @@ function NavigationMenuViewport({
 
 function NavigationMenuLink({
   className,
+  children,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Link>) {
   return (
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
+        "group relative inline-flex flex-col items-center",
+        "text-xl font-bold whitespace-nowrap px-4 py-2",
+        "hover:text-cyan-700 transition-colors duration-300",
         className
       )}
       {...props}
-    />
+    >
+      {children}
+      <motion.span
+        className="absolute bottom-0 h-0.5 bg-cyan-900"
+        initial={{ width: 0 }}
+        whileHover={{ width: "100%" }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+      />
+    </NavigationMenuPrimitive.Link>
   );
 }
 
