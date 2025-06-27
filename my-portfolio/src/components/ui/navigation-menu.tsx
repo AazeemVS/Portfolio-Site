@@ -132,7 +132,7 @@ function NavigationMenuLink({
       data-slot="navigation-menu-link"
       className={cn(
         "group relative inline-flex flex-col items-center",
-        "text-xl font-bold whitespace-nowrap px-4 py-2",
+        "text-xl font-bold whitespace-nowrap px-4 py-2 hover:cursor-pointer",
         "hover:text-cyan-700 transition-colors duration-300",
         className
       )}
