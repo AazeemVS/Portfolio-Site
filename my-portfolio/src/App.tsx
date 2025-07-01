@@ -70,7 +70,7 @@ function NavBar() {
                   {[
                     ["About Me", "/AboutMe"],
                     ["Projects", "/Projects"],
-                    ["Dev Blog", "/DevBlogs"],
+                    ["Thoughts", "/DevBlogs"],
                   ].map(([label, path]) => (
                     <NavigationMenuLink
                       key={label}

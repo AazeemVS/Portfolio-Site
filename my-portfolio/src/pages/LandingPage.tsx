@@ -52,7 +52,9 @@ const LandingPage: React.FC = () => {
           <CardTitle>
             <div className="flex flex-row w-full justify-between items-center gap-2">
               {/* Name (left-aligned) */}
-              <h1 className="text-4xl font-bold m-0">Aazeem Vaidya Shaikh</h1>
+              <h1 className="text-4xl font-outfit font-bold m-0">
+                Aazeem Vaidya Shaikh
+              </h1>
 
               {/* Social links (right-aligned) */}
               <div className="flex gap-2 justify-end">
@@ -110,13 +112,13 @@ const LandingPage: React.FC = () => {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <p className="text-gray-400">
+              <p className="text-gray-400 font-outfit">
                 Seattle WA, Falls Church VA, Cambridge MA
               </p>
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="font-outfit">
           <p>
             Hey I'm Aazeem, I'm a 20 year old full stack web, software, and game
             developer. I have been programming for 3 years, and I enjoy
