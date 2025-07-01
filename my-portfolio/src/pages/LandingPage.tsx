@@ -125,59 +125,7 @@ const LandingPage: React.FC = () => {
         </CardContent>
       </Card>
       <Experience></Experience>
-      {/* <StaticSkillsScroller></StaticSkillsScroller>
-    <SkillsScroller icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]} />
-    <SkillsScroller
-      icons={[ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon]}
-    />
-    <SkillsScroller
-      icons={[ShadcnIcon, CPlusPlusIcon, AngularIcon, CSharpIcon, FigmaIcon]}
-    />{" "} */}
-      {/* <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ">
-          {/* Title */}
-      {/* <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
-            <div className="text-left">
-              <h2 className="text-white text-5xl font-bold">My Skills</h2>
-            </div>
-            <div>
-              <div className="text-right "> */}
-      {/* Button which appears on hover which allows the user to click onto a sub page about the project*/}
-      {/* <PauseBtn />
-              </div>
-            </div>
-          </div>
-          <SkillsScroller
-            icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]}
-          />
-          <SkillsScroller
-            icons={[ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon]}
-          />
-          <SkillsScroller
-            icons={[
-              ShadcnIcon,
-              CPlusPlusIcon,
-              AngularIcon,
-              CSharpIcon,
-              FigmaIcon,
-            ]}
-          />
-        </div>
-      </div>
-    </section>
 
-    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]"> */}
-      {/* Title */}
-      {/* <div className="text-left">
-            <h2 className="text-white text-5xl font-bold">My Skills</h2>
-          </div>
-          <StaticSkillsScroller />
-        </div>
-      </div>
-    </section> */}
       <LandingPageSkillsScroller />
 
       <section className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">

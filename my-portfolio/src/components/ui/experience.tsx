@@ -84,7 +84,7 @@ const Experience = () => (
               Front End Web Developer
             </div>
             <div className="text-gray-400 text-sm">
-              September, 2024 – Present
+              September, 2024 – May, 2024
             </div>
           </div>
           <div className="text-slate-300 timeline-content">
