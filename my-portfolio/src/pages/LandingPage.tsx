@@ -52,7 +52,9 @@ const LandingPage: React.FC = () => {
           <CardTitle>
             <div className="flex flex-row w-full justify-between items-center gap-2">
               {/* Name (left-aligned) */}
-              <h1 className="text-4xl font-bold m-0">Aazeem Vaidya Shaikh</h1>
+              <h1 className="text-4xl font-outfit font-bold m-0">
+                Aazeem Vaidya Shaikh
+              </h1>
 
               {/* Social links (right-aligned) */}
               <div className="flex gap-2 justify-end">
@@ -110,13 +112,13 @@ const LandingPage: React.FC = () => {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <p className="text-gray-400">
+              <p className="text-gray-400 font-outfit">
                 Seattle WA, Falls Church VA, Cambridge MA
               </p>
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="font-outfit">
           <p>
             Hey I'm Aazeem, I'm a 20 year old full stack web, software, and game
             developer. I have been programming for 3 years, and I enjoy
@@ -125,59 +127,7 @@ const LandingPage: React.FC = () => {
         </CardContent>
       </Card>
       <Experience></Experience>
-      {/* <StaticSkillsScroller></StaticSkillsScroller>
-    <SkillsScroller icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]} />
-    <SkillsScroller
-      icons={[ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon]}
-    />
-    <SkillsScroller
-      icons={[ShadcnIcon, CPlusPlusIcon, AngularIcon, CSharpIcon, FigmaIcon]}
-    />{" "} */}
-      {/* <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ">
-          {/* Title */}
-      {/* <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
-            <div className="text-left">
-              <h2 className="text-white text-5xl font-bold">My Skills</h2>
-            </div>
-            <div>
-              <div className="text-right "> */}
-      {/* Button which appears on hover which allows the user to click onto a sub page about the project*/}
-      {/* <PauseBtn />
-              </div>
-            </div>
-          </div>
-          <SkillsScroller
-            icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]}
-          />
-          <SkillsScroller
-            icons={[ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon]}
-          />
-          <SkillsScroller
-            icons={[
-              ShadcnIcon,
-              CPlusPlusIcon,
-              AngularIcon,
-              CSharpIcon,
-              FigmaIcon,
-            ]}
-          />
-        </div>
-      </div>
-    </section>
 
-    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
-      <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]"> */}
-      {/* Title */}
-      {/* <div className="text-left">
-            <h2 className="text-white text-5xl font-bold">My Skills</h2>
-          </div>
-          <StaticSkillsScroller />
-        </div>
-      </div>
-    </section> */}
       <LandingPageSkillsScroller />
 
       <section className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">

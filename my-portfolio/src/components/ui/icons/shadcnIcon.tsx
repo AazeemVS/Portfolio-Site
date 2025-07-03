@@ -6,7 +6,7 @@ const ShadcnIcon: React.FC = () => (
   <div className="flex flex-row w-full justify-start items-center gap-4">
     {/* Icon wrapper with fixed size */}
     <div className="w-10 h-10">
-      <img src="../../../images/ShadcnIcon.png" alt="Shadcn Logo Image" />
+      <img src="../../../images/ShadcnIcon1.png" alt="Shadcn Logo Image" />
     </div>
 
     {/* Label next to the icon */}
