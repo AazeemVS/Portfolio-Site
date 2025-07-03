@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
   useNavigate,
+  useLocation,
 } from "react-router-dom";
 
 import LandingPage from "@/pages/LandingPage";
@@ -33,11 +34,19 @@ import { motion } from "framer-motion";
 
 function NavBar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const underlineVariants = {
     rest: { width: 0 },
     hover: { width: "100%" },
+    active: { width: "100%" },
   };
   const underlineTransition = { duration: 0.3, ease: "easeOut" };
+
+  // Helper function to check if a path is active
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
   return (
     <div className="w-full mt-5">
       <div className="max-w-4xl mx-auto px-4">
@@ -48,16 +57,28 @@ function NavBar() {
               <NavigationMenuItem>
                 <NavigationMenuLink onClick={() => navigate("/LandingPage")}>
                   <motion.span
-                    className="relative inline-block text-xl font-bold whitespace-nowrap"
+                    className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                      isActive("/LandingPage") ? "text-cyan-700" : ""
+                    }`}
                     initial="rest"
                     whileHover="hover"
                   >
                     <span className="relative z-10">Aazeem Vaidya Shaikh</span>
-                    <motion.span
-                      className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
-                      variants={underlineVariants}
-                      transition={underlineTransition}
-                    />
+
+                    {isActive("/LandingPage") ? (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        initial="active" // Start with full width
+                        animate="active" // Keep full width
+                      />
+                    ) : (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        transition={underlineTransition}
+                      />
+                    )}
                   </motion.span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -77,16 +98,27 @@ function NavBar() {
                       onClick={() => navigate(path)}
                     >
                       <motion.span
-                        className="relative inline-block text-xl font-bold whitespace-nowrap"
+                        className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                          isActive(path) ? "text-cyan-700" : ""
+                        }`}
                         initial="rest"
                         whileHover="hover"
                       >
                         <span className="relative z-10">{label}</span>
-                        <motion.span
-                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
-                          variants={underlineVariants}
-                          transition={underlineTransition}
-                        />
+                        {isActive(path) ? (
+                          <motion.span
+                            className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                            variants={underlineVariants}
+                            initial="active" // Start with full width
+                            animate="active" // Keep full width
+                          />
+                        ) : (
+                          <motion.span
+                            className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                            variants={underlineVariants}
+                            transition={underlineTransition}
+                          />
+                        )}
                       </motion.span>
                     </NavigationMenuLink>
                   ))}
@@ -99,16 +131,27 @@ function NavBar() {
               <NavigationMenuItem>
                 <NavigationMenuLink onClick={() => navigate("/ContactMe")}>
                   <motion.span
-                    className="relative inline-block text-xl font-bold whitespace-nowrap"
+                    className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                      isActive("/ContactMe") ? "text-cyan-700" : ""
+                    }`}
                     initial="rest"
                     whileHover="hover"
                   >
                     <span className="relative z-10">Contact Me</span>
-                    <motion.span
-                      className="absolute bottom-0 left-0 h-0.5 bg-cyan-900"
-                      variants={underlineVariants}
-                      transition={underlineTransition}
-                    />
+                    {isActive("/ContactMe") ? (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        initial="active" // Start with full width
+                        animate="active" // Keep full width
+                      />
+                    ) : (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        transition={underlineTransition}
+                      />
+                    )}
                   </motion.span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
