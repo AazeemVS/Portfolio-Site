@@ -53,12 +53,54 @@ const slides = [
 
 const WorkoutTrackerInfoPage: React.FC = () => (
   <>
-    <Card className="mb-[5%]">
-      <CardTitle className="text-white">
+    <Card className="mb-[5%] border-none">
+      <CardTitle className="text-white ">
         MoveSync: Workout Tracker Application
       </CardTitle>
     </Card>
 
+    <Card className="">
+      <CardHeader className="text-white text-2xl ">
+        {" "}
+        About The Project:
+      </CardHeader>
+      <CardDescription className="text-white text-md px-6">
+        {" "}
+        MoveSync is a single-page web application built with HTML, CSS, and
+        vanilla JavaScript. All workout and push-up data is stored locally in
+        the browser (Local Storage), so users can log, track and visualize their
+        fitness progress. The dashboard shows your most recent sessions plus
+        year-to-date totals, while dedicated forms let you separately enter
+        general workouts and push-up sets. For deeper insights, the Push-Up
+        Analytics view renders interactive bar, line, doughnut and monthly
+        comparison charts using Chart.js, and the Workout Info page lets you
+        filter by workout type.
+      </CardDescription>
+    </Card>
+
+    {/* Key Features Section*/}
+    <Card>
+      <p className="text-white">
+        <ul>
+          Exercise API Integration: Leverages an external Exercise API to
+          auto-populate metadata (e.g., muscle groups, equipment) directly
+          within the workout logging form, streamlining data entry and ensuring
+          standardized exercise information. <br />
+          Dual Logging Interfaces: Clean, separate forms for push-up tracking
+          and for all other workouts.
+          <br />
+          Interactive Charts: Chart.js-powered bar, line, doughnut and monthly
+          comparison views of push-up performance. <br />
+          Live Dashboard: At-a-glance view of recent workouts and push-up
+          sessions alongside year-to-date totals. <br />
+          Advanced Filters: Drill down by exercise category or date range to
+          load historical workout data.
+          <br />
+          Responsive, Lightweight UI: Built with semantic HTML and CSS for a
+          fast, mobile-friendly experience.
+        </ul>
+      </p>
+    </Card>
     {/* Carousel to show off different images of my websites */}
     <div className="flex justify-center">
       <Carousel className="w-full max-w-5xl">
@@ -90,13 +132,6 @@ const WorkoutTrackerInfoPage: React.FC = () => (
       </Carousel>
     </div>
 
-    <Card>
-      <CardHeader className="text-white text-2xl">
-        {" "}
-        About The Project:
-      </CardHeader>
-      <CardDescription className="text-white text-md"> </CardDescription>
-    </Card>
     <Footer />
   </>
 );
