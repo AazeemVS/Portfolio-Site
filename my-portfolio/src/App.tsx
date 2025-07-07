@@ -133,7 +133,6 @@ export default function App() {
           <Route path="/AboutMe" element={<AboutMe />}></Route>
           <Route path="/Projects" element={<Projects />}></Route>
           <Route path="/DevBlogs" element={<DevBlogs />}></Route>
-
           <Route path="/ContactMe" element={<ContactMe />}></Route>
           <Route path="/SBECIInfoPage" element={<SBECIInfoPage />}></Route>
           <Route path="/ImpetusInfoPage" element={<ImpetusInfoPage />}></Route>
