@@ -22,7 +22,7 @@ import WorkoutAppWorkoutDashboardImg from "@/../images/WorkoutAppWorkoutDashboar
 import WorkoutAppWorkoutLogImg from "@/../images/WorkoutAppWorkoutLog.png";
 import WorkoutAppPushupLogImg from "@/../images/WorkoutAppPushupLog.png";
 import WorkoutAppPushupDashboardImg from "@/../images/WorkoutAppPushupDashboard.png";
-
+import ProjDescription from "@/components/ui/projDescription";
 const slides = [
   {
     img: WorkoutAppImg,
@@ -59,24 +59,11 @@ const WorkoutTrackerInfoPage: React.FC = () => (
       </CardTitle>
     </Card>
 
-    <Card className="">
-      <CardHeader className="text-white text-2xl ">
-        {" "}
-        About The Project:
-      </CardHeader>
-      <CardDescription className="text-white text-md px-6">
-        {" "}
-        MoveSync is a single-page web application built with HTML, CSS, and
-        vanilla JavaScript. All workout and push-up data is stored locally in
-        the browser (Local Storage), so users can log, track and visualize their
-        fitness progress. The dashboard shows your most recent sessions plus
-        year-to-date totals, while dedicated forms let you separately enter
-        general workouts and push-up sets. For deeper insights, the Push-Up
-        Analytics view renders interactive bar, line, doughnut and monthly
-        comparison charts using Chart.js, and the Workout Info page lets you
-        filter by workout type.
-      </CardDescription>
-    </Card>
+    <ProjDescription
+      text={
+        " MoveSync is a single-page web application built with HTML, CSS, and vanilla JavaScript. All workout and push-up data is stored locally in the browser (Local Storage), so users can log, track and visualize their fitness progress. The dashboard shows your most recent sessions plus year-to-date totals, while dedicated forms let you separately enter general workouts and push-up sets. For deeper insights, the Push-Up Analytics view renders interactive bar, line, doughnut and monthly comparison charts using Chart.js, and the Workout Info page lets youfilter by workout type."
+      }
+    ></ProjDescription>
 
     {/* Key Features Section*/}
     <Card>

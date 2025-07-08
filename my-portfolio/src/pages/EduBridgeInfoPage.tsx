@@ -19,6 +19,7 @@ import SBESCILandingPage from "@/../images/SBESCILandingPage.png";
 import SBESCIAdminLandingPage from "@/../images/SBESCIAdminLandingPage.png";
 import SBESCICartPage from "@/../images/SBESCICartPage.png";
 import SBESCICupboardPage from "@/../images/SBESCIAdminCupboardPage.png";
+import ProjDescription from "@/components/ui/projDescription";
 
 const slides = [
   {
@@ -57,7 +58,7 @@ const SBECIInfoPage: React.FC = () => (
   <>
     <Card className="mb-[5%]">
       <CardTitle className="text-white">
-        MoveSync: Workout Tracker Application
+        EduBridge: School Donation Platform
       </CardTitle>
     </Card>
 
@@ -92,12 +93,24 @@ const SBECIInfoPage: React.FC = () => (
       </Carousel>
     </div>
 
-    <Card>
-      <CardHeader className="text-white text-2xl">
+    <ProjDescription
+      text={
+        "EduBridge is a full stack project. Which allows users to donate specific school supplies to underfunded schools. The application has a user interface for both donors and administrators. Donors can log in, view available needs, add items to their cart, and check out. Administrators can manage the needs by adding, editing, or deleting items from the cupboard."
+      }
+    ></ProjDescription>
+    <Card className="">
+      <CardHeader className="text-white text-2xl ">
         {" "}
-        About The Project:
+        My Contribution:
       </CardHeader>
-      <CardDescription className="text-white text-md"> </CardDescription>
+      <CardDescription className="text-white text-md px-6">
+        I was responsible for the front-end development of the application,
+        including the design and implementation of the user interface using
+        Angular. I also worked on integrating the back-end API to fetch and
+        display data dynamically. Additionally, I implemented the cart
+        functionality and ensured a smooth user experience across different
+        devices.{" "}
+      </CardDescription>
     </Card>
     <footer>
       <Footer />
