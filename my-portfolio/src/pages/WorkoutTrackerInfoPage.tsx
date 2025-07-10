@@ -23,6 +23,9 @@ import WorkoutAppWorkoutLogImg from "@/../images/WorkoutAppWorkoutLog.png";
 import WorkoutAppPushupLogImg from "@/../images/WorkoutAppPushupLog.png";
 import WorkoutAppPushupDashboardImg from "@/../images/WorkoutAppPushupDashboard.png";
 import ProjDescription from "@/components/ui/projDescription";
+import { BoltIcon, ShieldIcon, UserIcon } from "lucide-react";
+import KeyFeatures from "@/components/ui/keyFeatures";
+
 const slides = [
   {
     img: WorkoutAppImg,
@@ -51,6 +54,12 @@ const slides = [
   },
 ];
 
+const items = [
+  { icon: <BoltIcon size={24} />, label: "Lightning-fast load times" },
+  { icon: <ShieldIcon size={24} />, label: "Enterprise-grade security" },
+  { icon: <UserIcon size={24} />, label: "User-friendly UI" },
+];
+
 const WorkoutTrackerInfoPage: React.FC = () => (
   <>
     <Card className="mb-[5%] border-none">
@@ -58,7 +67,6 @@ const WorkoutTrackerInfoPage: React.FC = () => (
         MoveSync: Workout Tracker Application
       </CardTitle>
     </Card>
-
     <ProjDescription
       text={
         " MoveSync is a single-page web application built with HTML, CSS, and vanilla JavaScript. All workout and push-up data is stored locally in the browser (Local Storage), so users can log, track and visualize their fitness progress. The dashboard shows your most recent sessions plus year-to-date totals, while dedicated forms let you separately enter general workouts and push-up sets. For deeper insights, the Push-Up Analytics view renders interactive bar, line, doughnut and monthly comparison charts using Chart.js, and the Workout Info page lets youfilter by workout type."
@@ -66,6 +74,9 @@ const WorkoutTrackerInfoPage: React.FC = () => (
     ></ProjDescription>
 
     {/* Key Features Section*/}
+    {/* <div className="p-8 bg-gray-900 min-h-screen">
+      {/* } <KeyFeatures items={items} /> */}
+
     <Card>
       <p className="text-white">
         <ul>
@@ -118,7 +129,6 @@ const WorkoutTrackerInfoPage: React.FC = () => (
         <CarouselNext className="h-12 w-12 -right-16" />
       </Carousel>
     </div>
-
     <Footer />
   </>
 );
