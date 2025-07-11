@@ -55,9 +55,30 @@ const slides = [
 ];
 
 const items = [
-  { icon: <BoltIcon size={24} />, label: "Lightning-fast load times" },
-  { icon: <ShieldIcon size={24} />, label: "Enterprise-grade security" },
-  { icon: <UserIcon size={24} />, label: "User-friendly UI" },
+  {
+    icon: <BoltIcon size={24} />,
+    label:
+      "Leverages an external Exercise API to auto-populate exercise metadata for streamlined logging",
+  },
+  {
+    icon: <ShieldIcon size={24} />,
+    label: "Displays interactive charts powered by Chart.js",
+  },
+  {
+    icon: <ShieldIcon size={24} />,
+    label:
+      "Offers clean, separate forms for push-up tracking and all other workouts",
+  },
+  {
+    icon: <UserIcon size={24} />,
+    label:
+      "Features a live dashboard showing recent sessions alongside year-to-date totals",
+  },
+  {
+    icon: <UserIcon size={24} />,
+    label:
+      "Includes advanced filters to drill down by exercise category or date range",
+  },
 ];
 
 const WorkoutTrackerInfoPage: React.FC = () => (
@@ -74,8 +95,7 @@ const WorkoutTrackerInfoPage: React.FC = () => (
     ></ProjDescription>
 
     {/* Key Features Section*/}
-    {/* <div className="p-8 bg-gray-900 min-h-screen">
-      {/* } <KeyFeatures items={items} /> */}
+    <KeyFeatures items={items} />
 
     <Card>
       <p className="text-white">
@@ -96,6 +116,7 @@ const WorkoutTrackerInfoPage: React.FC = () => (
           <br />
           Responsive, Lightweight UI: Built with semantic HTML and CSS for a
           fast, mobile-friendly experience.
+          <br />
         </ul>
       </p>
     </Card>

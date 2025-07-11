@@ -10,14 +10,14 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
       <CardHeader className="text-white text-2xl">Key Features</CardHeader>
 
       <CardContent>
-        <div className="flex flex-wrap gap-4 mb-4">
+        <div className="grid grid-cols-1 gap-4 mb-4">
           {items.map((item, index) => (
             <div
               key={index}
-              className="inline-flex items-center justify-center h-12 px-2 bg-zinc-800 border-2 border-[#27272a] rounded-sm"
+              className="flex items-center justify-start w-full px-4 py-2 bg-zinc-800 border-2 border-[#27272a] rounded-sm gap-x-2"
             >
-              {item.icon}
-              <span className="ml-2 text-white">{item.label}</span>
+              <span className="text-white">{item.icon}</span>
+              <span className="text-white">{item.label}</span>
             </div>
           ))}
         </div>
