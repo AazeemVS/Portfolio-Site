@@ -11,7 +11,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/projects/carousel";
 import Footer from "@/components/ui/footer";
 import SBESCISearchPage from "@/../images/SBESCI_site_pic.png";
 import SBESCILoginPage from "@/../images/SBESCILoginPage.png";
@@ -19,7 +19,7 @@ import SBESCILandingPage from "@/../images/SBESCILandingPage.png";
 import SBESCIAdminLandingPage from "@/../images/SBESCIAdminLandingPage.png";
 import SBESCICartPage from "@/../images/SBESCICartPage.png";
 import SBESCICupboardPage from "@/../images/SBESCIAdminCupboardPage.png";
-import ProjDescription from "@/components/ui/projDescription";
+import ProjDescription from "@/components/ui/projects/projDescription";
 
 const slides = [
   {

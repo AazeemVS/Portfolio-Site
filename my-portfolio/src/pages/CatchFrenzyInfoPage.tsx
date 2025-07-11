@@ -13,7 +13,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/projects/carousel";
 import Footer from "@/components/ui/footer";
 
 //Images

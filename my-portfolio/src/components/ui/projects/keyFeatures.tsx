@@ -16,8 +16,13 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
               key={index}
               className="flex items-center justify-start w-full px-4 py-2 bg-zinc-800 border-2 border-[#27272a] rounded-sm gap-x-2"
             >
+              <span className="text-white text-2xl place-items-center">
+                {" "}
+                •{" "}
+              </span>
               <span className="text-white">{item.icon}</span>
-              <span className="text-white">{item.label}</span>
+
+              <span className="text-white text-base"> {item.label}</span>
             </div>
           ))}
         </div>

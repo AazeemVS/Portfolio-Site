@@ -1,157 +1,146 @@
 import React from "react";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/projects/carousel";
 import Footer from "@/components/ui/footer";
-import SBESCIImg from "@/../images/SBESCI_site_pic.png";
 import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
 import WorkoutAppWorkoutDashboardImg from "@/../images/WorkoutAppWorkoutDashboard.png";
 import WorkoutAppWorkoutLogImg from "@/../images/WorkoutAppWorkoutLog.png";
 import WorkoutAppPushupLogImg from "@/../images/WorkoutAppPushupLog.png";
 import WorkoutAppPushupDashboardImg from "@/../images/WorkoutAppPushupDashboard.png";
-import ProjDescription from "@/components/ui/projDescription";
-import { BoltIcon, ShieldIcon, UserIcon } from "lucide-react";
-import KeyFeatures from "@/components/ui/keyFeatures";
+import ProjDescription from "@/components/ui/projects/projDescription";
+import KeyFeatures from "@/components/ui/projects/keyFeatures";
+import { ProjBtns } from "@/components/ui/projects/projBtns";
+import {
+  BarChartIcon,
+  DashboardIcon,
+  GearIcon,
+  MixerVerticalIcon,
+  ReaderIcon,
+} from "@radix-ui/react-icons";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
 
 const slides = [
   {
     img: WorkoutAppImg,
     caption:
-      "A simple, right-aligned login form which allows helpers, teachers, and admins enter their username and password to access the platform or create a new account.",
+      "Home page with clean interface showing workout options and quick access to different sections of the app.",
   },
   {
     img: WorkoutAppWorkoutDashboardImg,
     caption:
-      "Welcomes the logged-in user by name, displays their current account balance, and briefly explains the site’s mission to connect donors with teachers in need, followed by team credits.",
+      "Dashboard displaying workout statistics and progress visualization with interactive charts.",
   },
   {
     img: WorkoutAppWorkoutLogImg,
     caption:
-      "Displays a list of teacher-requested items with descriptions, a sorting system by item type, and an Add to Cart button,allowing users to quickly filter and select supplies they wish to donate.",
+      "Detailed workout logging interface with exercise selection and data entry fields.",
   },
   {
     img: WorkoutAppPushupDashboardImg,
     caption:
-      "Shows the user’s cart with their selected items with quantity controls, a Remove from cart button, and a checkout option.",
+      "Specialized push-up tracking dashboard showing performance metrics over time.",
   },
   {
     img: WorkoutAppPushupLogImg,
     caption:
-      "Greets the admin account with a welcome message and balance, outlines the site’s purpose for supporting teachers, and lists credits for the development team.",
+      "Push-up analytics with different chart types for comprehensive performance analysis.",
   },
 ];
 
-const items = [
+const features = [
   {
-    icon: <BoltIcon size={24} />,
+    icon: <GearIcon width={24} height={24} />,
     label:
-      "Leverages an external Exercise API to auto-populate exercise metadata for streamlined logging",
+      "Leverages an external Exercise API to auto-populate exercise metadata for data logging",
   },
   {
-    icon: <ShieldIcon size={24} />,
+    icon: <BarChartIcon width={24} height={24} />,
     label: "Displays interactive charts powered by Chart.js",
   },
   {
-    icon: <ShieldIcon size={24} />,
+    icon: <ReaderIcon width={24} height={24} />,
     label:
       "Offers clean, separate forms for push-up tracking and all other workouts",
   },
   {
-    icon: <UserIcon size={24} />,
+    icon: <DashboardIcon width={24} height={24} />,
     label:
       "Features a live dashboard showing recent sessions alongside year-to-date totals",
   },
   {
-    icon: <UserIcon size={24} />,
+    icon: <MixerVerticalIcon width={24} height={24} />,
     label:
       "Includes advanced filters to drill down by exercise category or date range",
   },
 ];
 
 const WorkoutTrackerInfoPage: React.FC = () => (
-  <>
-    <Card className="mb-[5%] border-none">
-      <CardTitle className="text-white ">
-        MoveSync: Workout Tracker Application
-      </CardTitle>
+  <div className="container mx-auto px-4 py-8 ">
+    {/* Project Header */}
+    <Card className="mb-8 bg-transparent border-none shadow-none">
+      <CardHeader>
+        <CardTitle className="text-3xl font-bold text-white">
+          MoveSync: Workout Tracker Application
+        </CardTitle>
+      </CardHeader>
     </Card>
-    <ProjDescription
-      text={
-        " MoveSync is a single-page web application built with HTML, CSS, and vanilla JavaScript. All workout and push-up data is stored locally in the browser (Local Storage), so users can log, track and visualize their fitness progress. The dashboard shows your most recent sessions plus year-to-date totals, while dedicated forms let you separately enter general workouts and push-up sets. For deeper insights, the Push-Up Analytics view renders interactive bar, line, doughnut and monthly comparison charts using Chart.js, and the Workout Info page lets youfilter by workout type."
-      }
-    ></ProjDescription>
+    <ProjDescription text="MoveSync is a single-page web application built with HTML, CSS, and vanilla JavaScript. All workout and push-up data is stored locally in the browser (Local Storage), so users can log, track and visualize their fitness progress. The dashboard shows your most recent sessions plus year-to-date totals, while dedicated forms let you separately enter general workouts and push-up sets. For deeper insights, the Push-Up Analytics view renders interactive bar, line, doughnut and monthly comparison charts using Chart.js, and the Workout Info page lets you filter by workout type." />
 
-    {/* Key Features Section*/}
-    <KeyFeatures items={items} />
+    {/* Key Features Section */}
+    <section className="mb-12">
+      <KeyFeatures items={features} />
+    </section>
 
-    <Card>
-      <p className="text-white">
-        <ul>
-          Exercise API Integration: Leverages an external Exercise API to
-          auto-populate metadata (e.g., muscle groups, equipment) directly
-          within the workout logging form, streamlining data entry and ensuring
-          standardized exercise information. <br />
-          Dual Logging Interfaces: Clean, separate forms for push-up tracking
-          and for all other workouts.
-          <br />
-          Interactive Charts: Chart.js-powered bar, line, doughnut and monthly
-          comparison views of push-up performance. <br />
-          Live Dashboard: At-a-glance view of recent workouts and push-up
-          sessions alongside year-to-date totals. <br />
-          Advanced Filters: Drill down by exercise category or date range to
-          load historical workout data.
-          <br />
-          Responsive, Lightweight UI: Built with semantic HTML and CSS for a
-          fast, mobile-friendly experience.
-          <br />
-        </ul>
-      </p>
-    </Card>
-    {/* Carousel to show off different images of my websites */}
-    <div className="flex justify-center">
-      <Carousel className="w-full max-w-5xl">
-        {" "}
-        {/* Increased max-width */}
-        <CarouselContent>
-          {slides.map((slides, index) => (
-            <CarouselItem key={index} className="basis-full">
-              <div className="p-2">
-                <div className="flex items-center justify-center h-[500px]">
-                  <img
-                    src={slides.img}
-                    alt={`SBECI Site Preview ${index + 1}`}
-                    className="h-full w-auto object-contain rounded-sm border border-[#27272a] shadow-lg"
-                  />
-                </div>
-                <div className="ml-16 mr-16 mt-0">
-                  <Card className="border-none mt-4 p-0 text-left w-full">
-                    <p className="text-gray-300 text-sm">{slides.caption}</p>
+    {/* Project Buttons */}
+    <div className="mb-12 flex justify-center gap-4">
+      <ProjBtns
+        githubUrl="https://github.com/AazeemVS/Workout-Push-up-Project"
+        liveDemoUrl="https://yourdemo.com"
+      />
+    </div>
+
+    {/* Carousel Section */}
+    <section className="mb-12">
+      <h2 className="text-2xl font-bold text-white mb-6 text-center">
+        Application Screenshots
+      </h2>
+      <div className="flex justify-center">
+        <Carousel className="w-full max-w-5xl">
+          <CarouselContent>
+            {slides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="p-2">
+                  <div className="flex items-center justify-center h-[500px]">
+                    <img
+                      src={slide.img}
+                      alt={`Workout App Preview ${index + 1}`}
+                      className="h-full w-auto object-contain rounded-md border border-[#27272a] shadow-lg"
+                    />
+                  </div>
+                  <Card className="mt-4 w-8/10 bg-transparent border-none">
+                    <CardContent className="p-4 text-center">
+                      <p className="text-gray-300">{slide.caption}</p>
+                    </CardContent>
                   </Card>
                 </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="h-12 w-12 -left-16" />{" "}
-        {/* Adjusted position */}
-        <CarouselNext className="h-12 w-12 -right-16" />
-      </Carousel>
-    </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="h-12 w-12 -left-16" />
+          <CarouselNext className="h-12 w-12 -right-16" />
+        </Carousel>
+      </div>
+    </section>
+
     <Footer />
-  </>
+  </div>
 );
 
 export default WorkoutTrackerInfoPage;
