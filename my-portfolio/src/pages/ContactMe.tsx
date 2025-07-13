@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardDescription } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Footer from "@/components/ui/footer";
 
