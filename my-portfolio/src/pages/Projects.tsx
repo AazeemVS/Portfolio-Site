@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
           <HTMLIcon key="4" />,
           <CSSIcon key="5" />,
         ]}
-        onClick={() => navigate("/SBECIInfoPage")}
+        onClick={() => navigate("/EduBridgeInfoPage")}
       />
 
       <ProjectTemplate

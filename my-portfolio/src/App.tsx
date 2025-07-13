@@ -1,9 +1,7 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
   useNavigate,
   useLocation,
 } from "react-router-dom";
@@ -14,7 +12,7 @@ import NoPage from "@/pages/NoPage";
 import DevBlogs from "@/pages/DevBlogs";
 import Projects from "@/pages/Projects";
 import ContactMe from "@/pages/ContactMe";
-import SBECIInfoPage from "./pages/SBECIInfoPage";
+import EduBridgeInfoPage from "./pages/EduBridgeInfoPage";
 import ImpetusInfoPage from "./pages/ImpetusInfoPage";
 import WorkoutTrackerInfoPage from "./pages/WorkoutTrackerInfoPage";
 import CatchFrenzyInfoPage from "./pages/CatchFrenzyInfoPage";
@@ -24,10 +22,7 @@ import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
   NavigationMenuLink,
-  NavigationMenuIndicator,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { motion } from "framer-motion";
@@ -177,7 +172,10 @@ export default function App() {
           <Route path="/Projects" element={<Projects />}></Route>
           <Route path="/DevBlogs" element={<DevBlogs />}></Route>
           <Route path="/ContactMe" element={<ContactMe />}></Route>
-          <Route path="/SBECIInfoPage" element={<SBECIInfoPage />}></Route>
+          <Route
+            path="/EduBridgeInfoPage"
+            element={<EduBridgeInfoPage />}
+          ></Route>
           <Route path="/ImpetusInfoPage" element={<ImpetusInfoPage />}></Route>
           <Route
             path="/WorkoutTrackerInfoPage"
