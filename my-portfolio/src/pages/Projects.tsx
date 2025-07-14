@@ -1,10 +1,8 @@
 import React from "react";
 import Footer from "@/components/ui/footer";
 import TSIcon from "@/components/ui/icons/tsIcon";
-import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import ProjectTemplate from "@/components/ui/projectTemplate";
-import { useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -27,20 +25,108 @@ import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
 import CSharpIcon from "@/components/ui/icons/csharpIcon";
 import FigmaIcon from "@/components/ui/icons/figmaIcon";
 
+import {
+  BrowserRouter as Router,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
+
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu";
+import { motion } from "framer-motion";
+
 //Images
 import SBESCIImg from "@/../images/SBESCI_site_pic.png";
 import CatchFrenzyImg from "@/../images/Catch_Frenzy_Site_Pic2.png";
 import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
 import UnexpectedEscapesHomePage from "@/../images/Unexpected_Escapes_homeImg.png";
 
+function NavBar() {
+  const location = useLocation();
+  const underlineVariants = {
+    rest: { width: 0 },
+    hover: { width: "100%" },
+    active: { width: "100%" },
+  };
+  const underlineTransition = { duration: 0.3, ease: "easeOut" };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  return (
+    <div className="mt-5 flex justify-center">
+      <div className="max-w-4xl px-4">
+        <NavigationMenu className="w-full">
+          <NavigationMenuList className="flex justify-center">
+            <NavigationMenuItem>
+              <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
+                {[
+                  ["Web Projects", "web-projects"],
+                  ["Game Projects", "game-projects"],
+                ].map(([label, sectionId]) => (
+                  <NavigationMenuItem key={label}>
+                    <motion.div
+                      className="relative"
+                      initial="rest"
+                      whileHover="hover"
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <NavigationMenuLink
+                        className={`text-lg font-bold whitespace-nowrap px-4 py-1 ${
+                          location.hash === `#${sectionId}`
+                            ? "text-cyan-700"
+                            : "text-white"
+                        }`}
+                        onClick={() => scrollToSection(sectionId)}
+                      >
+                        {label}
+                        <motion.span
+                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                          variants={underlineVariants}
+                          initial={
+                            location.hash === `#${sectionId}`
+                              ? "active"
+                              : "rest"
+                          }
+                          animate={
+                            location.hash === `#${sectionId}`
+                              ? "active"
+                              : "rest"
+                          }
+                          transition={underlineTransition}
+                        />
+                      </NavigationMenuLink>
+                    </motion.div>
+                  </NavigationMenuItem>
+                ))}
+              </div>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+    </div>
+  );
+}
+
 const Projects: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Card className="border-none">
+      <NavBar />
+      <Card id="web-projects" className="border-none">
         <h2 className="text-white text-left text-4xl font-bold">
-          {" "}
-          My Projects{" "}
+          Web Projects
         </h2>
       </Card>
       <ProjectTemplate
@@ -50,7 +136,6 @@ const Projects: React.FC = () => {
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         onClick={() => navigate("/WorkoutTrackerInfoPage")}
       />
-
       <ProjectTemplate
         title="EduBridge"
         description="An educational platform connecting learners and mentors in real time."
@@ -64,7 +149,6 @@ const Projects: React.FC = () => {
         ]}
         onClick={() => navigate("/EduBridgeInfoPage")}
       />
-
       <ProjectTemplate
         title="Unexpected Escapes"
         description="An educational platform connecting learners and mentors in real time."
@@ -73,7 +157,6 @@ const Projects: React.FC = () => {
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         onClick={() => navigate("/UnexpectedEscapesInfoPage")}
       />
-
       <ProjectTemplate
         title="Catch Frenzy"
         description="An educational platform connecting learners and mentors in real time."
@@ -82,6 +165,12 @@ const Projects: React.FC = () => {
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         onClick={() => navigate("/CatchFrenzyInfoPage")}
       />
+      <Card id="game-projects" className="border-none">
+        <h2 className="text-white text-left text-4xl font-bold">
+          Game Projects
+        </h2>
+      </Card>
+
       <footer>
         <Footer></Footer>
       </footer>
