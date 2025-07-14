@@ -8,11 +8,12 @@ import SBESCICartPage from "@/../images/SBESCICartPage.png";
 import SBESCICupboardPage from "@/../images/SBESCIAdminCupboardPage.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
-  BarChartIcon,
-  DashboardIcon,
-  GearIcon,
-  MixerVerticalIcon,
+  PersonIcon,
+  BackpackIcon,
+  HomeIcon,
   ReaderIcon,
+  MagnifyingGlassIcon,
+  ArchiveIcon,
 } from "@radix-ui/react-icons";
 
 {
@@ -22,35 +23,36 @@ import {
 const EduBridgeInfoPage: React.FC = () => {
   const projectData = {
     title: "EduBridge: Non-Profit Donation Platform",
-    description: "Add EduBridge Project description...",
+    description:
+      "EduBridge is a single-page web application built with HTML, CSS, Java, and Typescript. This site was designed to connect donors with teachers in need of classroom supplies. Users can create accounts as helpers, teachers, or admins. Teachers can request items they need, which helpers can then browse and add to their cart for donation. The admin account has elevated privileges, allowing them to manage all items and view all requests. The platform aims to streamline the donation process and ensure that teachers have access to the supplies they need to provide quality education.",
     githubUrl: "https://github.com/your/project1",
     liveDemoUrl: "https://yourdemo.com", // Add live demo later
     websiteUrl: "https://official-website.com",
 
     features: [
       {
-        icon: <GearIcon width={24} height={24} />,
-        label:
-          "Leverages an external Exercise API to auto-populate exercise metadata for data logging",
+        icon: <HomeIcon width={23} height={23} />,
+        label: "Log in/Log out functionality for helpers, teachers, and admins",
       },
       {
-        icon: <BarChartIcon width={24} height={24} />,
-        label: "Displays interactive charts powered by Chart.js",
+        icon: <MagnifyingGlassIcon width={24} height={24} />,
+        label:
+          "Search for products by entering either their name or their type",
       },
       {
-        icon: <ReaderIcon width={24} height={24} />,
+        icon: <BackpackIcon width={23} height={23} />,
         label:
-          "Offers clean, separate forms for push-up tracking and all other workouts",
+          "Can checkout items in cart, view total cost, and remove items from cart",
       },
       {
-        icon: <DashboardIcon width={24} height={24} />,
+        icon: <ArchiveIcon width={24} height={24} />,
         label:
-          "Features a live dashboard showing recent sessions alongside year-to-date totals",
+          "Teacher can request items specific items by making  which helpers can fill",
       },
       {
-        icon: <MixerVerticalIcon width={24} height={24} />,
+        icon: <PersonIcon width={24} height={24} />,
         label:
-          "Includes advanced filters to drill down by exercise category or date range",
+          "Includes an admin account who can manage all items and view all requests",
       },
     ],
     slides: [
