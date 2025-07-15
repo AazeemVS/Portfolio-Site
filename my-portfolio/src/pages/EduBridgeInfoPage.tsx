@@ -8,11 +8,11 @@ import SBESCICartPage from "@/../images/SBESCICartPage.png";
 import SBESCICupboardPage from "@/../images/SBESCIAdminCupboardPage.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
-  BarChartIcon,
-  DashboardIcon,
-  GearIcon,
-  MixerVerticalIcon,
-  ReaderIcon,
+  PersonIcon,
+  BackpackIcon,
+  HomeIcon,
+  MagnifyingGlassIcon,
+  ArchiveIcon,
 } from "@radix-ui/react-icons";
 
 {
@@ -22,35 +22,36 @@ import {
 const EduBridgeInfoPage: React.FC = () => {
   const projectData = {
     title: "EduBridge: Non-Profit Donation Platform",
-    description: "Add EduBridge Project description...",
+    description:
+      "EduBridge is a single-page web application built with Angular, HTML, CSS, Java, and TypeScript that connects donors with teachers in need of classroom supplies. It uses OAuth for role-based authentication (helpers, teachers, admins) and lets teachers submit item requests that helpers can fulfill in full or in part. All data is stored in JSON files and served via a backend API, with unit tests running in a Docker-based CI/CD pipeline to ensure quality. The responsive design adapts seamlessly across devices, and the team followed Agile Scrum, running 2–4 week sprints with planning poker, daily stand-ups, sprint planning, and retrospectives.",
     githubUrl: "https://github.com/your/project1",
     liveDemoUrl: "https://yourdemo.com", // Add live demo later
     websiteUrl: "https://official-website.com",
 
     features: [
       {
-        icon: <GearIcon width={24} height={24} />,
-        label:
-          "Leverages an external Exercise API to auto-populate exercise metadata for data logging",
+        icon: <HomeIcon width={23} height={23} />,
+        label: "Log in/Log out functionality for helpers, teachers, and admins",
       },
       {
-        icon: <BarChartIcon width={24} height={24} />,
-        label: "Displays interactive charts powered by Chart.js",
+        icon: <MagnifyingGlassIcon width={24} height={24} />,
+        label:
+          "Search for products by entering either their name or their type",
       },
       {
-        icon: <ReaderIcon width={24} height={24} />,
+        icon: <BackpackIcon width={23} height={23} />,
         label:
-          "Offers clean, separate forms for push-up tracking and all other workouts",
+          "Can checkout items in cart, view total cost, and remove items from cart",
       },
       {
-        icon: <DashboardIcon width={24} height={24} />,
+        icon: <ArchiveIcon width={24} height={24} />,
         label:
-          "Features a live dashboard showing recent sessions alongside year-to-date totals",
+          "Teacher can request items specific items by making  which helpers can fill",
       },
       {
-        icon: <MixerVerticalIcon width={24} height={24} />,
+        icon: <PersonIcon width={24} height={24} />,
         label:
-          "Includes advanced filters to drill down by exercise category or date range",
+          "Includes an admin account who can manage all items and view all requests",
       },
     ],
     slides: [
