@@ -22,8 +22,9 @@ import {
 
 const UnexpectedEscapesInfoPage: React.FC = () => {
   const projectData = {
-    title: "Project 1 Name",
-    description: "Add Unexpected Escapes Project description...",
+    title: "Unexpected Escapes: Random Image Generator",
+    description:
+      "Unexpected Escapes is a responsive single-page web app built with HTML, CSS, and vanilla JavaScript that integrates the Lorem Picsum API to fetch random images at user-specified dimensions and supports multiple endpoints—including static, blurred, grayscale, and “list” modes. Users can customize height and width for each request, browse detailed metadata (artist, actual dimensions, and a direct source link), save personal favorites to local storage, and clear their favorites list at any time; under the hood, it uses the Fetch API with async/await, and the fully responsive interface adapts seamlessly across mobile and desktop, for a smooth discovery experience.",
     githubUrl: "https://github.com/your/project1",
     liveDemoUrl: "https://yourdemo.com", // Add live demo later
     websiteUrl: "https://official-website.com",
@@ -32,11 +33,11 @@ const UnexpectedEscapesInfoPage: React.FC = () => {
       {
         icon: <GearIcon width={24} height={24} />,
         label:
-          "Leverages an external Exercise API to auto-populate exercise metadata for data logging",
+          "Leverages an external random picture API to fetch images, and metadata",
       },
       {
         icon: <BarChartIcon width={24} height={24} />,
-        label: "Displays interactive charts powered by Chart.js",
+        label: "Can save, load, and clear favorite images using Local Storage",
       },
       {
         icon: <ReaderIcon width={24} height={24} />,
