@@ -46,12 +46,26 @@ function landingPageSkillsSection() {
               <StaticSkillsScroller />
             ) : (
               <>
-                <SkillsScroller icons={[HTMLIcon, JSIcon, TSIcon, ReactIcon]} />
                 <SkillsScroller
-                  icons={[ViteIcon, GitIcon, JavaIcon, TailwindCSSIcon]}
+                  icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]}
                 />
                 <SkillsScroller
-                  icons={[CPlusPlusIcon, AngularIcon, CSharpIcon, FigmaIcon]}
+                  icons={[
+                    ViteIcon,
+                    GitIcon,
+                    NodeJSIcon,
+                    JavaIcon,
+                    TailwindCSSIcon,
+                  ]}
+                />
+                <SkillsScroller
+                  icons={[
+                    ShadcnIcon,
+                    CPlusPlusIcon,
+                    AngularIcon,
+                    CSharpIcon,
+                    FigmaIcon,
+                  ]}
                 />
               </>
             )}

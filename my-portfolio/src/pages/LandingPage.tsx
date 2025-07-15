@@ -3,48 +3,21 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { motion } from "framer-motion";
-import HTMLIcon from "@/components/ui/icons/HTMLIcon";
-import CSSIcon from "@/components/ui/icons/CSSIcon";
-import TailwindCSSIcon from "@/components/ui/icons/tailwindCSSIcon";
-import JSIcon from "@/components/ui/icons/jsIcon";
-import TSIcon from "@/components/ui/icons/tsIcon";
-import ReactIcon from "@/components/ui/icons/reactIcon";
-import ViteIcon from "@/components/ui/icons/viteIcon";
-import JavaIcon from "@/components/ui/icons/javaIcon";
-import GitIcon from "@/components/ui/icons/gitIcon";
-import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
-import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
-import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
-//import NextJSIcon from "@/components/ui/icons/nextJSIcon"; Might be needed later
-import CSharpIcon from "@/components/ui/icons/cppIcon";
-import AngularIcon from "@/components/ui/icons/angularIcon";
-import FigmaIcon from "@/components/ui/icons/figmaIcon";
-import SkillsScroller from "@/components/ui/skillsScroller";
+
 import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
-import PauseBtn from "@/components/ui/pauseBtnSkillsScroller";
 import LandingPageSkillsScroller from "@/components/ui/landingPageSkillsSection";
-import StaticSkillsScroller from "@/components/ui/staticSkills";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   EnvelopeClosedIcon,
-  PauseIcon,
-  PlayIcon,
 } from "@radix-ui/react-icons";
-import SBESCIImg from "@/../images/SBESCI_site_pic.png";
-import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
-import { useNavigate } from "react-router-dom";
-import ProjectTemplate from "@/components/ui/projectTemplate";
+
 import LandingPageProjects from "@/components/ui/landingPageProjects";
 const LandingPage: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
     <>
       <Card className="bg-slate-900">
@@ -52,9 +25,7 @@ const LandingPage: React.FC = () => {
           <CardTitle>
             <div className="flex flex-row w-full justify-between items-center gap-2">
               {/* Name (left-aligned) */}
-              <h1 className="text-4xl font-outfit font-bold m-0">
-                Aazeem Vaidya Shaikh
-              </h1>
+              <h1 className="text-4xl  font-bold m-0">Aazeem Vaidya Shaikh</h1>
 
               {/* Social links (right-aligned) */}
               <div className="flex gap-2 justify-end">
@@ -112,13 +83,13 @@ const LandingPage: React.FC = () => {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <p className="text-gray-400 font-outfit">
+              <p className="text-gray-400 ">
                 Seattle WA, Falls Church VA, Cambridge MA
               </p>
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent className="font-outfit">
+        <CardContent>
           <p>
             Hey I'm Aazeem, I'm a 20 year old full stack web, software, and game
             developer. I have been programming for 3 years, and I enjoy
