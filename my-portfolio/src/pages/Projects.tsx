@@ -3,33 +3,13 @@ import Footer from "@/components/ui/footer";
 import TSIcon from "@/components/ui/icons/tsIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import ProjectTemplate from "@/components/ui/projectTemplate";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";
 import CSSIcon from "@/components/ui/icons/CSSIcon";
-import TailwindCSSIcon from "@/components/ui/icons/tailwindCSSIcon";
 import JSIcon from "@/components/ui/icons/jsIcon";
-import ReactIcon from "@/components/ui/icons/reactIcon";
-import ViteIcon from "@/components/ui/icons/viteIcon";
 import JavaIcon from "@/components/ui/icons/javaIcon";
-import GitIcon from "@/components/ui/icons/gitIcon";
-import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
-import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
-import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
-import CSharpIcon from "@/components/ui/icons/csharpIcon";
-import FigmaIcon from "@/components/ui/icons/figmaIcon";
 
-import {
-  BrowserRouter as Router,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import {
   NavigationMenu,
@@ -123,7 +103,7 @@ const Projects: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Card id="web-projects" className="border-none">
         <h2 className="text-white text-left text-4xl font-bold">
           Web Projects
@@ -169,6 +149,9 @@ const Projects: React.FC = () => {
         <h2 className="text-white text-left text-4xl font-bold">
           Game Projects
         </h2>
+      </Card>
+      <Card className="border-none">
+        <p className="text-white text-2xl font-bold"> Coming soon...</p>
       </Card>
 
       <footer>
