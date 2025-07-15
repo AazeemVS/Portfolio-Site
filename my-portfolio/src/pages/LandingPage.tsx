@@ -149,6 +149,10 @@ const LandingPage: React.FC = () => {
         </h2>
       </Card>
 
+      <Card className="border-none">
+        <p className="text-white text-2xl ml-4 font-bold"> Coming soon...</p>
+      </Card>
+
       <footer>
         <Footer></Footer>
       </footer>
