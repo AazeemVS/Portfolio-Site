@@ -52,7 +52,7 @@ const ContactMe: React.FC = () => (
           >
             <span className="relative z-10">av7304@rit.edu</span>
             <motion.span
-              className="absolute bottom-0 left-0 h-0.5 bg-white"
+              className="absolute bottom-0 left-0 h-0.5 bg-cyan-600"
               variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             />
@@ -89,13 +89,13 @@ const ContactMe: React.FC = () => (
           </a>
           <motion.a
             href="https://www.linkedin.com/in/aazeemvs"
-            className="relative inline-block text-gray-300 text-center"
+            className="relative inline-block text-cyan-600 text-center"
             whileHover="hover"
             initial="rest"
           >
             <span className="relative z-10">linkedin.com/in/aazeemvs</span>
             <motion.span
-              className="absolute bottom-0 left-0 h-0.5 bg-white"
+              className="absolute bottom-0 left-0 h-0.5 bg-cyan-600"
               variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             />
