@@ -11,7 +11,6 @@ import {
   PersonIcon,
   BackpackIcon,
   HomeIcon,
-  ReaderIcon,
   MagnifyingGlassIcon,
   ArchiveIcon,
 } from "@radix-ui/react-icons";
