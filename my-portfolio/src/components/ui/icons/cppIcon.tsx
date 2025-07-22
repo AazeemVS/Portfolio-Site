@@ -5,7 +5,7 @@ const CPPIcon: React.FC = () => (
   // Container aligns icon and text horizontally
   <div className="flex flex-row w-full justify-start items-center gap-4">
     {/* Icon wrapper with fixed size */}
-    <div className="w-8 h-8">
+    <div className="w-8 h-8 sm:w-10 sm:h-10">
       <img src="../../../images/CPlusPlusIcon.png" alt="C++ Logo Image" />
     </div>
 

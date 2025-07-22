@@ -115,17 +115,18 @@ const AboutMe: React.FC = () => (
     <Experience></Experience>
 
     {/* Skills */}
-    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
+    <section className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-[#27272a] py-6 shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto relative justify-center overflow-hidden">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="flex flex-col justify-center [&>*]:pb-4 ">
+        <div className="flex flex-col justify-center [&>*]:pb-4">
           {/* Title */}
-          <div className="grid grid-cols-2 ml-[2rem] mr-[2rem] items-center">
+          <div className="grid grid-cols-2 px-4 sm:px-6 md:px-8 items-center">
             <div className="text-left">
-              <h2 className="text-white text-5xl font-bold">My Skills</h2>
+              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">
+                My Skills
+              </h2>
             </div>
-            <div></div>
           </div>
-          <StaticSkillsScroller></StaticSkillsScroller>
+          <StaticSkillsScroller />
         </div>
       </div>
     </section>
