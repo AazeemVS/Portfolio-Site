@@ -27,14 +27,16 @@ const LandingPage: React.FC = () => {
 
       <LandingPageProjects></LandingPageProjects>
 
-      <Card className="border-none">
-        <h2 className="text-white text-left text-4xl font-bold ml-4">
-          Recent Posts
-        </h2>
+      <Card className="border-none mb-0">
+        <div className="text-left">
+          <h2 className="text-white text-5xl font-bold">Recent Posts</h2>
+        </div>
       </Card>
 
-      <Card className="border-none">
-        <p className="text-white text-2xl ml-4 font-bold"> Coming soon...</p>
+      <Card className="border-none mt-16">
+        <div className="text-left">
+          <h2 className="text-white text-3xl font-bold">Coming soon...</h2>
+        </div>{" "}
       </Card>
 
       <footer>
