@@ -2,23 +2,11 @@ import SBESCIImg from "@/../images/SBESCI_site_pic.png";
 import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
 import { useNavigate } from "react-router-dom";
 import ProjectTemplate from "@/components/ui/projectTemplate";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";
 import CSSIcon from "@/components/ui/icons/CSSIcon";
-import TailwindCSSIcon from "@/components/ui/icons/tailwindCSSIcon";
 import JSIcon from "@/components/ui/icons/jsIcon";
 import TSIcon from "@/components/ui/icons/tsIcon";
-import ReactIcon from "@/components/ui/icons/reactIcon";
-import ViteIcon from "@/components/ui/icons/viteIcon";
 import JavaIcon from "@/components/ui/icons/javaIcon";
-import GitIcon from "@/components/ui/icons/gitIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 function LandingPageProjects() {
   const navigate = useNavigate();
@@ -43,7 +31,7 @@ function LandingPageProjects() {
           <HTMLIcon key="4" />,
           <CSSIcon key="5" />,
         ]}
-        onClick={() => navigate("/SBECIInfoPage")}
+        onClick={() => navigate("/EduBridgeInfoPage")}
       />
     </div>
   );
