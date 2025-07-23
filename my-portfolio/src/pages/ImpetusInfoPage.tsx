@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
-import Story from "@/components/ui/story";
+import Story from "@/components/ui/about-us/story";
 import { motion } from "framer-motion";
 
 const ImpetusInfoPage: React.FC = () => (
