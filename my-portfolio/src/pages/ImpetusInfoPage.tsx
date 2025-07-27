@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Footer from "@/components/ui/footer";
-import Experience from "@/components/ui/experience";
-import Story from "@/components/ui/about-us/story";
-import { motion } from "framer-motion";
-
+import { Card } from "@/components/ui/card";
 const ImpetusInfoPage: React.FC = () => (
   <>
     <Card>
