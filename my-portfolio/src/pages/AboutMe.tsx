@@ -4,15 +4,17 @@ import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
 import StaticSkillsScroller from "@/components/ui/staticSkills";
 import Story from "@/components/ui/about-us/story";
-import { motion } from "framer-motion";
-import AboutMeCard from "@/components/ui/about-us-card";
+import AboutMeCard from "@/components/ui/about-us/about-us-card";
+import StoryMobile from "@/components/ui/about-us/story-mobile";
 const AboutMe: React.FC = () => (
   <>
     <Card className="border-none">
       <h2 className="text-white text-left text-4xl font-bold"> About Me </h2>
     </Card>
 
-    <AboutMeCard></AboutMeCard>
+    {/* About Me text Section */}
+
+    <AboutMeCard />
 
     {/* Experience Section */}
 
@@ -36,7 +38,17 @@ const AboutMe: React.FC = () => (
     </section>
 
     {/* Personal Story Section */}
-    <Story></Story>
+    <div>
+      {/* Show Story on desktop, hide on desktop */}
+      <div className="hidden md:block">
+        <Story />
+      </div>
+
+      {/* Show Static Story on mobile, hide on mobile */}
+      <div className="block md:hidden">
+        <StoryMobile />
+      </div>
+    </div>
     <footer>
       <Footer></Footer>
     </footer>
