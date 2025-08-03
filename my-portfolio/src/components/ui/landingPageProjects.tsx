@@ -27,8 +27,6 @@ function LandingPageProjects() {
         icons={[
           <AngularIcon key="1" />,
           <TSIcon key="2" />,
-          <JavaIcon key="3" />,
-          <HTMLIcon key="4" />,
           <CSSIcon key="5" />,
         ]}
         onClick={() => navigate("/EduBridgeInfoPage")}

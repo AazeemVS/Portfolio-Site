@@ -2,7 +2,6 @@
 import React from "react";
 import type { ReactElement } from "react";
 import SkillBox from "@/components/ui/skillBox";
-import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
 import JSIcon from "@/components/ui/icons/jsProjIcon";
 import AngularIcon from "@/components/ui/icons/angularProjIcon";
 
@@ -19,11 +18,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   description,
   backgroundImg,
   onClick,
-  icons = [
-    <NextJSIcon key="nextjs" />,
-    <JSIcon key="js" />,
-    <AngularIcon key="ng" />,
-  ],
+  icons = [<JSIcon key="js" />, <AngularIcon key="ng" />],
 }) => (
   <div className="flex items-center justify-center mt-10 md:mt-20 w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mx-auto">
     <div

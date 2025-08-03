@@ -1,12 +1,9 @@
 import React from "react";
 
-// CSSIcon component displays a CSS logo (SVG) with a label
 const CSSIcon: React.FC = () => (
-  // Container aligns icon and text horizontally
-  <div className="flex w-full justify-center items-center gap-4">
-    {/* Icon wrapper with fixed size */}
-    <div className="w-9 h-9">
-      {/* SVG for the CSS logo */}
+  <div className="flex w-full justify-center items-center gap-2 sm:gap-3 md:gap-4">
+    {/* Icon wrapper with responsive sizing */}
+    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 384 512"
@@ -19,8 +16,8 @@ const CSSIcon: React.FC = () => (
       </svg>
     </div>
 
-    {/* Label next to the icon */}
-    <h2 className="text-white">CSS</h2>
+    {/* Responsive text sizing */}
+    <h2 className="text-white text-sm sm:text-base md:text-lg">CSS</h2>
   </div>
 );
 

@@ -183,7 +183,7 @@ function NavBar() {
                             className={`text-[10px] mt-0.5 ${
                               isActive(item.path)
                                 ? "text-cyan-700 font-medium"
-                                : "text-gray-400"
+                                : "text-white"
                             }`}
                           >
                             {item.label}

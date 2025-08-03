@@ -40,7 +40,6 @@ const Projects: React.FC = () => {
         icons={[
           <AngularIcon key="1" />,
           <TSIcon key="2" />,
-          <HTMLIcon key="4" />,
           <CSSIcon key="5" />,
         ]}
         onClick={() => navigate("/EduBridgeInfoPage")}

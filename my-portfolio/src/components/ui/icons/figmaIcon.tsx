@@ -1,14 +1,10 @@
 import React from "react";
 
-// FigmaIcon component displays a Figma logo with a label
 const FigmaIcon: React.FC = () => (
-  // Container aligns icon and text horizontally
-  <div className="flex flex-row w-full justify-start items-center gap-4">
-    {/* Icon wrapper with fixed size and centered content */}
-    <div className="w-12 h-12 flex items-center justify-center bg-[#1e293b] rounded-lg">
+  <div className="flex flex-row w-full justify-start items-center gap-2 sm:gap-3 md:gap-4">
+    <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center bg-[#1e293b] rounded-lg">
       <svg
-        // let Tailwind classes drive the size now
-        className="w-8 h-8 text-white"
+        className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white"
         viewBox="0 0 15 15"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +17,7 @@ const FigmaIcon: React.FC = () => (
         />
       </svg>
     </div>
-
-    {/* Label next to the icon */}
-    <h2 className="text-white">Figma</h2>
+    <h2 className="text-white text-sm sm:text-base md:text-lg">Figma</h2>
   </div>
 );
 
