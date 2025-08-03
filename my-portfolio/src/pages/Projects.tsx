@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "@/components/ui/footer";
 import TSIcon from "@/components/ui/icons/tsIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
-import ProjectTemplate from "@/components/ui/projectTemplate";
+import ProjectTemplate from "@/components/ui/projects/projectTemplate";
 import { Card } from "@/components/ui/card";
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";
 import CSSIcon from "@/components/ui/icons/CSSIcon";

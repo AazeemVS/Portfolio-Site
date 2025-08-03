@@ -1,12 +1,11 @@
 import SBESCIImg from "@/../images/SBESCI_site_pic.png";
 import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
 import { useNavigate } from "react-router-dom";
-import ProjectTemplate from "@/components/ui/projectTemplate";
+import ProjectTemplate from "@/components/ui/projects/projectTemplate";
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";
 import CSSIcon from "@/components/ui/icons/CSSIcon";
 import JSIcon from "@/components/ui/icons/jsIcon";
 import TSIcon from "@/components/ui/icons/tsIcon";
-import JavaIcon from "@/components/ui/icons/javaIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 function LandingPageProjects() {
   const navigate = useNavigate();
