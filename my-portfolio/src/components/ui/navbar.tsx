@@ -159,7 +159,7 @@ function NavBar() {
         <div className="flex justify-center">
           <div className="max-w-md rounded-lg">
             <NavigationMenu className="w-full">
-              <NavigationMenuList className="flex justify-between items-center px-2 py-2 border border-gray-800 bg-gray-950 rounded-lg">
+              <NavigationMenuList className="flex justify-between items-center px-2 py-2 border border-gray-800 bg-zinc-900 rounded-lg">
                 {mobileNavItems.map((item) => {
                   const Icon = item.icon;
                   return (
@@ -176,14 +176,14 @@ function NavBar() {
                             className={`w-8 h-8 ${
                               isActive(item.path)
                                 ? "text-cyan-700"
-                                : "text-gray-500"
+                                : "text-zinc-600"
                             }`}
                           />
                           <span
                             className={`text-[10px] mt-0.5 ${
                               isActive(item.path)
                                 ? "text-cyan-700 font-medium"
-                                : "text-gray-200"
+                                : "text-gray-400"
                             }`}
                           >
                             {item.label}
