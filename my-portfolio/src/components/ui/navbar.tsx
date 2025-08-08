@@ -39,7 +39,7 @@ function NavBar() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden md:block w-full mt-5">
+      <div className="hidden lg:block w-full mt-5">
         <div className="max-w-4xl mx-auto px-4">
           <NavigationMenu className="w-full">
             <NavigationMenuList className="grid grid-cols-3 gap-64 place-items-center">
@@ -155,7 +155,7 @@ function NavBar() {
       </div>
 
       {/* Mobile Nav bar */}
-      <div className="md:hidden w-full mt-5">
+      <div className="lg:hidden w-full mt-5">
         <div className="flex justify-center">
           <div className="max-w-md rounded-lg">
             <NavigationMenu className="w-full">
