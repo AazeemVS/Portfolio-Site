@@ -8,18 +8,16 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
   return (
     <Card
       className="
-        w-full
-        max-sm:-mx-2    /* extend card closer to screen edges on phones */
+        max-sm:w-full
+        max-sm:-mx-2
         max-[360px]:-mx-1
       "
     >
-      {/* Desktop unchanged; smaller screens step down the title size */}
       <CardHeader className="text-white text-2xl max-sm:text-xl">
         Key Features
       </CardHeader>
 
       <CardContent>
-        {/* Keep 1 column on desktop; just tighten gaps on phones */}
         <div className="grid grid-cols-1 gap-4 max-sm:gap-2.5 mb-4">
           {items.map((item, index) => (
             <div
@@ -31,12 +29,10 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
                 max-sm:px-3 max-sm:py-2
               "
             >
-              {/* Bullet stays on desktop; hide only on very tiny screens */}
               <span className="text-white text-2xl leading-none max-[360px]:hidden">
                 •
               </span>
 
-              {/* Icon: constrain size only on phones; desktop untouched */}
               <span
                 className="
                   text-white place-items-center
@@ -46,7 +42,6 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
                 {item.icon}
               </span>
 
-              {/* Label: shrink on smaller screens & ensure it stays inside the box */}
               <span
                 className="
                   flex-1 text-white text-base
