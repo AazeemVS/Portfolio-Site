@@ -40,9 +40,19 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
       {/* Project Header */}
-      <Card className="mb-6 sm:mb-8 lg:mb-10 bg-transparent border-none shadow-none">
+      <Card className="mb-5 sm:mb-8 lg:mb-10 bg-transparent border-none shadow-none px-4 sm:px-0">
         <CardHeader className="px-0">
-          <CardTitle className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+          <CardTitle
+            className="
+        text-xl sm:text-3xl lg:text-4xl
+        font-bold text-white
+        leading-tight tracking-tight
+        text-center sm:text-left
+        break-words
+        max-w-prose sm:max-w-none
+        mx-auto sm:mx-0
+      "
+          >
             {title}
           </CardTitle>
         </CardHeader>
@@ -63,8 +73,6 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
           websiteUrl={websiteUrl}
         />
       </div>
-
-      {/* Carousel Section */}
       {slides.length > 0 && (
         <section className="mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">
@@ -94,8 +102,8 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -left-4 sm:-left-8 md:-left-12" />
-              <CarouselNext className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -right-4 sm:-right-8 md:-right-12" />
+              <CarouselPrevious className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -left-4 sm:-left-8 md:-left-12" />
+              <CarouselNext className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -right-4 sm:-right-8 md:-right-12" />
             </Carousel>
           </div>
         </section>

@@ -61,10 +61,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
 
       {/* Content layer */}
       <div className="relative z-10 p-4 sm:p-6 flex flex-col justify-end h-full">
-        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-200 text-lg sm:text-xl md:text-2xl font-semibold">
+        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-white text-lg sm:text-xl md:text-2xl font-semibold">
           {title}
         </p>
-        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-400 mb-1 text-sm sm:text-base font-semibold">
+        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-500 mb-1 text-sm sm:text-base font-semibold">
           {description}
         </p>
 
