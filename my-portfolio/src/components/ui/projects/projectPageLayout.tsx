@@ -75,9 +75,15 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
       </div>
       {slides.length > 0 && (
         <section className="mb-8 sm:mb-10 lg:mb-12">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-6 text-center">
             Application Screenshots
           </h2>
+
+          {/* Mobile hint */}
+          <p className="sm:hidden text-center text-xs text-gray-400 mb-3">
+            Swipe to view →
+          </p>
+
           <div className="flex justify-center px-2 sm:px-0">
             <Carousel className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-5xl">
               <CarouselContent>
@@ -102,6 +108,8 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
                   </CarouselItem>
                 ))}
               </CarouselContent>
+
+              {/* Desktop buttons */}
               <CarouselPrevious className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -left-4 sm:-left-8 md:-left-12" />
               <CarouselNext className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -right-4 sm:-right-8 md:-right-12" />
             </Carousel>
