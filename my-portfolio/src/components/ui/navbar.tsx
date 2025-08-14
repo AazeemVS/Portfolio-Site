@@ -4,7 +4,6 @@ import {
   NavigationMenuList,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { motion } from "framer-motion";
 import {
@@ -40,116 +39,107 @@ function NavBar() {
     <>
       {/* Desktop Navigation */}
       <div className="hidden lg:block w-full mt-5">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <NavigationMenu className="w-full">
-            <NavigationMenuList className="grid grid-cols-3 gap-64 place-items-center">
+            <NavigationMenuList className="flex items-center justify-between gap-28 xl:gap-64">
               {/* Left - Name */}
-              <div className="grid place-items-center pr-96">
-                <NavigationMenuItem>
-                  <NavigationMenuLink onClick={() => navigate("/LandingPage")}>
-                    <motion.span
-                      className={`relative inline-block text-xl font-bold whitespace-nowrap ${
-                        isActive("/LandingPage") ? "text-cyan-700" : ""
-                      }`}
-                      initial="rest"
-                      whileHover="hover"
-                    >
-                      <span className="relative z-10">
-                        Aazeem Vaidya Shaikh
-                      </span>
-                      {isActive("/LandingPage") ? (
-                        <motion.span
-                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                          variants={underlineVariants}
-                          initial="active"
-                          animate="active"
-                        />
-                      ) : (
-                        <motion.span
-                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                          variants={underlineVariants}
-                          transition={underlineTransition}
-                        />
-                      )}
-                    </motion.span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </div>
+              <NavigationMenuItem>
+                <NavigationMenuLink onClick={() => navigate("/LandingPage")}>
+                  <motion.span
+                    className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                      isActive("/LandingPage") ? "text-cyan-700" : ""
+                    }`}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <span className="relative z-10">Aazeem Vaidya Shaikh</span>
+                    {isActive("/LandingPage") ? (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        initial="active"
+                        animate="active"
+                      />
+                    ) : (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        transition={underlineTransition}
+                      />
+                    )}
+                  </motion.span>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
 
               {/* Center - Main Nav */}
-              <div className="grid place-items-center px-4">
-                <NavigationMenuItem>
-                  <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
-                    {[
-                      ["About Me", "/AboutMe"],
-                      ["Projects", "/Projects"],
-                      ["Thoughts", "/DevBlogs"],
-                    ].map(([label, path]) => (
-                      <NavigationMenuLink
-                        key={label}
-                        onClick={() => navigate(path)}
+              <NavigationMenuItem>
+                <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
+                  {[
+                    ["About Me", "/AboutMe"],
+                    ["Projects", "/Projects"],
+                    ["Thoughts", "/DevBlogs"],
+                  ].map(([label, path]) => (
+                    <NavigationMenuLink
+                      key={label}
+                      onClick={() => navigate(path)}
+                    >
+                      <motion.span
+                        className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                          isActive(path) ? "text-cyan-700" : ""
+                        }`}
+                        initial="rest"
+                        whileHover="hover"
                       >
-                        <motion.span
-                          className={`relative inline-block text-xl font-bold whitespace-nowrap ${
-                            isActive(path) ? "text-cyan-700" : ""
-                          }`}
-                          initial="rest"
-                          whileHover="hover"
-                        >
-                          <span className="relative z-10">{label}</span>
-                          {isActive(path) ? (
-                            <motion.span
-                              className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                              variants={underlineVariants}
-                              initial="active"
-                              animate="active"
-                            />
-                          ) : (
-                            <motion.span
-                              className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                              variants={underlineVariants}
-                              transition={underlineTransition}
-                            />
-                          )}
-                        </motion.span>
-                      </NavigationMenuLink>
-                    ))}
-                  </div>
-                </NavigationMenuItem>
-              </div>
+                        <span className="relative z-10">{label}</span>
+                        {isActive(path) ? (
+                          <motion.span
+                            className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                            variants={underlineVariants}
+                            initial="active"
+                            animate="active"
+                          />
+                        ) : (
+                          <motion.span
+                            className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                            variants={underlineVariants}
+                            transition={underlineTransition}
+                          />
+                        )}
+                      </motion.span>
+                    </NavigationMenuLink>
+                  ))}
+                </div>
+              </NavigationMenuItem>
 
               {/* Right - Contact */}
-              <div className="grid place-items-center pl-112">
-                <NavigationMenuItem>
-                  <NavigationMenuLink onClick={() => navigate("/ContactMe")}>
-                    <motion.span
-                      className={`relative inline-block text-xl font-bold whitespace-nowrap ${
-                        isActive("/ContactMe") ? "text-cyan-700" : ""
-                      }`}
-                      initial="rest"
-                      whileHover="hover"
-                    >
-                      <span className="relative z-10">Contact Me</span>
-                      {isActive("/ContactMe") ? (
-                        <motion.span
-                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                          variants={underlineVariants}
-                          initial="active"
-                          animate="active"
-                        />
-                      ) : (
-                        <motion.span
-                          className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
-                          variants={underlineVariants}
-                          transition={underlineTransition}
-                        />
-                      )}
-                    </motion.span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </div>
+              <NavigationMenuItem>
+                <NavigationMenuLink onClick={() => navigate("/ContactMe")}>
+                  <motion.span
+                    className={`relative inline-block text-xl font-bold whitespace-nowrap ${
+                      isActive("/ContactMe") ? "text-cyan-700" : ""
+                    }`}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <span className="relative z-10">Contact Me</span>
+                    {isActive("/ContactMe") ? (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        initial="active"
+                        animate="active"
+                      />
+                    ) : (
+                      <motion.span
+                        className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
+                        variants={underlineVariants}
+                        transition={underlineTransition}
+                      />
+                    )}
+                  </motion.span>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
-            <NavigationMenuViewport />
           </NavigationMenu>
         </div>
       </div>
