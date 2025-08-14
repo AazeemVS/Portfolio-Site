@@ -15,12 +15,23 @@ const ProjDescription: React.FC<ProjDescriptionProps> = ({
   className = "",
 }) => {
   return (
-    <Card className={`bg-transparent border-border ${className}`}>
-      <CardHeader className="px-6 pt-6 pb-2">
-        <h2 className="text-2xl font-semibold text-white">About The Project</h2>
+    <Card
+      className={[
+        // full width but keep a comfy reading width
+        "w-full max-w-screen-md md:max-w-3xl mx-auto",
+        // subtle styling
+        "bg-transparent border-border/80 rounded-xl",
+        className,
+      ].join(" ")}
+    >
+      <CardHeader className="px-4 sm:px-6 pt-4 sm:pt-6 pb-1 sm:pb-2">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white leading-tight tracking-tight">
+          About The Project
+        </h2>
       </CardHeader>
-      <CardContent className="px-6 pb-6">
-        <CardDescription className="text-md text-muted-foreground">
+
+      <CardContent className="px-4 sm:px-6 pb-4 sm:pb-6">
+        <CardDescription className="text-sm sm:text-md md:text-2xl text-muted-foreground leading-relaxed break-words hyphens-auto">
           {text}
         </CardDescription>
       </CardContent>
