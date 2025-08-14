@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LinksComingSoon from "@/pages/LinksComingSoon";
 
 import LandingPage from "@/pages/LandingPage";
 import AboutMe from "@/pages/AboutMe";
@@ -41,6 +42,7 @@ export default function App() {
             path="/UnexpectedEscapesInfoPage"
             element={<UnexpectedEscapesInfoPage />}
           ></Route>
+          <Route path="/links-coming-soon" element={<LinksComingSoon />} />
           <Route path="*" element={<NoPage />}></Route>
         </Routes>
       </Router>

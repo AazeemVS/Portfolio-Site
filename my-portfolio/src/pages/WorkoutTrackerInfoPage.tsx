@@ -19,9 +19,9 @@ const WorkoutTrackerInfoPage: React.FC = () => {
     title: "MoveSync: Workout Tracker Application",
     description:
       "MoveSync is a single-page web application built with HTML, CSS, and JavaScript. All workout and push-up data is stored locally in the browser (Local Storage), so users can log, track and visualize their fitness progress. The dashboard shows your most recent sessions plus year-to-date totals, while dedicated forms let you separately enter general workouts and push-up sets. For deeper insights, the Push-Up Analytics view renders interactive bar, line, doughnut and monthly comparison charts using Chart.js, and the Workout Info page lets you filter by workout type",
-    githubUrl: "https://github.com/AazeemVS/Workout-Push-up-Project",
-    liveDemoUrl: "https://yourdemo.com", // Add live demo later
-    websiteUrl: "https://official-website.com",
+    githubUrl: "/links-coming-soon",
+    liveDemoUrl: "/links-coming-soon",
+    websiteUrl: "/links-coming-soon",
 
     features: [
       {
