@@ -5,7 +5,7 @@ const CsharpIcon: React.FC = () => (
     {/* Responsive image container */}
     <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9">
       <img
-        src="../../../images/CSharpIcon.png"
+        src="/images/csharp_logo.png"
         alt="C# Logo"
         className="w-full h-full object-contain"
       />
