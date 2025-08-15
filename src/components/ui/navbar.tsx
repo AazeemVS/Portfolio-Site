@@ -5,7 +5,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { motion } from "framer-motion";
+import { motion, type Variants, type Transition } from "framer-motion";
 import {
   HomeIcon,
   PersonIcon,
@@ -18,16 +18,19 @@ function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const underlineVariants = {
+  // cubic-bezier tuples
+  const EASE_OUT: [number, number, number, number] = [0, 0, 0.2, 1];
+
+  const underlineVariants: Variants = {
     rest: { width: 0 },
     hover: { width: "100%" },
     active: { width: "100%" },
   };
-  const underlineTransition = { duration: 0.3, ease: "easeOut" };
+
+  const underlineTransition: Transition = { duration: 0.3, ease: EASE_OUT };
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Mobile navigation items
   const mobileNavItems = [
     { icon: HomeIcon, path: "/LandingPage", label: "Home" },
     { icon: PersonIcon, path: "/AboutMe", label: "About" },
@@ -35,6 +38,7 @@ function NavBar() {
     { icon: ChatBubbleIcon, path: "/DevBlogs", label: "Blogs" },
     { icon: EnvelopeClosedIcon, path: "/ContactMe", label: "Contact" },
   ];
+
   return (
     <>
       {/* Desktop Navigation */}
@@ -64,7 +68,7 @@ function NavBar() {
                       <motion.span
                         className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
                         variants={underlineVariants}
-                        transition={underlineTransition}
+                        transition={underlineTransition} // <-- tuple ease
                       />
                     )}
                   </motion.span>
@@ -102,7 +106,7 @@ function NavBar() {
                           <motion.span
                             className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
                             variants={underlineVariants}
-                            transition={underlineTransition}
+                            transition={underlineTransition} // <-- tuple ease
                           />
                         )}
                       </motion.span>
@@ -133,7 +137,7 @@ function NavBar() {
                       <motion.span
                         className="absolute bottom-0 left-0 h-0.5 bg-cyan-700"
                         variants={underlineVariants}
-                        transition={underlineTransition}
+                        transition={underlineTransition} // <-- tuple ease
                       />
                     )}
                   </motion.span>

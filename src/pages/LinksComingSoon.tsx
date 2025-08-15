@@ -1,6 +1,6 @@
 // src/pages/LinksComingSoon.tsx
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -28,7 +28,12 @@ const items = [
   },
 ];
 
-const container = {
+// Use Variants typing so TS is happy about transitions
+// ease-out cubic-bezier and linear tuples:
+const EASE_OUT: [number, number, number, number] = [0, 0, 0.2, 1];
+const LINEAR: [number, number, number, number] = [0, 0, 1, 1];
+
+const container: Variants = {
   hidden: { opacity: 0, y: 8 },
   show: {
     opacity: 1,
@@ -36,15 +41,19 @@ const container = {
     transition: {
       when: "beforeChildren",
       duration: 0.35,
-      ease: "easeOut",
+      ease: EASE_OUT, // was "easeOut"
       staggerChildren: 0.06,
     },
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 10 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.35, ease: EASE_OUT }, // was "easeOut"
+  },
 };
 
 export default function LinksComingSoon() {
@@ -78,7 +87,7 @@ export default function LinksComingSoon() {
             className="absolute inset-0 bg-white/40"
             initial={{ x: "-100%" }}
             animate={{ x: "100%" }}
-            transition={{ repeat: Infinity, duration: 1.6, ease: "linear" }}
+            transition={{ repeat: Infinity, duration: 1.6, ease: LINEAR }} // was "linear"
           />
         </motion.div>
 
@@ -127,8 +136,8 @@ export default function LinksComingSoon() {
                     transition={{
                       repeat: Infinity,
                       duration: 1.8,
-                      ease: "linear",
-                    }}
+                      ease: LINEAR,
+                    }} // was "linear"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-[11px] uppercase tracking-wide text-zinc-400">
