@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+const EASE_IN_OUT: [number, number, number, number] = [0.4, 0, 0.2, 1];
 //const DevBlogs: React.FC = () => (
 //<>
 // <Card className="border-none mb-8">
@@ -55,7 +55,7 @@ const DevBlogs: React.FC = () => {
       transition: {
         duration: 8,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: EASE_IN_OUT,
       },
     },
   };
@@ -67,7 +67,7 @@ const DevBlogs: React.FC = () => {
       transition: {
         duration: 4,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: EASE_IN_OUT,
       },
     },
   };
