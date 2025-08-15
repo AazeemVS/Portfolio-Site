@@ -1,12 +1,8 @@
 import React from "react";
 
-// NextJSIcon component displays the Next.js logo (SVG) with a label
 const NextJSIcon: React.FC = () => (
-  // Container aligns icon and text horizontally
-  <div className="flex flex-row w-full justify-start items-center gap-4">
-    {/* Icon wrapper with fixed size */}
-    <div className="w-8 h-8">
-      {/* SVG for the Next.js logo */}
+  <div className="flex flex-row w-full justify-start items-center gap-2 sm:gap-3 md:gap-4">
+    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8">
       <svg
         viewBox="0 0 256 256"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,9 +16,7 @@ const NextJSIcon: React.FC = () => (
         </g>
       </svg>
     </div>
-
-    {/* Label next to the icon */}
-    <h2 className="text-white">Next.js</h2>
+    <h2 className="text-white text-sm sm:text-base md:text-lg">Next.js</h2>
   </div>
 );
 

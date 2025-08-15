@@ -1,16 +1,18 @@
 import React from "react";
 
-// CPlusPlusIcon component displays a C++ logo with a label
 const CPPIcon: React.FC = () => (
-  // Container aligns icon and text horizontally
-  <div className="flex flex-row w-full justify-start items-center gap-4">
-    {/* Icon wrapper with fixed size */}
-    <div className="w-8 h-8">
-      <img src="../../../images/CPlusPlusIcon.png" alt="C++ Logo Image" />
+  <div className="flex flex-row w-full justify-start items-center gap-2 sm:gap-3 md:gap-4">
+    {/* Responsive image container */}
+    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9">
+      <img
+        src="../../../images/CPlusPlusIcon.png"
+        alt="C++ Logo"
+        className="w-full h-full object-contain"
+      />
     </div>
 
-    {/* Label next to the icon */}
-    <h2 className="text-white">C++</h2>
+    {/* Responsive text */}
+    <h2 className="text-white text-sm sm:text-base md:text-lg">C++</h2>
   </div>
 );
 

@@ -2,16 +2,15 @@
 import React from "react";
 import type { ReactElement } from "react";
 import SkillBox from "@/components/ui/skillBox";
-import NextJSIcon from "@/components/ui/icons/nextJSProjIcon";
 import JSIcon from "@/components/ui/icons/jsProjIcon";
 import AngularIcon from "@/components/ui/icons/angularProjIcon";
 
 interface ProjectTemplateProps {
-  title: string; // Project title text
-  description: string; // Short description text
-  backgroundImg: string; // URL of the background image
-  onClick?: () => void; // Click handler for the card
-  icons?: ReactElement[]; // Array of icon elements to display
+  title: string;
+  description: string;
+  backgroundImg: string;
+  onClick?: () => void;
+  icons?: ReactElement[];
 }
 
 const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
@@ -19,42 +18,36 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   description,
   backgroundImg,
   onClick,
-
-  // Default icons if none are provided
-  icons = [
-    <NextJSIcon key="nextjs" />,
-    <JSIcon key="js" />,
-    <AngularIcon key="ng" />,
-  ],
+  icons = [<JSIcon key="js" />, <AngularIcon key="ng" />],
 }) => (
-  // Wrapper which centers the project card on the page
-  <div className="flex items-center justify-center mt-20">
+  <div className="flex items-center justify-center mt-10 md:mt-20 w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mx-auto">
     <div
       onClick={onClick}
       className="
         relative
         group
-        w-1/2 h-118
+        w-full
+        aspect-video
         overflow-hidden
-        rounded-lg
-        border border-[#27272a]
+        rounded-xl
+        border-2 border-solid border-[#27272a]
         bg-[#1f1f1f]
-        shadow-lg
+        shadow-sm
         cursor-pointer
       "
     >
-      {/* Background image */}
+      {/* Background image - now using cover instead of contain */}
       <div
         className="
           absolute inset-0
-          bg-contain bg-no-repeat bg-center
+          bg-cover bg-no-repeat bg-center
           transform transition-transform duration-300 ease-in-out
           group-hover:scale-105
         "
         style={{ backgroundImage: `url(${backgroundImg})` }}
       />
 
-      {/* Bottom 20% black gradient overlay */}
+      {/* Bottom gradient overlay */}
       <div
         className="
           absolute
@@ -67,31 +60,30 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       />
 
       {/* Content layer */}
-      <div className="relative z-10 p-6 flex flex-col justify-end h-full">
-        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-200 text-xl font-semibold">
+      <div className="relative z-10 p-4 sm:p-6 flex flex-col justify-end h-full">
+        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-white text-lg sm:text-xl md:text-2xl font-semibold">
           {title}
         </p>
-        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-400 mb-1 font-semibold">
+        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-500 mb-1 text-sm sm:text-base font-semibold">
           {description}
         </p>
 
-        <div className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 flex gap-4 mb-4">
+        <div className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 flex gap-2 sm:gap-4 mb-4">
           {icons.map((icon, i) => (
             <SkillBox key={i} icon={icon} />
           ))}
         </div>
 
-        {/* Button which appears on hover which allows the user to click onto a sub page about the project*/}
+        {/* Learn more button */}
         <button
           className="
             absolute bottom-4 left-4
             opacity-0 translate-y-2
             group-hover:opacity-100 group-hover:translate-y-0
             transition-all duration-300
-            text-xs bg-white text-gray-600
-            px-4 py-2 rounded-lg border border-black
+            text-xs sm:text-sm bg-white text-gray-600
+            px-3 sm:px-4 py-1 sm:py-2 rounded-lg border border-black
             font-semibold hover:bg-slate-300
-            ml-[1%]
           "
         >
           Learn more →

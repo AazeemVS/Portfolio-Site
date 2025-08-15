@@ -11,12 +11,12 @@ import GitIcon from "@/components/ui/icons/gitIcon";
 import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
 import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
 import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
-import CSharpIcon from "@/components/ui/icons/cppIcon";
+import CSharpIcon from "@/components/ui/icons/csharpIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import FigmaIcon from "@/components/ui/icons/figmaIcon";
 
 const StaticSkillsScroller: React.FC = () => {
-  // Group icons into rows similar to your animated version
+  // Group icons into rows of 5
   const iconGroups = [
     [HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon],
     [ViteIcon, GitIcon, NodeJSIcon, JavaIcon, TailwindCSSIcon],
@@ -24,16 +24,16 @@ const StaticSkillsScroller: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 px-4 sm:px-6">
       {iconGroups.map((icons, groupIndex) => (
         <div
           key={`group-${groupIndex}`}
-          className="flex justify-center gap-4 flex-wrap p-8"
+          className="flex justify-center flex-wrap gap-2 sm:gap-3 md:gap-4 py-2 sm:py-4"
         >
           {icons.map((Icon, iconIndex) => (
             <div
               key={`icon-${groupIndex}-${iconIndex}`}
-              className="p-2 bg-[#1e293b] rounded-lg hover:bg-[#334155] transition-colors"
+              className="p-2 sm:p-3 bg-[#1e293b] rounded-lg hover:bg-[#334155] transition-colors flex-shrink-0"
             >
               <Icon />
             </div>

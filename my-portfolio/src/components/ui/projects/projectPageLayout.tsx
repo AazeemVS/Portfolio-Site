@@ -38,11 +38,21 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
   websiteUrl,
 }) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
       {/* Project Header */}
-      <Card className="mb-8 bg-transparent border-none shadow-none">
-        <CardHeader>
-          <CardTitle className="text-3xl font-bold text-white">
+      <Card className="mb-5 sm:mb-8 lg:mb-10 bg-transparent border-none shadow-none px-4 sm:px-0">
+        <CardHeader className="px-0">
+          <CardTitle
+            className="
+        text-xl sm:text-3xl lg:text-4xl
+        font-bold text-white
+        leading-tight tracking-tight
+        text-center sm:text-left
+        break-words
+        max-w-prose sm:max-w-none
+        mx-auto sm:mx-0
+      "
+          >
             {title}
           </CardTitle>
         </CardHeader>
@@ -51,49 +61,57 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
       <ProjDescription text={description} />
 
       {/* Key Features Section */}
-      <section className="mb-12">
+      <section className="mb-8 sm:mb-10 lg:mb-12">
         <KeyFeatures items={features} />
       </section>
 
       {/* Project Buttons */}
-      <div className="mb-12 flex justify-center gap-4">
+      <div className="mb-8 sm:mb-10 lg:mb-12 flex flex-wrap justify-center gap-3 sm:gap-4">
         <ProjBtns
           githubUrl={githubUrl}
           liveDemoUrl={liveDemoUrl}
           websiteUrl={websiteUrl}
         />
       </div>
-
-      {/* Carousel Section */}
       {slides.length > 0 && (
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">
+        <section className="mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-6 text-center">
             Application Screenshots
           </h2>
-          <div className="flex justify-center">
-            <Carousel className="w-full max-w-5xl">
+
+          {/* Mobile hint */}
+          <p className="sm:hidden text-center text-xs text-gray-400 mb-3">
+            Swipe to view →
+          </p>
+
+          <div className="flex justify-center px-2 sm:px-0">
+            <Carousel className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-5xl">
               <CarouselContent>
                 {slides.map((slide, index) => (
                   <CarouselItem key={index}>
-                    <div className="p-2">
-                      <div className="flex items-center justify-center h-[500px]">
+                    <div className="p-1 sm:p-2">
+                      <div className="flex items-center justify-center h-[200px] xs:h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px]">
                         <img
                           src={slide.img}
                           alt={`Project Preview ${index + 1}`}
-                          className="h-full w-auto object-contain rounded-md border border-[#27272a] shadow-lg"
+                          className="h-full w-auto max-w-full object-contain rounded-md border border-[#27272a] shadow-lg"
                         />
                       </div>
-                      <Card className="mt-4 w-8/10 bg-transparent border-none">
-                        <CardContent className="p-4 text-center">
-                          <p className="text-gray-300">{slide.caption}</p>
+                      <Card className="mt-2 sm:mt-3 lg:mt-4 w-full sm:w-10/12 mx-auto bg-transparent border-none">
+                        <CardContent className="p-2 sm:p-3 lg:p-4 text-center">
+                          <p className="text-sm sm:text-base text-gray-300">
+                            {slide.caption}
+                          </p>
                         </CardContent>
                       </Card>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="h-12 w-12 -left-16" />
-              <CarouselNext className="h-12 w-12 -right-16" />
+
+              {/* Desktop buttons */}
+              <CarouselPrevious className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -left-4 sm:-left-8 md:-left-12" />
+              <CarouselNext className="hidden sm:flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 -right-4 sm:-right-8 md:-right-12" />
             </Carousel>
           </div>
         </section>
