@@ -4,7 +4,7 @@
 This is my personal developer portfolio, created to showcase my projects, skills, and professional experience as a web developer.  
 The site features a clean, modern design, smooth animations, and a responsive layout for an optimal viewing experience on any device.
 
-**Live Site:** [https://www.aazeemvaidyashaikh.com/](https://www.aazeemvaidyashaikh.com/)
+**Live Site:** <a href="https://www.aazeemvaidyashaikh.com/" target="_blank">https://www.aazeemvaidyashaikh.com/</a>
 
 ---
 
