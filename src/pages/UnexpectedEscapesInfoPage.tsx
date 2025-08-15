@@ -3,10 +3,10 @@ import Footer from "@/components/ui/footer";
 {
   /* add imports for images here*/
 }
-import homePage from "@/../images/Unexpected_Escapes_homeImg.png";
-import imgDetails from "@/../images/image_Details.png";
-import imgSelection from "@/../images/image_Selection.png";
-import loadingFavImage from "@/../images/loading_Favorite_Image.png";
+import homePage from "@/../public/images/Unexpected_Escapes_homeImg.png";
+import imgDetails from "@/../public/images/image_Details.png";
+import imgSelection from "@/../public/images/image_Selection.png";
+import loadingFavImage from "@/../public/images/loading_Favorite_Image.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
   BarChartIcon,

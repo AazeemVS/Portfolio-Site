@@ -3,10 +3,10 @@ import React from "react";
 import Footer from "@/components/ui/footer";
 
 //Images
-import homePageImg from "@/../images/CF-home.png";
-import Level1Img from "@/../images/CF-lvl1.png";
-import Level2Img from "@/../images/CF_Lvl2.png";
-import Level3Img from "@/../images/CF_Lvl3.png";
+import homePageImg from "@/../public/images/CF-home.png";
+import Level1Img from "@/../public/images/CF-lvl1.png";
+import Level2Img from "@/../public/images/CF_Lvl2.png";
+import Level3Img from "@/../public/images/CF_Lvl3.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
   KeyboardIcon,

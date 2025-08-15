@@ -1,5 +1,5 @@
-import SBESCIImg from "@/../images/SBESCI_site_pic.png";
-import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
+import SBESCIImg from "@/../public/images/SBESCI_site_pic.png";
+import WorkoutAppImg from "@/../public/images/WorkoutAppHomePage.png";
 import { useNavigate } from "react-router-dom";
 import ProjectTemplate from "@/components/ui/projects/projectTemplate";
 import HTMLIcon from "@/components/ui/icons/HTMLIcon";

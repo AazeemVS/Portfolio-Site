@@ -11,10 +11,10 @@ import JSIcon from "@/components/ui/icons/jsIcon";
 import { useNavigate } from "react-router-dom";
 
 //Images
-import SBESCIImg from "@/../images/SBESCI_site_pic.png";
-import CatchFrenzyImg from "@/../images/Catch_Frenzy_Site_Pic2.png";
-import WorkoutAppImg from "@/../images/WorkoutAppHomePage.png";
-import UnexpectedEscapesHomePage from "@/../images/Unexpected_Escapes_homeImg.png";
+import SBESCIImg from "@/../public/images/SBESCI_site_pic.png";
+import CatchFrenzyImg from "@/../public/images/Catch_Frenzy_Site_Pic2.png";
+import WorkoutAppImg from "@/../public/images/WorkoutAppHomePage.png";
+import UnexpectedEscapesHomePage from "@/../public/images/Unexpected_Escapes_homeImg.png";
 
 const Projects: React.FC = () => {
   const navigate = useNavigate();
