@@ -42,7 +42,7 @@ export default function App() {
             path="/UnexpectedEscapesInfoPage"
             element={<UnexpectedEscapesInfoPage />}
           ></Route>
-          <Route path="/links-coming-soon" element={<LinksComingSoon />} />
+          <Route path="/LinksComingSoon" element={<LinksComingSoon />} />
           <Route path="*" element={<NoPage />}></Route>
         </Routes>
       </Router>
