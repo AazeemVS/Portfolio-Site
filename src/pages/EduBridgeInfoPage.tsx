@@ -24,9 +24,9 @@ const EduBridgeInfoPage: React.FC = () => {
     title: "EduBridge: Non-Profit Donation Platform",
     description:
       "EduBridge is a single-page web application built with Angular, HTML, CSS, Java, and TypeScript that connects donors with teachers in need of classroom supplies. It uses OAuth for role-based authentication (helpers, teachers, admins) and lets teachers submit item requests that helpers can fulfill in full or in part. All data is stored in JSON files and served via a backend API, with unit tests running in a Docker-based CI/CD pipeline to ensure quality. The responsive design adapts seamlessly across devices, and the team followed Agile Scrum, running 2–4 week sprints with planning poker, daily stand-ups, sprint planning, and retrospectives.",
-    githubUrl: "/../LinksComingSoon",
+    githubUrl: "/LinksComingSoon",
     liveDemoUrl: "/LinksComingSoon",
-    websiteUrl: "../LinksComingSoon",
+    websiteUrl: "/LinksComingSoon",
 
     features: [
       {

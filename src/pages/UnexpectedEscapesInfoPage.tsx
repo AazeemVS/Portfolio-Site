@@ -25,9 +25,9 @@ const UnexpectedEscapesInfoPage: React.FC = () => {
     title: "Unexpected Escapes: Random Image Generator",
     description:
       "Unexpected Escapes is a responsive single-page web app built with HTML, CSS, and vanilla JavaScript that integrates the Lorem Picsum API to fetch random images at user-specified dimensions and supports multiple endpoints—including static, blurred, grayscale, and “list” modes. Users can customize height and width for each request, browse detailed metadata (artist, actual dimensions, and a direct source link), save personal favorites to local storage, and clear their favorites list at any time; under the hood, it uses the Fetch API with async/await, and the fully responsive interface adapts seamlessly across mobile and desktop, for a smooth discovery experience.",
-    githubUrl: "/links-coming-soon",
-    liveDemoUrl: "/links-coming-soon",
-    websiteUrl: "/links-coming-soon",
+    githubUrl: "/LinksComingSoon",
+    liveDemoUrl: "/LinksComingSoon",
+    websiteUrl: "/LinksComingSoon",
 
     features: [
       {

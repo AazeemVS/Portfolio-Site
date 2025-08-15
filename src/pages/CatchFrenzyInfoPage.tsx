@@ -20,9 +20,9 @@ const CatchFrenzyInfoPage: React.FC = () => {
     title: "Catch Frenzy: An Intense 2D Browser Game.",
     description:
       "Catch Frenzy is a browser-based arcade game built with HTML, CSS, vanilla JavaScript, and PIXI.js for rendering. Players control a basket man (the “character”) to catch falling fruits while avoiding bombs. The game features three escalating levels—each with faster spawn rates, shorter time limits, and higher bomb-spawn chances—plus HP and score tracking, a survival mode, and smooth keyboard controls (Arrow keys or A/D). Assets are loaded via PIXI’s asset bundle system, using ES6 classes. The UI (start screen, controls page, game scene, and game-over screen) is managed with PIXI containers and text styles. A looping cloud background and floating fruit decor animate behind the canvas for extra polish.",
-    githubUrl: "/links-coming-soon",
-    liveDemoUrl: "/links-coming-soon",
-    websiteUrl: "/links-coming-soon",
+    githubUrl: "/LinksComingSoon",
+    liveDemoUrl: "/LinksComingSoon",
+    websiteUrl: "/LinksComingSoon",
     features: [
       {
         icon: <KeyboardIcon width={24} height={24} />,
