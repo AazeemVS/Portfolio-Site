@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "@/components/ui/scrollToTop";
 import LinksComingSoon from "@/pages/LinksComingSoon";
-
 import LandingPage from "@/pages/LandingPage";
 import AboutMe from "@/pages/AboutMe";
 import NoPage from "@/pages/NoPage";
@@ -17,6 +17,7 @@ export default function App() {
   return (
     <>
       <Router>
+        <ScrollToTop behavior="smooth" />
         <NavBar />
         <Routes>
           <Route index element={<LandingPage />}></Route>
