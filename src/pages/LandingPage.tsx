@@ -4,12 +4,12 @@ import { Card } from "@/components/ui/card";
 import Footer from "@/components/ui/footer";
 import Experience from "@/components/ui/experience";
 import LandingPageSkillsScroller from "@/components/ui/landingPageSkillsSection";
-import AbouttMe from "@/components/ui/about-me-card";
+import AboutMe from "@/components/ui/about-me-card";
 import LandingPageProjects from "@/components/ui/landingPageProjects";
 const LandingPage: React.FC = () => {
   return (
     <>
-      <AbouttMe></AbouttMe>
+      <AboutMe></AboutMe>
       <Experience></Experience>
 
       <LandingPageSkillsScroller />
