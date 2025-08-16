@@ -25,15 +25,13 @@ const Experience = () => (
             <div className="absolute left-2 sm:left-2 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-cyan-500 rounded-full -translate-x-1/2 translate-y-2.5 z-10"></div>
             <div className="font-medium text-cyan-500 mb-1 sm:mb-0 text-sm sm:text-base">
               <motion.a
-                href="https://www.rit.edu/computing/school-interactive-games-and-media/"
+                href="https://www.linkedin.com/company/nicky-nice-games/"
                 target="_blank"
                 className="relative inline-block font-medium text-cyan-500 mb-1 sm:mb-0"
                 whileHover="hover"
                 initial="rest"
               >
-                <span className="relative z-10">
-                  RIT School of Interactive Games and Media
-                </span>
+                <span className="relative z-10">Nicky Nice Games</span>
                 <motion.span
                   className="absolute bottom-0 left-0 h-0.5 bg-cyan-500"
                   variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
@@ -49,8 +47,15 @@ const Experience = () => (
             </div>
           </div>
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
-            I worked as a front end web developer to construct a website that
-            promoted the game our team developed.
+            <p>
+              {" "}
+              I worked as a Junior Web Developer Intern at Nicky Nice Games,
+              where I worked on an agile team to build a promotional website for
+              our video game startup. I focused on responsive layouts,
+              interactive UI components, and optimizing the codebase with
+              reusable components, while also mentoring teammates in Tailwind
+              CSS and React.
+            </p>
           </div>
         </div>
 
@@ -86,11 +91,15 @@ const Experience = () => (
               Front End Web Developer
             </div>
             <div className="text-gray-400 text-xs sm:text-sm">
-              September, 2024 – May, 2024
+              September, 2024 – May, 2025
             </div>
           </div>
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
-            Worked on a small agile scrum team to modernize an outdated website.
+            I worked as a Front End Web Developer at Grid 1 Solutions, where I
+            helped modernize and maintain a 10-page utilities application for
+            internal users. I focused on updating the site’s styling and
+            responsiveness while also migrating Xamarin Forms apps to .NET MAUI
+            to streamline infrastructure and reduce maintenance.{" "}
           </div>
         </div>
 
@@ -117,8 +126,11 @@ const Experience = () => (
             </div>
           </div>
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
-            I worked as a front end web developer to construct a website that
-            promoted the game our team developed.
+            I worked as a Gameplay Programmer on a 9-person agile scrum team,
+            specializing in enemy AI. I implemented A pathfinding, state
+            machines, and varied attack patterns in Unity with C#, creating
+            challenging and unpredictable enemy encounters that added depth and
+            variance to our game.
           </div>
         </div>
       </div>
