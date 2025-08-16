@@ -80,16 +80,18 @@ const AbtMe = () => {
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
             <p className="text-gray-400 text-sm sm:text-base">
-              Seattle WA, Falls Church VA, Cambridge MA
+              <p className="text-gray-400 text-sm sm:text-base">
+                Housing available in Falls Church, VA & Cambridge, MA
+              </p>
             </p>
           </div>
         </CardDescription>
       </CardHeader>
       <CardContent>
         <p className="text-sm sm:text-base">
-          Hey I'm Aazeem, I'm a 20 year old full stack web, software, and game
-          developer. I have been programming for 3 years, and I enjoy expressing
-          my creativity and bringing ideas to life online.
+          Hey, I’m Aazeem. I'm a full stack developer passionate about web,
+          software, and game development. I love blending human-centered design
+          with coding to create engaging, user-friendly experiences.
         </p>
       </CardContent>
     </Card>
