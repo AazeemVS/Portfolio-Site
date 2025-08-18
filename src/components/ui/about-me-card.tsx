@@ -80,9 +80,7 @@ const AbtMe = () => {
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
             <p className="text-gray-400 text-sm sm:text-base">
-              <p className="text-gray-400 text-sm sm:text-base">
-                Housing available in Falls Church, VA & Cambridge, MA
-              </p>
+              Housing available in Falls Church, VA & Cambridge, MA
             </p>
           </div>
         </CardDescription>
