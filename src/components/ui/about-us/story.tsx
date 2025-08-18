@@ -40,12 +40,13 @@ const Story = () => {
                 Beginnings
               </h1>
               <p className="text-white text-sm md:text-base font-semibold">
-                I've been playing video games since I was a kid, but around age
-                15 (in 2021, during quarantine) I started noticing glitches and
-                errors. Madden was my go-to, and I'd see players fail to
-                register certain moves or weird interactions causing funny bugs.
-                I couldn't help but wonder why those bugs happened, and dreamt
-                about how I might fix them to make my favorite game even better.
+                Since I was a kid, video games weren’t just entertainment, they
+                sparked my curiosity. Around 2021, during quarantine, I started
+                noticing glitches and unexpected bugs in my favorite game
+                Madden. Instead of ignoring them, I found myself asking why they
+                happened and imagining how I could fix them. That curiosity
+                planted the seed that I could be more than just a player, I
+                could be a creator and problem solver.
               </p>
             </div>
           </motion.div>
@@ -147,11 +148,12 @@ const Story = () => {
                 First Steps
               </h1>
               <p className="text-white text-sm md:text-base font-semibold">
-                Once quarantine ended, I dove into coding at school. I took an
-                intro course, then AP Computer Science Principles and a robotics
-                class in my senior year, using Python and MIT App Inventor.
-                Those classes and extracurriculars cemented my love for
-                programming.
+                Once school reopened, I dove headfirst into coding. I took my
+                first intro coding class, then AP Computer Science Principles,
+                and even explored robotics in my senior year. I explored tools
+                like Python and MIT App Inventor, and discovered the power of
+                programming. These experiences weren’t just classes; they lit a
+                fire in me to keep pushing further, honing my skills.
               </p>
             </div>
           </motion.div>
@@ -169,9 +171,11 @@ const Story = () => {
                 Pre-College Summer
               </h1>
               <p className="text-white text-sm md:text-base font-semibold">
-                The summer before college, I tackled online CS courses from MIT
-                and Harvard to sharpen my skills. Both used Python, and they
-                gave me confidence heading into my first year.
+                The summer before college, I couldn’t wait for classes to begin.
+                I challenged myself with online CS courses from MIT and Harvard,
+                both centered on Python. The classes weren’t easy, but they gave
+                me confidence and taught me that with enough drive and
+                self-discipline, I could pick up any new skill and excel in it.
               </p>
             </div>
           </motion.div>
@@ -271,11 +275,14 @@ const Story = () => {
             <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">College</h1>
               <p className="text-white text-sm md:text-base font-semibold">
-                In my second year, I took an intro to web development class and
-                fell in love with HTML, CSS, and JavaScript. From there, I built
-                personal projects and dove deeper, taking Software Engineering
-                courses where I learned Java, TypeScript, and Angular, and
-                explored full-stack web development.
+                By my second year in college, I was ready to branch out. I fell
+                in love with web development, HTML, CSS, and
+                JavaScript/TypeScript opened up a new world of creativity for
+                me. From there, I built personal projects, tackled Software
+                Engineering courses in Java, TypeScript, and Angular, and began
+                to see the whole picture of full-stack development. Every new
+                skill further equipped me with the means to bring my ideas to
+                life.
               </p>
             </div>
           </motion.div>
@@ -291,9 +298,12 @@ const Story = () => {
             <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">Present</h1>
               <p className="text-white text-sm md:text-base font-semibold">
-                Last semester I wrapped up rigorous Software Engineering and OOP
-                classes, and I've been experimenting with HTML, Tailwind CSS,
-                React, and shadcn/ui to level up my web-dev skills even more.
+                Today, I’m pushing myself further than ever. I’ve built a strong
+                foundation in Software Engineering and OOP, and now I’m delving
+                into modern tools like React, Tailwind CSS, and shadcn/ui. I
+                don’t just want to code; I want to create, problem-solve, and
+                keep learning. Every project I build is a step toward the kind
+                of developer I aspire to be.
               </p>
             </div>
           </motion.div>
