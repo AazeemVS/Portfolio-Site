@@ -11,7 +11,7 @@ import JSIcon from "@/components/ui/icons/jsIcon";
 import { useNavigate } from "react-router-dom";
 
 //Images
-import SBESCIImg from "@/../public/images/SBESCI_site_pic.png";
+import EduBridgeImg from "@/../public/images/SBESCI_site_pic.png";
 import CatchFrenzyImg from "@/../public/images/Catch_Frenzy_Site_Pic2.png";
 import WorkoutAppImg from "@/../public/images/WorkoutAppHomePage.png";
 import UnexpectedEscapesHomePage from "@/../public/images/Unexpected_Escapes_homeImg.png";
@@ -27,16 +27,16 @@ const Projects: React.FC = () => {
         </h2>
       </Card>
       <ProjectTemplate
-        title="Workout Tracker Application"
-        description="An workout and pushup tracker application."
+        title="MoveSync"
+        description="MoveSync is a fitness tracker that lets you log workouts and push-ups, then see your progress come to life with interactive charts and statistics."
         backgroundImg={WorkoutAppImg}
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         onClick={() => navigate("/WorkoutTrackerInfoPage")}
       />
       <ProjectTemplate
         title="EduBridge"
-        description="An educational platform connecting learners and mentors in real time."
-        backgroundImg={SBESCIImg}
+        description="EduBridge is a web application that connects donors with teachers who need classroom supplies, making it easy to request and fulfill items."
+        backgroundImg={EduBridgeImg}
         icons={[
           <AngularIcon key="1" />,
           <TSIcon key="2" />,
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       />
       <ProjectTemplate
         title="Unexpected Escapes"
-        description="An educational platform connecting learners and mentors in real time."
+        description="Unexpected Escapes is a fun web appllication that lets users explore random images and save your favorites for later."
         backgroundImg={UnexpectedEscapesHomePage}
         // override the defaults if you like, or omit this prop to get the 3-icon default
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
       />
       <ProjectTemplate
         title="Catch Frenzy"
-        description="An educational platform connecting learners and mentors in real time."
+        description="Catch Frenzy is a fast-paced browser game where you dodge bombs and grab as many falling fruits as you can before time runs out."
         backgroundImg={CatchFrenzyImg}
         // override the defaults if you like, or omit this prop to get the 3-icon default
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
