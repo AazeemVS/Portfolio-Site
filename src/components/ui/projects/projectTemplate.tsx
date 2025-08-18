@@ -64,7 +64,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-white text-lg sm:text-xl md:text-2xl font-semibold">
           {title}
         </p>
-        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-500 mb-1 text-sm sm:text-base font-semibold">
+        <p className="transform translate-y-2 group-hover:-translate-y-6 transition-all duration-300 text-gray-300 mb-1 text-sm sm:text-base font-semibold">
           {description}
         </p>
 
