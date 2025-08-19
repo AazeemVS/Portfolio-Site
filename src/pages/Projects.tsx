@@ -11,10 +11,10 @@ import JSIcon from "@/components/ui/icons/jsIcon";
 import { useNavigate } from "react-router-dom";
 
 //Images
-import EduBridgeImg from "@/../public/images/SBESCI_site_pic.png";
-import CatchFrenzyImg from "@/../public/images/Catch_Frenzy_Site_Pic2.png";
-import WorkoutAppImg from "@/../public/images/WorkoutAppHomePage.png";
-import UnexpectedEscapesHomePage from "@/../public/images/Unexpected_Escapes_homeImg.png";
+import EduBridgeImg from "/images/SBESCI_site_pic.png";
+import CatchFrenzyImg from "/images/Catch_Frenzy_Site_Pic2.png";
+import WorkoutAppImg from "/images/WorkoutAppHomePage.png";
+import UnexpectedEscapesHomePage from "/images/Unexpected_Escapes_homeImg.png";
 
 const Projects: React.FC = () => {
   const navigate = useNavigate();
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       />
       <ProjectTemplate
         title="Unexpected Escapes"
-        description="Unexpected Escapes is a fun web appllication that lets users explore random images and save your favorites for later."
+        description="Unexpected Escapes is a fun web application that lets users explore random images and save your favorites for later."
         backgroundImg={UnexpectedEscapesHomePage}
         // override the defaults if you like, or omit this prop to get the 3-icon default
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
