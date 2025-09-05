@@ -25,12 +25,11 @@ const StoryMobile = () => {
             <h1 className="text-white text-xl font-medium py-2">Beginnings</h1>
             <p className="text-white text-sm font-semibold">
               Since I was a kid, video games weren’t just entertainment, they
-              sparked my curiosity. Around 2021, during quarantine, I started
-              noticing glitches and unexpected bugs in my favorite game Madden.
-              Instead of ignoring them, I found myself asking why they happened
-              and imagining how I could fix them. That curiosity planted the
-              seed that I could be more than just a player, I could be a creator
-              and problem solver.
+              sparked my curiosity. During 2021, I started noticing glitches and
+              unexpected bugs in my favorite game Madden. Instead of ignoring
+              them, I found myself asking why they happened and imagining how I
+              could fix them. That curiosity planted the seed that I could be
+              more than just a player, I could be a creator and problem solver.
             </p>
           </div>
         </div>
