@@ -49,12 +49,11 @@ const Experience = () => (
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
             <p>
               {" "}
-              I worked as a Junior Web Developer Intern at Nicky Nice Games,
-              where I worked on an agile team to build a promotional website for
-              our video game startup. I focused on responsive layouts,
-              interactive UI components, and optimizing the codebase with
-              reusable components, while also mentoring teammates in Tailwind
-              CSS and React.
+              At Nicky Nice Games I worked on an agile team, I built a
+              promotional website for a video game startup. My focus was on
+              responsive layouts, interactive UI components, and optimizing the
+              codebase with reusable components. Additionally I mentored
+              teammates in Tailwind CSS and React to accelerate development.
             </p>
           </div>
         </div>
@@ -95,11 +94,11 @@ const Experience = () => (
             </div>
           </div>
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
-            I worked as a Front End Web Developer at Grid 1 Solutions, where I
-            helped modernize and maintain a 10-page utilities application for
-            internal users. I focused on updating the site’s styling and
-            responsiveness while also migrating Xamarin Forms apps to .NET MAUI
-            to streamline infrastructure and reduce maintenance.{" "}
+            At Grid 1 Solutions, I contributed to modernizing and maintaining a
+            10-page utilities application for internal users. I updated the
+            site’s styling and responsiveness while also migrating Xamarin Forms
+            apps to .NET MAUI, streamlining infrastructure and reducing
+            maintenance.
           </div>
         </div>
 
@@ -126,11 +125,11 @@ const Experience = () => (
             </div>
           </div>
           <div className="text-slate-300 text-sm sm:text-base timeline-content">
-            I worked as a Gameplay Programmer on a 9-person agile scrum team,
-            specializing in enemy AI. I implemented A pathfinding, state
-            machines, and varied attack patterns in Unity with C#, creating
-            challenging and unpredictable enemy encounters that added depth and
-            variance to our game.
+            As part of a 9-person agile scrum team, I specialized in enemy AI
+            programming. I implemented A* pathfinding, state machines, and
+            varied attack patterns in Unity with C#, creating challenging and
+            unpredictable enemy encounters that added depth and variance to the
+            game.
           </div>
         </div>
       </div>
