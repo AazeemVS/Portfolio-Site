@@ -7,10 +7,11 @@ import CSSIcon from "@/components/ui/icons/CSSIcon";
 import JSIcon from "@/components/ui/icons/jsIcon";
 import TSIcon from "@/components/ui/icons/tsIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
+
 function LandingPageProjects() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <ProjectTemplate
         title="Workout Tracker Application"
         description="An workout and pushup tracker application."
@@ -30,7 +31,20 @@ function LandingPageProjects() {
         ]}
         onClick={() => navigate("/EduBridgeInfoPage")}
       />
+
+      <div className="flex justify-center mt-4">
+        <div className="group relative">
+          <button
+            onClick={() => navigate("/ProjectsPage")}
+            className=" text-3xl font-bold relative text-gray-300 hover:text-gray-100 transition-colors duration-300 hover:cursor-pointer px-4 py-2"
+          >
+            View More Projects
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
+
 export default LandingPageProjects;
