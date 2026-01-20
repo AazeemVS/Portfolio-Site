@@ -13,9 +13,7 @@ const AboutMeCard: React.FC = () => {
             passionate about creating interactive experiences. I'm based in
             Falls Church, VA and Boston, MA. I hold housing in both cities, so
             I'm ready to jump in wherever an opportunity takes me. Currently,
-            I'm working as a Front-End Developer at Grid 1 Solutions, where I
-            construct and style UI components to build user-friendly
-            applications.
+            I'm a junior at RIT and an incoming CTS intern at Charles Schwab.
           </p>
         </div>
 
@@ -40,12 +38,11 @@ const AboutMeCard: React.FC = () => {
             During my internship at Nicky Nice Games, I worked on a team to
             construct a promotional website for a video game start up company.
             At Grid 1 Solutions, I worked on the restoration and modernization
-            of a legacy website, revamping its look, improving performance, and
-            integrating new content management workflows. I've also been on the
-            Dean's List every semester at RIT, where I'm a rising junior
+            of a legacy website, improving performance. I've also been on the
+            Dean's List every semester at RIT, where I'm a rising senior
             studying Software Engineering and Game Design & Development. Last
-            summer, I completed three AI courses on Coursera taught by Andrew Ng
-            to deepen my understanding of machine learning pipelines.
+            summer, I constructed this personal website to deepen my
+            understanding of web development.
           </p>
         </div>
 
@@ -55,11 +52,10 @@ const AboutMeCard: React.FC = () => {
             My Approach & Passion
           </h3>
           <p className="mt-1 sm:mt-2 text-white text-sm sm:text-base">
-            I thrive in collaborative, Agile teams and love workng with others
-            to tackle complex challenges. I believe the best products come from
-            combining thoughtful design with clean, maintainable code. Whether
-            I'm styling a component or debugging a tricky back-end issue, I give
-            100% to deliver polished, reliable solutions.
+            I thrive in collaborative, Agile teams and love workng with peers to
+            tackle complex challenges. I believe the best products come from
+            combining design with clean, maintainable code. Whether I'm styling
+            a component or debugging a back-end error.
           </p>
         </div>
 
@@ -70,8 +66,8 @@ const AboutMeCard: React.FC = () => {
           </h3>
           <p className="mt-1 sm:mt-2 text-white text-sm sm:text-base">
             When I'm not programming, you'll find me rock climbing, working out,
-            playing chess, or grinding levels in fortnite. A fun fact about me
-            is that I love to play chess puzzles.
+            or playing chess. A fun fact about me is that I love to go on walks
+            with friends.
           </p>
         </div>
 
