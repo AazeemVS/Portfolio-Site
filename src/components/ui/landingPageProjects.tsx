@@ -35,11 +35,11 @@ function LandingPageProjects() {
       <div className="flex justify-center mt-4">
         <div className="group relative">
           <button
-            onClick={() => navigate("/ProjectsPage")}
-            className=" text-3xl font-bold relative text-gray-300 hover:text-gray-100 transition-colors duration-300 hover:cursor-pointer px-4 py-2"
+            onClick={() => navigate("/Projects")}
+            className=" text-3xl font-bold relative transition-colors text-white duration-300 hover:cursor-pointer hover:text-cyan-700 px-4 py-2"
           >
             View More Projects
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cyan-700 transition-all duration-300 group-hover:w-full"></span>
           </button>
         </div>
       </div>

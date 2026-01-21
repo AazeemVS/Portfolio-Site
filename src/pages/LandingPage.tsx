@@ -12,8 +12,6 @@ const LandingPage: React.FC = () => {
       <AboutMe></AboutMe>
       <Experience></Experience>
 
-      <LandingPageSkillsScroller />
-
       <section className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
         <div className="w-full max-w-6xl mx-auto">
           <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
@@ -26,6 +24,8 @@ const LandingPage: React.FC = () => {
       </section>
 
       <LandingPageProjects></LandingPageProjects>
+
+      <LandingPageSkillsScroller />
 
       <Card className="border-none mb-0">
         <div className="text-left">
