@@ -9,7 +9,7 @@ const AboutMeCard: React.FC = () => {
         <div className="md:w-2/3 space-y-3 sm:space-y-4">
           <h3 className="text-white text-xl sm:text-2xl font-bold">Who I Am</h3>
           <p className="text-white text-sm sm:text-base">
-            Hi there! I'm Aazeem, a 20 year old full-stack web developer who's
+            Hi there! I'm Aazeem, a 21 year old full-stack web developer who's
             passionate about creating interactive experiences. I'm based in
             Falls Church, VA and Boston, MA. I hold housing in both cities, so
             I'm ready to jump in wherever an opportunity takes me. Currently,
@@ -20,9 +20,11 @@ const AboutMeCard: React.FC = () => {
         {/* Photo */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 border-2 border-white rounded-lg flex items-center justify-center">
-            <span className="text-white/50 text-xs sm:text-sm">
-              Photo coming soon
-            </span>
+            <img
+              src="/images/pfp.jpg"
+              alt="Aazeem's Profile Picture"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>

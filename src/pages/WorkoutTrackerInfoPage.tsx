@@ -1,11 +1,11 @@
 import React from "react";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import Footer from "@/components/ui/footer";
-import WorkoutAppImg from "/images/WorkoutAppHomePage.png";
-import WorkoutAppWorkoutDashboardImg from "/images/WorkoutAppWorkoutDashboard.png";
-import WorkoutAppWorkoutLogImg from "/images/WorkoutAppWorkoutLog.png";
-import WorkoutAppPushupLogImg from "/images/WorkoutAppPushupLog.png";
-import WorkoutAppPushupDashboardImg from "/images/WorkoutAppPushupDashboard.png";
+const WorkoutAppImg = "/images/WorkoutAppHomePage.png";
+const WorkoutAppWorkoutDashboardImg = "/images/WorkoutAppWorkoutDashboard.png";
+const WorkoutAppWorkoutLogImg = "/images/WorkoutAppWorkoutLog.png";
+const WorkoutAppPushupLogImg = "/images/WorkoutAppPushupLog.png";
+const WorkoutAppPushupDashboardImg = "/images/WorkoutAppPushupDashboard.png";
 import {
   BarChartIcon,
   DashboardIcon,

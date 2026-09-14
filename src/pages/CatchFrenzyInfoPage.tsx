@@ -3,10 +3,10 @@ import React from "react";
 import Footer from "@/components/ui/footer";
 
 //Images
-import homePageImg from "/images/CF-home.png";
-import Level1Img from "/images/CF-lvl1.png";
-import Level2Img from "/images/CF_Lvl2.png";
-import Level3Img from "/images/CF_Lvl3.png";
+const homePageImg = "/images/CF-home.png";
+const Level1Img = "/images/CF-lvl1.png";
+const Level2Img = "/images/CF_Lvl2.png";
+const Level3Img = "/images/CF_Lvl3.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
   KeyboardIcon,

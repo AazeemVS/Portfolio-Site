@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "@/components/ui/footer";
-import SBESCISearchPage from "/images/SBESCI_site_pic.png";
-import SBESCILoginPage from "/images/SBESCILoginPage.png";
-import SBESCILandingPage from "/images/SBESCILandingPage.png";
-import SBESCIAdminLandingPage from "/images/SBESCIAdminLandingPage.png";
-import SBESCICartPage from "/images/SBESCICartPage.png";
-import SBESCICupboardPage from "/images/SBESCIAdminCupboardPage.png";
+const SBESCISearchPage = "/images/SBESCI_site_pic.png";
+const SBESCILoginPage = "/images/SBESCILoginPage.png";
+const SBESCILandingPage = "/images/SBESCILandingPage.png";
+const SBESCIAdminLandingPage = "/images/SBESCIAdminLandingPage.png";
+const SBESCICartPage = "/images/SBESCICartPage.png";
+const SBESCICupboardPage = "/images/SBESCIAdminCupboardPage.png";
 import { ProjectPageLayout } from "@/components/ui/projects/projectPageLayout";
 import {
   PersonIcon,
