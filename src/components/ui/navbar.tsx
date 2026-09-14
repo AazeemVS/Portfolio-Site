@@ -10,7 +10,6 @@ import {
   HomeIcon,
   PersonIcon,
   BackpackIcon,
-  ChatBubbleIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
 
@@ -35,7 +34,6 @@ function NavBar() {
     { icon: HomeIcon, path: "/LandingPage", label: "Home" },
     { icon: PersonIcon, path: "/AboutMe", label: "About" },
     { icon: BackpackIcon, path: "/Projects", label: "Projects" },
-    { icon: ChatBubbleIcon, path: "/DevBlogs", label: "Blogs" },
     { icon: EnvelopeClosedIcon, path: "/ContactMe", label: "Contact" },
   ];
 
@@ -81,7 +79,6 @@ function NavBar() {
                   {[
                     ["About Me", "/AboutMe"],
                     ["Projects", "/Projects"],
-                    ["Thoughts", "/DevBlogs"],
                   ].map(([label, path]) => (
                     <NavigationMenuLink
                       key={label}

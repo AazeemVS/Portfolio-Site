@@ -94,7 +94,7 @@ const NoPage: React.FC = () => {
                   404
                 </CardTitle>
               </motion.div>
-              <CardDescription className="text-cyan-800 text-xl font-medium">
+              <CardDescription className="text-cyan-500 text-xl font-medium">
                 Page Not Found
               </CardDescription>
             </CardHeader>
@@ -124,7 +124,7 @@ const NoPage: React.FC = () => {
               >
                 <Link
                   to="/"
-                  className="inline-flex items-center px-6 py-3 border-2 border-cyan-800 text-cyan-800 rounded-lg font-medium hover:bg-cyan-800 hover:text-black transition-colors duration-300 group"
+                  className="inline-flex items-center px-6 py-3 border-2 border-cyan-500 text-cyan-500 rounded-lg font-medium hover:bg-cyan-500 hover:text-black transition-colors duration-300 group"
                 >
                   <motion.span
                     animate={{

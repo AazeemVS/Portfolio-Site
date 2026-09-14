@@ -4,7 +4,6 @@ import LinksComingSoon from "@/pages/LinksComingSoon";
 import LandingPage from "@/pages/LandingPage";
 import AboutMe from "@/pages/AboutMe";
 import NoPage from "@/pages/NoPage";
-import DevBlogs from "@/pages/DevBlogs";
 import Projects from "@/pages/Projects";
 import ContactMe from "@/pages/ContactMe";
 import EduBridgeInfoPage from "./pages/EduBridgeInfoPage";
@@ -24,7 +23,6 @@ export default function App() {
           <Route path="/LandingPage" element={<LandingPage />}></Route>
           <Route path="/AboutMe" element={<AboutMe />}></Route>
           <Route path="/Projects" element={<Projects />}></Route>
-          <Route path="/DevBlogs" element={<DevBlogs />}></Route>
           <Route path="/ContactMe" element={<ContactMe />}></Route>
           <Route
             path="/EduBridgeInfoPage"
