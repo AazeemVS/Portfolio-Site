@@ -78,7 +78,7 @@ const NoPage: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Card className="max-w-lg w-full bg-[#11111] border border-gray-700 p-8 backdrop-blur-sm bg-opacity-70">
+          <Card className="max-w-lg w-full bg-card/70 p-8 backdrop-blur-sm">
             <CardHeader className="text-center space-y-3">
               <motion.div
                 animate={{

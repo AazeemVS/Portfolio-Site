@@ -7,7 +7,7 @@ import {
 
 const AbtMe = () => {
   return (
-    <Card className="bg-slate-900 text-card-foreground rounded-xl border-2 border-solid border-[#27272a] shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto">
+    <Card className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto">
       <CardHeader>
         <CardTitle>
           <div className="flex flex-col sm:flex-row w-full justify-between items-start sm:items-center gap-4 sm:gap-2">
@@ -23,7 +23,7 @@ const AbtMe = () => {
                 href="mailto:av7304@rit.edu"
                 target="_blank"
                 aria-label="Email"
-                className="card p-2 sm:p-3 border-2 border-solid border-[#27272a] hover:bg-[#27272a] rounded-lg 
+                className="card p-2 sm:p-3 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
                   transition-all duration-200 ease-in-out 
                   transform hover:-translate-y-1"
               >
@@ -35,7 +35,7 @@ const AbtMe = () => {
                 href="https://github.com/AazeemVS"
                 target="_blank"
                 aria-label="GitHub"
-                className="card p-2 sm:p-3 border-2 border-solid border-[#27272a] hover:bg-[#27272a] rounded-lg 
+                className="card p-2 sm:p-3 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
                   transition-all duration-200 ease-in-out 
                   transform hover:-translate-y-1"
               >
@@ -47,7 +47,7 @@ const AbtMe = () => {
                 href="https://linkedin.com/in/AazeemVS"
                 target="_blank"
                 aria-label="LinkedIn"
-                className="card p-2 sm:p-3 border-2 border-solid border-[#27272a] hover:bg-[#27272a] rounded-lg 
+                className="card p-2 sm:p-3 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
                   transition-all duration-200 ease-in-out 
                   transform hover:-translate-y-1"
               >

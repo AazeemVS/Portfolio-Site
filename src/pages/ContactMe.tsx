@@ -5,9 +5,7 @@ import Footer from "@/components/ui/footer";
 
 const ContactMe: React.FC = () => (
   <>
-    <Card className="bg-[#09090b] border-[#27272a]">
-      {" "}
-      {/* Added dark background and border */}
+    <Card>
       <h2 className="text-white text-3xl md:text-5xl font-bold p-2 pl-4 md:pl-6 pb-2">
         Contact Me
       </h2>
@@ -22,7 +20,7 @@ const ContactMe: React.FC = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email"
-            className="card p-3 sm:p-4 md:p-5 lg:p-6 border-2 border-solid border-[#27272a] hover:bg-[#27272a] rounded-lg 
+            className="card p-3 sm:p-4 md:p-5 lg:p-6 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
         transition-all duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
           >
             <svg
@@ -61,7 +59,7 @@ const ContactMe: React.FC = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="card p-3 sm:p-4 md:p-5 lg:p-6 border-2 border-solid border-[#27272a] hover:bg-[#27272a] rounded-lg 
+            className="card p-3 sm:p-4 md:p-5 lg:p-6 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
         transition-all duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
           >
             <svg

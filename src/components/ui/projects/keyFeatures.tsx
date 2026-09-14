@@ -25,7 +25,7 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
               className="
                 flex items-center justify-start w-full
                 px-4 py-2 gap-x-2
-                bg-zinc-800 border-2 border-[#27272a] rounded-sm
+                bg-zinc-800 border-2 border-border rounded-sm
                 max-sm:px-3 max-sm:py-2
               "
             >

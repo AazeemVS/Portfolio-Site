@@ -30,7 +30,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         aspect-video
         overflow-hidden
         rounded-xl
-        border-2 border-solid border-[#27272a]
+        border-2 border-solid border-border
         bg-[#1f1f1f]
         shadow-sm
         cursor-pointer

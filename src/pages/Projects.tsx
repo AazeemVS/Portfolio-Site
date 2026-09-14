@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
   return (
     <>
       {/* <NavBar /> */}
-      <Card id="web-projects" className="border-none">
+      <Card id="web-projects" className="border-none bg-transparent">
         <h2 className="text-white text-left text-4xl font-bold">
           Web Projects
         </h2>
@@ -60,12 +60,12 @@ const Projects: React.FC = () => {
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         onClick={() => navigate("/CatchFrenzyInfoPage")}
       />
-      <Card id="game-projects" className="border-none">
+      <Card id="game-projects" className="border-none bg-transparent">
         <h2 className="text-white text-left text-4xl font-bold">
           Game Projects
         </h2>
       </Card>
-      <Card className="border-none">
+      <Card className="border-none bg-transparent">
         <p className="text-white text-2xl font-bold"> Coming soon...</p>
       </Card>
 

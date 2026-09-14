@@ -77,7 +77,7 @@ function NavBar() {
 
               {/* Center - Main Nav */}
               <NavigationMenuItem>
-                <div className="flex space-x-6 px-6 py-2 border-2 border-[#27272a] rounded-full">
+                <div className="flex space-x-6 px-6 py-2 border-2 border-border rounded-full">
                   {[
                     ["About Me", "/AboutMe"],
                     ["Projects", "/Projects"],

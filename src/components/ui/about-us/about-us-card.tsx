@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 const AboutMeCard: React.FC = () => {
   return (
-    <Card className="bg-slate-900 text-card-foreground rounded-xl border-2 border-solid border-[#27272a] shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto p-4 sm:p-6">
+    <Card className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto p-4 sm:p-6">
       {/* Two-column intro/photo */}
       <div className="flex flex-col md:flex-row items-start gap-4 sm:gap-6 md:gap-8">
         {/* Text content */}

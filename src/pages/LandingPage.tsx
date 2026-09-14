@@ -27,13 +27,13 @@ const LandingPage: React.FC = () => {
 
       <LandingPageSkillsScroller />
 
-      <Card className="border-none mb-0">
+      <Card className="border-none bg-transparent mb-0">
         <div className="text-left">
           <h2 className="text-white text-5xl font-bold">Recent Posts</h2>
         </div>
       </Card>
 
-      <Card className="border-none mt-16">
+      <Card className="border-none bg-transparent mt-16">
         <div className="text-left">
           <h2 className="text-white text-3xl font-bold">Coming soon...</h2>
         </div>{" "}

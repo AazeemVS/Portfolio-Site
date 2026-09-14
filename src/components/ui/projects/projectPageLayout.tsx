@@ -94,7 +94,7 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
                         <img
                           src={slide.img}
                           alt={`Project Preview ${index + 1}`}
-                          className="h-full w-auto max-w-full object-contain rounded-md border border-[#27272a] shadow-lg"
+                          className="h-full w-auto max-w-full object-contain rounded-md border border-border shadow-lg"
                         />
                       </div>
                       <Card className="mt-2 sm:mt-3 lg:mt-4 w-full sm:w-10/12 mx-auto bg-transparent border-none">

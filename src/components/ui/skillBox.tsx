@@ -15,8 +15,8 @@ const SkillBox: React.FC<SkillBoxProps> = ({ icon }) => {
         h-12
         px-2
         bg-zinc-800 /* background color*/
-        border-2 
-        border-[#27272a]
+        border-2
+        border-border
         rounded-sm"
     >
       {icon}

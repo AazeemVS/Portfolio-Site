@@ -114,10 +114,10 @@ export default function LinksComingSoon() {
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.98 }}
           >
-            <Card className="bg-transparent border-[#27272a] rounded-2xl shadow-[0_0_0_1px_rgba(39,39,42,1),0_10px_30px_-10px_rgba(6,182,212,0.25)]">
+            <Card className="bg-transparent border-border rounded-2xl shadow-[0_0_0_1px_rgba(113,113,122,1),0_10px_30px_-10px_rgba(6,182,212,0.25)]">
               <CardHeader className="px-5 pt-5 pb-2">
                 <CardTitle className="flex items-center gap-3 text-white text-lg sm:text-xl">
-                  <span className="inline-flex items-center justify-center rounded-xl border border-[#27272a] p-2">
+                  <span className="inline-flex items-center justify-center rounded-xl border border-border p-2">
                     <Icon className="w-5 h-5 text-cyan-400" />
                   </span>
                   {label}
@@ -127,7 +127,7 @@ export default function LinksComingSoon() {
                 <p className="text-sm text-zinc-400">{blurb}</p>
 
                 {/* animated placeholder line */}
-                <div className="mt-4 h-9 w-full rounded-lg border border-[#27272a] relative overflow-hidden">
+                <div className="mt-4 h-9 w-full rounded-lg border border-border relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800" />
                   <motion.div
                     className="absolute inset-0 bg-white/10"
