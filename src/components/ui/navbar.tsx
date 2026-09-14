@@ -40,13 +40,20 @@ function NavBar() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden lg:block w-full mt-5">
+      <div className="hidden lg:block w-full sticky top-0 z-50 bg-background/90 backdrop-blur-md py-5">
         <div className="max-w-6xl mx-auto px-4">
           <NavigationMenu className="w-full">
-            <NavigationMenuList className="flex items-center justify-between gap-28 xl:gap-64">
+            <NavigationMenuList className="flex items-center justify-between">
               {/* Left - Name */}
               <NavigationMenuItem>
-                <NavigationMenuLink onClick={() => navigate("/LandingPage")}>
+                <NavigationMenuLink
+                  href="/LandingPage"
+                  active={isActive("/LandingPage")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/LandingPage");
+                  }}
+                >
                   <motion.span
                     className={`relative inline-block text-xl font-bold whitespace-nowrap ${
                       isActive("/LandingPage") ? "text-cyan-700" : ""
@@ -82,7 +89,12 @@ function NavBar() {
                   ].map(([label, path]) => (
                     <NavigationMenuLink
                       key={label}
-                      onClick={() => navigate(path)}
+                      href={path}
+                      active={isActive(path)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigate(path);
+                      }}
                     >
                       <motion.span
                         className={`relative inline-block text-xl font-bold whitespace-nowrap ${
@@ -114,7 +126,14 @@ function NavBar() {
 
               {/* Right - Contact */}
               <NavigationMenuItem>
-                <NavigationMenuLink onClick={() => navigate("/ContactMe")}>
+                <NavigationMenuLink
+                  href="/ContactMe"
+                  active={isActive("/ContactMe")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/ContactMe");
+                  }}
+                >
                   <motion.span
                     className={`relative inline-block text-xl font-bold whitespace-nowrap ${
                       isActive("/ContactMe") ? "text-cyan-700" : ""
@@ -146,7 +165,7 @@ function NavBar() {
       </div>
 
       {/* Mobile Nav bar */}
-      <div className="lg:hidden w-full mt-5">
+      <div className="lg:hidden w-full sticky top-0 z-50 bg-background/90 backdrop-blur-md py-5">
         <div className="flex justify-center">
           <div className="max-w-md rounded-lg">
             <NavigationMenu className="w-full">
@@ -155,7 +174,14 @@ function NavBar() {
                   const Icon = item.icon;
                   return (
                     <NavigationMenuItem key={item.path} className="flex-1">
-                      <NavigationMenuLink onClick={() => navigate(item.path)}>
+                      <NavigationMenuLink
+                        href={item.path}
+                        active={isActive(item.path)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigate(item.path);
+                        }}
+                      >
                         <motion.div
                           className="flex flex-col items-center p-1 rounded-md"
                           whileTap={{ scale: 0.95 }}

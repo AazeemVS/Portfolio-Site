@@ -5,15 +5,19 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
+import { PageTitle } from "@/components/ui/page-title";
 import Footer from "@/components/ui/footer";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const NoPage: React.FC = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   // Create floating particles
   useEffect(() => {
+    if (prefersReducedMotion) return;
+
     const particles = 15;
     const container = document.querySelector(".particles-container");
 
@@ -36,7 +40,7 @@ const NoPage: React.FC = () => {
 
       container?.appendChild(particle);
     }
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-black via-[#111111] to-[#1a1a1a] flex flex-col overflow-hidden particles-container">
@@ -47,10 +51,14 @@ const NoPage: React.FC = () => {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
           className="w-96 h-96 border-2 border-cyan-800 rounded-full opacity-10"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: 360,
-          }}
+          animate={
+            prefersReducedMotion
+              ? undefined
+              : {
+                  scale: [1, 1.2, 1],
+                  rotate: 360,
+                }
+          }
           transition={{
             duration: 30,
             repeat: Infinity,
@@ -59,10 +67,14 @@ const NoPage: React.FC = () => {
         />
         <motion.div
           className="absolute w-64 h-64 border border-cyan-800 rounded-full opacity-5"
-          animate={{
-            scale: [1, 1.3, 1],
-            rotate: -360,
-          }}
+          animate={
+            prefersReducedMotion
+              ? undefined
+              : {
+                  scale: [1, 1.3, 1],
+                  rotate: -360,
+                }
+          }
           transition={{
             duration: 40,
             repeat: Infinity,
@@ -81,18 +93,22 @@ const NoPage: React.FC = () => {
           <Card className="max-w-lg w-full bg-card/70 p-8 backdrop-blur-sm">
             <CardHeader className="text-center space-y-3">
               <motion.div
-                animate={{
-                  scale: [1, 1.05, 1],
-                  opacity: [1, 0.8, 1],
-                }}
+                animate={
+                  prefersReducedMotion
+                    ? undefined
+                    : {
+                        scale: [1, 1.05, 1],
+                        opacity: [1, 0.8, 1],
+                      }
+                }
                 transition={{
                   duration: 3,
                   repeat: Infinity,
                 }}
               >
-                <CardTitle className="text-6xl font-extrabold text-white tracking-tighter">
+                <PageTitle className="tracking-tighter">
                   404
-                </CardTitle>
+                </PageTitle>
               </motion.div>
               <CardDescription className="text-cyan-500 text-xl font-medium">
                 Page Not Found
@@ -127,9 +143,13 @@ const NoPage: React.FC = () => {
                   className="inline-flex items-center px-6 py-3 border-2 border-cyan-500 text-cyan-500 rounded-lg font-medium hover:bg-cyan-500 hover:text-black transition-colors duration-300 group"
                 >
                   <motion.span
-                    animate={{
-                      x: [0, 5, 0],
-                    }}
+                    animate={
+                      prefersReducedMotion
+                        ? undefined
+                        : {
+                            x: [0, 5, 0],
+                          }
+                    }
                     transition={{
                       duration: 2,
                       repeat: Infinity,

@@ -1,6 +1,7 @@
 // components/ProjectTemplate.tsx
 import React from "react";
 import type { ReactElement } from "react";
+import { Link } from "react-router-dom";
 import SkillBox from "@/components/ui/skillBox";
 import JSIcon from "@/components/ui/icons/jsProjIcon";
 import AngularIcon from "@/components/ui/icons/angularProjIcon";
@@ -9,7 +10,7 @@ interface ProjectTemplateProps {
   title: string;
   description: string;
   backgroundImg: string;
-  onClick?: () => void;
+  to: string;
   icons?: ReactElement[];
 }
 
@@ -17,15 +18,17 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   title,
   description,
   backgroundImg,
-  onClick,
+  to,
   icons = [<JSIcon key="js" />, <AngularIcon key="ng" />],
 }) => (
-  <div className="flex items-center justify-center mt-10 md:mt-20 w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mx-auto">
-    <div
-      onClick={onClick}
+  <div className="flex items-center justify-center w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mx-auto">
+    <Link
+      to={to}
+      aria-label={title}
       className="
         relative
         group
+        block
         w-full
         aspect-video
         overflow-hidden
@@ -33,14 +36,17 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         border-2 border-solid border-border
         bg-[#1f1f1f]
         shadow-sm
-        cursor-pointer
+        focus-visible:outline
+        focus-visible:outline-2
+        focus-visible:outline-offset-2
+        focus-visible:outline-cyan-500
       "
     >
-      {/* Background image - now using cover instead of contain */}
+      {/* Background image - cropped to top so the page header/nav stays visible */}
       <div
         className="
           absolute inset-0
-          bg-cover bg-no-repeat bg-center
+          bg-cover bg-no-repeat bg-top
           transform transition-transform duration-300 ease-in-out
           group-hover:scale-105
         "
@@ -74,22 +80,23 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           ))}
         </div>
 
-        {/* Learn more button */}
-        <button
+        {/* Learn more indicator */}
+        <span
+          aria-hidden="true"
           className="
             absolute bottom-4 left-4
-            opacity-0 translate-y-2
-            group-hover:opacity-100 group-hover:translate-y-0
+            translate-y-2
+            group-hover:translate-y-0
             transition-all duration-300
             text-xs sm:text-sm bg-white text-gray-600
             px-3 sm:px-4 py-1 sm:py-2 rounded-lg border border-black
-            font-semibold hover:bg-slate-300
+            font-semibold
           "
         >
           Learn more →
-        </button>
+        </span>
       </div>
-    </div>
+    </Link>
   </div>
 );
 

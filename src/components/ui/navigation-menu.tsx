@@ -2,7 +2,6 @@ import * as React from "react";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { cva } from "class-variance-authority";
 import { ChevronDownIcon } from "lucide-react";
-import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -139,12 +138,6 @@ function NavigationMenuLink({
       {...props}
     >
       {children}
-      <motion.span
-        className="absolute bottom-0 h-0.5 bg-cyan-900"
-        initial={{ width: 0 }}
-        whileHover={{ width: "100%" }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
-      />
     </NavigationMenuPrimitive.Link>
   );
 }

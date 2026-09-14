@@ -31,7 +31,7 @@ const ProjDescription: React.FC<ProjDescriptionProps> = ({
       </CardHeader>
 
       <CardContent className="px-4 sm:px-6 pb-4 sm:pb-6">
-        <CardDescription className="text-sm sm:text-md md:text-2xl text-muted-foreground leading-relaxed break-words hyphens-auto">
+        <CardDescription className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed break-words hyphens-auto">
           {text}
         </CardDescription>
       </CardContent>

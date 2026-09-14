@@ -1,6 +1,6 @@
 // src/pages/LinksComingSoon.tsx
 import { useNavigate } from "react-router-dom";
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -58,6 +58,7 @@ const item: Variants = {
 
 export default function LinksComingSoon() {
   const navigate = useNavigate();
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -83,12 +84,14 @@ export default function LinksComingSoon() {
           className="relative h-[3px] w-40 sm:w-56 rounded-full overflow-hidden mx-auto sm:mx-0 mb-6 sm:mb-10"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600 opacity-70" />
-          <motion.div
-            className="absolute inset-0 bg-white/40"
-            initial={{ x: "-100%" }}
-            animate={{ x: "100%" }}
-            transition={{ repeat: Infinity, duration: 1.6, ease: LINEAR }} // was "linear"
-          />
+          {!prefersReducedMotion && (
+            <motion.div
+              className="absolute inset-0 bg-white/40"
+              initial={{ x: "-100%" }}
+              animate={{ x: "100%" }}
+              transition={{ repeat: Infinity, duration: 1.6, ease: LINEAR }} // was "linear"
+            />
+          )}
         </motion.div>
 
         <motion.p
@@ -129,16 +132,18 @@ export default function LinksComingSoon() {
                 {/* animated placeholder line */}
                 <div className="mt-4 h-9 w-full rounded-lg border border-border relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-800" />
-                  <motion.div
-                    className="absolute inset-0 bg-white/10"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 1.8,
-                      ease: LINEAR,
-                    }} // was "linear"
-                  />
+                  {!prefersReducedMotion && (
+                    <motion.div
+                      className="absolute inset-0 bg-white/10"
+                      initial={{ x: "-100%" }}
+                      animate={{ x: "100%" }}
+                      transition={{
+                        repeat: Infinity,
+                        duration: 1.8,
+                        ease: LINEAR,
+                      }} // was "linear"
+                    />
+                  )}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-[11px] uppercase tracking-wide text-zinc-400">
                       Link available soon

@@ -113,25 +113,25 @@ const StoryMobile = () => {
         </div>
 
         {/* Final timeline dot (no line after last item) */}
-        <div className="w-full flex justify-center w-full flex justify-center items-center">
-          <div className="w-6 h-6 rounded-full bg-cyan-800 z-10 text-white text-center flex items-center justify-center mb-2">
+        <div className="w-full flex justify-center items-center mb-2">
+          <div className="w-6 h-6 rounded-full bg-cyan-800 z-10 text-white text-center flex items-center justify-center">
             5
           </div>
         </div>
-      </div>
 
-      {/* Note 5 */}
-      <div className="w-full mb-2">
-        <div className="w-full bg-cyan-800 rounded p-4">
-          <h1 className="text-white text-xl font-medium py-2">Present</h1>
-          <p className="text-white text-sm font-semibold">
-            Today, I’m pushing myself further than ever. I’ve built a strong
-            foundation in Software Engineering and OOP, and now I’m delving into
-            modern tools like React, Tailwind CSS, and shadcn/ui. I don’t just
-            want to code; I want to create, problem-solve, and keep learning.
-            Every project I build is a step toward the kind of developer I
-            aspire to be.
-          </p>
+        {/* Note 5 */}
+        <div className="w-full mb-2">
+          <div className="w-full bg-cyan-800 rounded p-4">
+            <h1 className="text-white text-xl font-medium py-2">Present</h1>
+            <p className="text-white text-sm font-semibold">
+              Today, I’m pushing myself further than ever. I’ve built a strong
+              foundation in Software Engineering and OOP, and now I’m delving into
+              modern tools like React, Tailwind CSS, and shadcn/ui. I don’t just
+              want to code; I want to create, problem-solve, and keep learning.
+              Every project I build is a step toward the kind of developer I
+              aspire to be.
+            </p>
+          </div>
         </div>
       </div>
     </section>

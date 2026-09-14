@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "@/components/ui/card";
 
 import Footer from "@/components/ui/footer";
+import { PageTitle } from "@/components/ui/page-title";
 import Experience from "@/components/ui/experience";
 import LandingPageSkillsScroller from "@/components/ui/landingPageSkillsSection";
 import Hero from "@/components/ui/hero";
@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
           <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
             {/* Title */}
             <div className="text-left">
-              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">My Works</h2>
+              <PageTitle>My Works</PageTitle>
             </div>
           </div>
         </div>
@@ -31,18 +31,6 @@ const LandingPage: React.FC = () => {
       <LandingPageProjects></LandingPageProjects>
 
       <LandingPageSkillsScroller />
-
-      <Card className="border-none bg-transparent mb-0">
-        <div className="text-left">
-          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">Recent Posts</h2>
-        </div>
-      </Card>
-
-      <Card className="border-none bg-transparent mt-16">
-        <div className="text-left">
-          <h2 className="text-white text-3xl font-bold">Coming soon...</h2>
-        </div>{" "}
-      </Card>
 
       <footer>
         <Footer></Footer>

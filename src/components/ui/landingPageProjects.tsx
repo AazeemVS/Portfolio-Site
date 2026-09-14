@@ -11,13 +11,13 @@ import AngularIcon from "@/components/ui/icons/angularIcon";
 function LandingPageProjects() {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-10 md:gap-20">
       <ProjectTemplate
         title="Workout Tracker Application"
-        description="An workout and pushup tracker application."
+        description="A workout and pushup tracker application."
         backgroundImg={WorkoutAppImg}
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
-        onClick={() => navigate("/WorkoutTrackerInfoPage")}
+        to="/WorkoutTrackerInfoPage"
       />
 
       <ProjectTemplate
@@ -29,7 +29,7 @@ function LandingPageProjects() {
           <TSIcon key="2" />,
           <CSSIcon key="5" />,
         ]}
-        onClick={() => navigate("/EduBridgeInfoPage")}
+        to="/EduBridgeInfoPage"
       />
 
       <div className="flex justify-center mt-4">

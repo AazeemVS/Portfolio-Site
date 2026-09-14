@@ -8,9 +8,7 @@ const KeyFeatures: React.FC<KeyFeaturesProps> = ({ items }) => {
   return (
     <Card
       className="
-        max-sm:w-full
-        max-sm:-mx-2
-        max-[360px]:-mx-1
+        w-full max-w-screen-md md:max-w-3xl mx-auto
       "
     >
       <CardHeader className="text-white text-2xl max-sm:text-xl">

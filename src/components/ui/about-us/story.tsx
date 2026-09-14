@@ -38,7 +38,7 @@ const Story = () => {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
+            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">
                 Beginnings
               </h1>
@@ -146,7 +146,7 @@ const Story = () => {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
+            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">
                 First Steps
               </h1>
@@ -169,7 +169,7 @@ const Story = () => {
             variants={variants}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
+            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">
                 Pre-College Summer
               </h1>
@@ -275,7 +275,7 @@ const Story = () => {
             variants={variants}
             transition={{ duration: 0.5, delay: 1.1 }}
           >
-            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
+            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">College</h1>
               <p className="text-white text-sm md:text-base font-semibold">
                 By my second year in college, I was ready to branch out. I fell
@@ -298,7 +298,7 @@ const Story = () => {
             variants={variants}
             transition={{ duration: 0.5, delay: 1.4 }}
           >
-            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 md:hover:scale-110 transition-transform duration-200 mb-2 md:mb-0">
+            <div className="w-full h-full bg-cyan-800 rounded p-4 md:p-2 md:pl-4 hover:scale-105 transition-transform duration-200 mb-2 md:mb-0">
               <h1 className="text-white text-xl font-medium py-2">Present</h1>
               <p className="text-white text-sm md:text-base font-semibold">
                 Today, I’m pushing myself further than ever. I’ve built a strong

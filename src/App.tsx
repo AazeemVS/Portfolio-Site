@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <Router>
-        <ScrollToTop behavior="smooth" />
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route index element={<LandingPage />}></Route>
