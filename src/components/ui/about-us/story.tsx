@@ -17,7 +17,10 @@ const Story = () => {
   };
 
   return (
-    <section ref={ref} className="px-4 md:px-0">
+    <section
+      ref={ref}
+      className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mx-auto px-4 md:px-0"
+    >
       {/* Story header */}
       <Card className="border-none bg-transparent shadow-none">
         <div className="text-white text-left text-3xl md:text-5xl mt-8 md:mt-[5%] ml-2 md:ml-[2rem] font-bold">
@@ -26,7 +29,7 @@ const Story = () => {
       </Card>
 
       <div className="h-auto w-full flex justify-center items-center mt-8 md:mt-[5%]">
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-9 gap-0">
+        <div className="w-full grid grid-cols-1 md:grid-cols-9 gap-0">
           {/* Note 1 */}
           <motion.div
             className="col-span-1 md:col-span-4 w-full h-full order-1 md:order-1"

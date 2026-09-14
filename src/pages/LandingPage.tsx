@@ -12,12 +12,12 @@ const LandingPage: React.FC = () => {
       <AboutMe></AboutMe>
       <Experience></Experience>
 
-      <section className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
+      <section className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden">
         <div className="w-full max-w-6xl mx-auto">
           <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
             {/* Title */}
             <div className="text-left">
-              <h2 className="text-white text-5xl font-bold">My Works</h2>
+              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">My Works</h2>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ const LandingPage: React.FC = () => {
 
       <Card className="border-none bg-transparent mb-0">
         <div className="text-left">
-          <h2 className="text-white text-5xl font-bold">Recent Posts</h2>
+          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">Recent Posts</h2>
         </div>
       </Card>
 

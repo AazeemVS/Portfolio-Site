@@ -8,8 +8,8 @@ import AboutMeCard from "@/components/ui/about-us/about-us-card";
 import StoryMobile from "@/components/ui/about-us/story-mobile";
 const AboutMe: React.FC = () => (
   <>
-    <Card className="border-none bg-transparent">
-      <h2 className="text-white text-left text-4xl font-bold"> About Me </h2>
+    <Card className="border-none bg-transparent w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 px-4 sm:px-6">
+      <h2 className="text-white text-left text-3xl sm:text-4xl font-bold">About Me</h2>
     </Card>
 
     {/* About Me text Section */}
