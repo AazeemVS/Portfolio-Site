@@ -13,8 +13,8 @@ function LandingPageProjects() {
   return (
     <div className="flex flex-col gap-10 md:gap-20">
       <ProjectTemplate
-        title="Workout Tracker Application"
-        description="A workout and pushup tracker application."
+        title="MoveSync"
+        description="A fitness tracker that lets you log workouts and push-ups, then see your progress come to life with interactive charts and statistics."
         backgroundImg={WorkoutAppImg}
         icons={[<JSIcon key="1" />, <HTMLIcon key="3" />, <CSSIcon key="4" />]}
         to="/WorkoutTrackerInfoPage"
@@ -22,7 +22,7 @@ function LandingPageProjects() {
 
       <ProjectTemplate
         title="EduBridge"
-        description="An educational platform connecting learners and mentors in real time."
+        description="A web application that connects donors with teachers who need classroom supplies, making it easy to request and fulfill items."
         backgroundImg={SBESCIImg}
         icons={[
           <AngularIcon key="1" />,
@@ -36,7 +36,7 @@ function LandingPageProjects() {
         <div className="group relative">
           <button
             onClick={() => navigate("/Projects")}
-            className=" text-3xl font-bold relative transition-colors text-white duration-300 hover:cursor-pointer hover:text-cyan-700 px-4 py-2"
+            className=" text-3xl font-bold relative transition-all text-white duration-300 hover:cursor-pointer hover:text-cyan-700 px-4 py-2 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 active:scale-95 active:text-cyan-800"
           >
             View More Projects
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cyan-700 transition-all duration-300 group-hover:w-full"></span>

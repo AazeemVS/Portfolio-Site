@@ -14,7 +14,6 @@ import GitIcon from "@/components/ui/icons/gitIcon";
 import NodeJSIcon from "@/components/ui/icons/nodeJSIcon";
 import CPlusPlusIcon from "@/components/ui/icons/cppIcon";
 import ShadcnIcon from "@/components/ui/icons/shadcnIcon";
-//import NextJSIcon from "@/components/ui/icons/nextJSIcon"; Might be needed later
 import CSharpIcon from "@/components/ui/icons/csharpIcon";
 import AngularIcon from "@/components/ui/icons/angularIcon";
 import FigmaIcon from "@/components/ui/icons/figmaIcon";
@@ -45,6 +44,8 @@ function landingPageSkillsSection() {
             <>
               <SkillsScroller
                 icons={[HTMLIcon, CSSIcon, JSIcon, TSIcon, ReactIcon]}
+                durationSeconds={32}
+                direction="normal"
               />
               <SkillsScroller
                 icons={[
@@ -54,6 +55,8 @@ function landingPageSkillsSection() {
                   JavaIcon,
                   TailwindCSSIcon,
                 ]}
+                durationSeconds={42}
+                direction="reverse"
               />
               <SkillsScroller
                 icons={[
@@ -63,6 +66,8 @@ function landingPageSkillsSection() {
                   CSharpIcon,
                   FigmaIcon,
                 ]}
+                durationSeconds={26}
+                direction="normal"
               />
             </>
           )}

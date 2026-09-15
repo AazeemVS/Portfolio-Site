@@ -12,14 +12,13 @@ const LandingPage: React.FC = () => {
     <>
       <Hero></Hero>
       <AboutMe></AboutMe>
-      <Experience></Experience>
 
       <section
         id="work"
-        className="bg-none text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-20 mx-auto relative flex flex-col justify-center overflow-hidden"
+        className="bg-[#0f172a] text-card-foreground flex flex-col gap-6 rounded-xl border-2 border-solid border-border py-6 shadow-sm w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto relative justify-center overflow-hidden"
       >
         <div className="w-full max-w-6xl mx-auto">
-          <div className="flex flex-col justify-center [&>*]:pb-4 ml-[2rem]">
+          <div className="flex flex-col justify-center [&>*]:pb-4 ml-0 sm:ml-[2rem]">
             {/* Title */}
             <div className="text-left">
               <PageTitle>My Works</PageTitle>
@@ -29,6 +28,8 @@ const LandingPage: React.FC = () => {
       </section>
 
       <LandingPageProjects></LandingPageProjects>
+
+      <Experience></Experience>
 
       <LandingPageSkillsScroller />
 

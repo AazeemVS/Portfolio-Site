@@ -90,7 +90,9 @@ const ContactMe: React.FC = () => (
               rel={external ? "noopener noreferrer" : undefined}
               aria-label={ariaLabel}
               className="card p-3 sm:p-4 md:p-5 lg:p-6 border-2 border-solid border-border hover:bg-[#27272a] rounded-lg
-        transition-all duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
+        transition-all duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20
+        focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500
+        active:translate-y-0 active:scale-95 active:bg-[#27272a]"
             >
               {icon}
             </a>
@@ -98,7 +100,7 @@ const ContactMe: React.FC = () => (
               href={href}
               target={external ? "_blank" : undefined}
               rel={external ? "noopener noreferrer" : undefined}
-              className="relative inline-block text-cyan-600 text-center text-sm sm:text-base md:text-lg"
+              className="relative inline-block text-cyan-600 text-center text-sm sm:text-base md:text-lg rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 active:text-cyan-800"
               whileHover="hover"
               initial="rest"
             >

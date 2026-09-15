@@ -3,10 +3,18 @@ import React from "react";
 // Props: an array of icon components to display in the scroller
 interface SkillsScrollerProps {
   icons: React.FC[];
+  // Seconds per full loop; vary per row so rows don't move in lockstep
+  durationSeconds?: number;
+  // Scroll direction; alternate per row for a less uniform look
+  direction?: "normal" | "reverse";
 }
 
 // SkillsScroller component: horizontal marquee of icons that pauses on hover
-const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
+const SkillsScroller: React.FC<SkillsScrollerProps> = ({
+  icons,
+  durationSeconds = 35,
+  direction = "normal",
+}) => (
   <div className="flex justify-center items-center relative bg">
     {/* Overlay gradients on left and right to fade icons at edges */}
     <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#0f172a] to-transparent z-10 pointer-events-none" />
@@ -24,12 +32,13 @@ const SkillsScroller: React.FC<SkillsScrollerProps> = ({ icons }) => (
     >
       {/* Animated section: scrolls infinitely, and pauses when the user hovers over an icon */}
       <div
-        className="whitespace-nowrap inline-block animate-[scroll_35s_linear_infinite] hover:[animation-play-state:paused] w-fit"
+        className="whitespace-nowrap inline-block hover:[animation-play-state:paused] w-fit"
         style={{
           animationName: "scroll",
-          animationDuration: "35s",
+          animationDuration: `${durationSeconds}s`,
           animationTimingFunction: "linear",
           animationIterationCount: "infinite",
+          animationDirection: direction,
         }}
       >
         {/* Duplicates the animation to create a fluid looping animation */}

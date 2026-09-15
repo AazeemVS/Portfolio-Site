@@ -40,6 +40,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         focus-visible:outline-2
         focus-visible:outline-offset-2
         focus-visible:outline-cyan-500
+        transition-transform duration-150
+        active:scale-[0.98]
       "
     >
       {/* Background image - cropped to top so the page header/nav stays visible */}

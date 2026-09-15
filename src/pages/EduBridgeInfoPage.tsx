@@ -46,7 +46,7 @@ const EduBridgeInfoPage: React.FC = () => {
       {
         icon: <ArchiveIcon width={24} height={24} />,
         label:
-          "Teacher can request items specific items by making  which helpers can fill",
+          "Teachers can request specific items by making requests which helpers can fill",
       },
       {
         icon: <PersonIcon width={24} height={24} />,

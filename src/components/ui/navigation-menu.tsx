@@ -130,9 +130,10 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "group relative inline-flex flex-col items-center",
+        "group relative inline-flex flex-col items-center rounded-md",
         "text-xl font-bold whitespace-nowrap px-4 py-2 hover:cursor-pointer",
-        "hover:text-cyan-700 transition-colors duration-300",
+        "hover:text-cyan-700 transition-colors duration-300 active:text-cyan-800",
+        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500",
         className
       )}
       {...props}

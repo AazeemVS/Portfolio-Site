@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { motion } from "framer-motion";
 const AboutMeCard: React.FC = () => {
   return (
     <Card className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[45%] mt-10 md:mt-20 mx-auto p-4 sm:p-6">
@@ -13,7 +12,7 @@ const AboutMeCard: React.FC = () => {
             passionate about creating interactive experiences. I'm based in
             Falls Church, VA and Boston, MA. I hold housing in both cities, so
             I'm ready to jump in wherever an opportunity takes me. Currently,
-            I'm a junior at RIT and an incoming CTS intern at Charles Schwab.
+            I'm a senior at RIT and an incoming CTS intern at Charles Schwab.
           </p>
         </div>
 
@@ -41,7 +40,7 @@ const AboutMeCard: React.FC = () => {
             construct a promotional website for a video game start up company.
             At Grid 1 Solutions, I worked on the restoration and modernization
             of a legacy website, improving performance. I've also been on the
-            Dean's List every semester at RIT, where I'm a rising senior
+            Dean's List every semester at RIT, where I'm a senior
             studying Software Engineering and Game Design & Development. Last
             summer, I constructed this personal website to deepen my
             understanding of web development.
@@ -54,9 +53,9 @@ const AboutMeCard: React.FC = () => {
             My Approach & Passion
           </h3>
           <p className="mt-1 sm:mt-2 text-white text-sm sm:text-base">
-            I thrive in collaborative, Agile teams and love workng with peers to
+            I thrive in collaborative, Agile teams and love working with peers to
             tackle complex challenges. I believe the best products come from
-            combining design with clean, maintainable code. Whether I'm styling
+            combining design with clean, maintainable code, whether I'm styling
             a component or debugging a back-end error.
           </p>
         </div>
@@ -70,32 +69,6 @@ const AboutMeCard: React.FC = () => {
             When I'm not programming, you'll find me rock climbing, working out,
             or playing chess. A fun fact about me is that I love to go on walks
             with friends.
-          </p>
-        </div>
-
-        {/* Contact Me */}
-        <div>
-          <h3 className="text-white text-xl sm:text-2xl font-bold">
-            Contact Me
-          </h3>
-          <p className="mt-1 sm:mt-2 text-white text-sm sm:text-base">
-            I'm actively seeking internships or junior-level roles in web
-            development, software engineering, or game design. Feel free to
-            reach out at{" "}
-            <motion.a
-              href="mailto:av7304@rit.edu"
-              className="relative inline-block text-cyan-500"
-              whileHover="hover"
-              initial="rest"
-            >
-              <span className="relative z-10">av7304@rit.edu</span>
-              <motion.span
-                className="absolute bottom-0 left-0 h-0.5 bg-cyan-500"
-                variants={{ rest: { width: 0 }, hover: { width: "100%" } }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-              />
-            </motion.a>
-            . I'd love to discuss how we can build something great together!
           </p>
         </div>
       </div>

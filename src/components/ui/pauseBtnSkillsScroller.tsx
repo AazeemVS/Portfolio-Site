@@ -11,9 +11,9 @@ function PauseBtn({ isPaused, setIsPaused }: PauseBtnProps) {
 
   return (
     <button
-      className="inline-flex items-center px-3.5 py-3.5 border-2 border-cyan-800 text-cyan-500 rounded-full font-medium hover:text-black transition-colors duration-300 group ml-[1%] bg-[#1e293b] hover:bg-cyan-800 transition-colors"
+      className="inline-flex items-center px-3.5 py-3.5 border-2 border-cyan-800 text-cyan-500 rounded-full font-medium hover:text-black transition-colors duration-300 group ml-[1%] bg-[#1e293b] hover:bg-cyan-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 active:scale-95 active:bg-cyan-900"
       onClick={togglePlayPause}
-      aria-label={isPaused ? "Pause" : "Play"}
+      aria-label={isPaused ? "Play" : "Pause"}
     >
       {isPaused ? <PlayIcon /> : <PauseIcon />}
     </button>
